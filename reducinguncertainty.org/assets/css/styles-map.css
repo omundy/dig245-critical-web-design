@@ -1,0 +1,24 @@
+
+
+
+
+/* MAP */
+
+.leaflet-touch .leaflet-bar button { line-height: 26px } /* fix position of fa button */
+.leaflet-control-container { position: absolute; right: 56px } /* move map controls to right side */
+.leaflet-control a:link, .leaflet-control a:hover, .leaflet-control a:active, .leaflet-control a:visited {
+    color: #000;
+}
+
+
+/* LEAFLET */
+
+.leaflet-popup-content-wrapper { background-color: rgba(255,255,255,.7); }
+.leaflet-popup-tip { opacity: 0.7; }
+
+
+/* LEAFLET POP TABLES */
+
+#map table { width: 100%; }
+#map .key { min-width: 100px; padding: 2px 3px; text-align: left; }
+#map .val { min-width: 70px; padding: 2px 3px; text-align: right; }
