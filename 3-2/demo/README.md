@@ -19,8 +19,8 @@ Now, complete the following tasks with a partner:
    (except for the interactive map), but it just looks different.
 
 3. In order to style the site, you first need a place to put your CSS. We will use an external stylesheet to keep things
-   organized and make our lives easier. In the directory `assets/css/`, make a new file called `styles.css`.
-   Then, add a link to this stylesheet in the `index.html` file.
+   organized and make our lives easier. We will use `assets/css/styles.css` to hold all of the CSS (this file is
+   currently empty). Add a link to this stylesheet in the `index.html` file.
    
 4. Now you will give your site the appropriate typography and colors. Keep in mind that it is best practice to always use
    the lowest level of specificity as possible. In other words, classes are your friend. Your task is to add classes
