@@ -42,11 +42,9 @@ Now, complete the following tasks with a partner:
    
    The previous bullet points are meant to guide you in the right direction, but you may find that there are some changes
    you need to make along the way that are not explicitly listed here. Once you feel as though you have accurately
-   recreated the typography and color of the site, you have finished this assignment. Next week, we will add on to this
-   by correctly positioning everything on the screen.
+   recreated the typography and color of the site, you have finished this assignment. In the coming weeks, we will add
+   on to this by correctly positioning everything on the screen.
    
 5. (Optional) If you have time, you may want to look through the live site and figure out what elements will share classes.
    If you create all of the necessary classes now, even if they don't actually have any rules applied to them, you will
    save yourself some time down the road.
-   
-6. Save your work, as you will be picking up where you left off next week.
