@@ -3,7 +3,7 @@
 Over the next few weeks, you will be recreating parts of the site [reducinguncertainty.org](https://reducinguncertainty.org/)
 in order to gain experience with CSS. The full site relies heavily on JavaScript as well as some technologies we
 won't be covering in this class, so you will be focusing only on the look of the site. You will be adding to this site
-week as you learn more about CSS.
+in the following weeks as you learn more about CSS.
 
 ## Assignment
 
