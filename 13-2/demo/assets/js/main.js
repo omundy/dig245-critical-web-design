@@ -1,12 +1,12 @@
 var todos = [];
 
-var addTask = document.getElementById("addTask");
-addTask.onsubmit = function(event) {
+$("#addTask").submit(function (event) {
     event.preventDefault();
-    var task = addTask.task.value;
+    var input = $("input[name=task]");
+    var task = input.val();
     if (task) addItem(task);
-    addTask.task.value = null;
-};
+    input.val(null);
+});
 
 /**
  * Adds the given task to the list of todos, then updates the list to reflect the changes.
@@ -26,7 +26,9 @@ function addItem(task) {
  */
 function updateList() {
     var list = document.getElementById("list");
-    list.innerHTML = todos.reduce(function (a, value) {
-        return a + "<li>" + value + "</li>";
-    }, "");
+    var html = "";
+    for (var i = 0; i < todos.length; i++) {
+        html += "<li>" + todos[i] + "</li>"
+    }
+    list.innerHTML = html;
 }

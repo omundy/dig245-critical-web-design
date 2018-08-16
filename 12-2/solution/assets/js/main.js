@@ -14,8 +14,13 @@ addTask.onsubmit = function(event) {
  * @param task: the new task
  */
 function addItem(task) {
+    // First, add the new task to the array
     todos.push(task);
+
+    // Then, update the list
     updateList();
+
+    // Finally, check to see if the number of tasks is a multiple of 5 and alert the user if so
     if (todos.length % 5 === 0) {
         alert("You now have " + todos.length + " tasks.")
     }
@@ -25,8 +30,18 @@ function addItem(task) {
  * Updates the HTML of the list to match the current state of todos.
  */
 function updateList() {
+    // Get a reference to the
     var list = document.getElementById("list");
-    list.innerHTML = todos.reduce(function (a, value) {
-        return a + "<li>" + value + "</li>";
-    }, "");
+
+    // Create a new string that we can build on
+    var html = "";
+
+    // Iterate over all todos
+    for (var i = 0; i < todos.length; i++) {
+        // Add each item to the string inside <li> tags
+        html += "<li>" + todos[i] + "</li>"
+    }
+
+    // Set the content of the <ul> to our new string
+    list.innerHTML = html;
 }

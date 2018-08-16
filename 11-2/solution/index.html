@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Boxalicious</title>
     <style>
+        /* Set the background to a nice gradient */
         body {
             background: linear-gradient(to bottom right, #ffb95e, #10ffe9) no-repeat fixed;
         }
@@ -15,6 +16,7 @@
             top: 0;
             left: 0;
             border: solid black 2px;
+            /* Tell the box to use our animations (specified below) */
             animation-name: color-animation, shape-animation;
             animation-duration: 5s, 5s;
             animation-iteration-count: infinite;
@@ -49,10 +51,16 @@
 
 <div id="box" class="boxalicious"></div>
 <script defer>
+    // Tell JavaScript to watch for the mouse to move on the page, then do something when it happens
     document.addEventListener("mousemove", function (data) {
+        // Store a reference to the box as a variable
         var box = document.getElementById("box");
+
+        // Calculate the new x and y coordinates for where we want to box to be
         var x = data.clientX - box.clientWidth / 2;
         var y = data.clientY - box.clientHeight / 2;
+
+        // Set the box's location to the newly calculated position
         box.style.left = x + "px";
         box.style.top = y + "px";
     })

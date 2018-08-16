@@ -8,7 +8,7 @@ a random color.
 
 Complete the following tasks with a partner:
 
-1. Download this directory to one partner's computer, then open `index.html` in a browser. This file, along with
+1. Download the `demo` directory to one partner's computer, then open `index.html` in a browser. This file, along with
    `styles.css`, have already been completed for you. You should see a simple site that says **"COLORS"** with four
    buttons underneath. Try clicking on the buttons. You'll notice that nothing happens. This is because there is currently
    no JavaScript to make anything happen. Let's change that.

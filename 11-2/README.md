@@ -5,7 +5,7 @@ relate to everything we have covered up until this point. JavaScript is called t
 of the web" because it is used to interact with HTML and CSS, therefore making website more dynamic. This assignment
 will begin to explore these connections.
 
-![Boxalicious](examples/boxalicious.gif)
+![Boxalicious](demo/examples/boxalicious.gif)
 
 ## Assignment
 
@@ -66,7 +66,7 @@ Your box moves now, but the page is still pretty boring. You are going to make t
 background a nice pretty gradient (Hint: Look into CSS's `linear-gradient` function.). Then, using
 [CSS Animations](https://www.w3schools.com/css/css3_animations.asp), make your box change color and shape, indefinitely.
 
-![Challenge](examples/challenge.gif)
+![Challenge](demo/examples/challenge.gif)
 
 
 ## Credit
