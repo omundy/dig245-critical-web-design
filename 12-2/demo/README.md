@@ -18,7 +18,7 @@ to add items to the list. With a partner, complete the following tasks:
 2. First, you should implement `updateList`, since `addItem` relies on it. Essentially, you need to change the `innerHTML` of
    the `#list` element to contain a `<li>` for every task in `todos`. There are several ways to go about transforming
    `todos` into a properly formatted HTML String. However, for a concise and elegant, albeit more challenging, solution,
-   I would recommend taking advantage of JavaScript's `.reduce()` function. It is wise to ensure this function is
+   I would recommend taking advantage of JavaScript's `.reduce()` function. It is wise to ensure `updateList` is
    working properly before moving on to the next step. You can test it by manually adding some items to `todos` and then
    placing a single call to `updateList` at the bottom of the file. Then, when you load the page, you should see the
    elements of `todos` listed on the screen.
