@@ -1,3 +1,6 @@
 # Critical Web Design
 
-For fall 2018 course
+Fall 2018 course demos
+
+Course Website
+https://owenmundy.com/teaching/critical-web-design/
