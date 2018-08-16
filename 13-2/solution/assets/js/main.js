@@ -41,7 +41,7 @@ $(document).ready(function () {
     function updateList() {
         var html = "";
         for (var i = 0; i < todos.length; i++) {
-            html += "<li>" + todos[i] + "</li>"
+            html += "<li class='task" + (completed[i] ? " completed" : "") + "'>" + todos[i] + "</li>"
         }
         // Set the inner HTML of the list to the concatenated string
         $("#list").html(html);

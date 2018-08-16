@@ -8,7 +8,7 @@ positioning tasks become as simple as adding a class to an element.
 
 ## Assignment
 
-This directory contains a completed version of [Reducing Uncertainty - Part 1](../../3-2/demo/README.md) as a starting
+This directory contains a completed version of [Reducing Uncertainty - Part 1](../03-2/README.md) as a starting
 point in the event that you did not finish that assignment. It also contains some additional styles and code that you
 may not have included in Part 1 but will be helpful nonetheless.
 

@@ -28,7 +28,7 @@ function updateList() {
     var list = document.getElementById("list");
     var html = "";
     for (var i = 0; i < todos.length; i++) {
-        html += "<li>" + todos[i] + "</li>"
+        html += "<li class='task'>" + todos[i] + "</li>"
     }
     list.innerHTML = html;
 }

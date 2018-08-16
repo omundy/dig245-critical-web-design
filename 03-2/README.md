@@ -12,7 +12,7 @@ Use this as your starting point. It contains all of the content of the site, but
 
 Now, complete the following tasks with a partner:
 
-1. Download this directory (`demo/`) to one partner's computer.
+1. Download `demo/` to one partner's computer.
 
 2. Open `index.html` in a browser, and compare it to the live version of
    [reducinguncertainty.org](https://reducinguncertainty.org/). Notice that all of the content is the same
