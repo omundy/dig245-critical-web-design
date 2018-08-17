@@ -9,7 +9,7 @@ a random color.
 Complete the following tasks with a partner:
 
 1. Download the `demo/` directory to one partner's computer, then open `index.html` in a browser. This file, along with
-   `styles.css`, have already been completed for you. You should see a simple site that says **"COLORS"** with four
+   `styles.css`, has already been completed for you. You should see a simple site that says **"COLORS"** with four
    buttons underneath. Try clicking on the buttons. You'll notice that nothing happens. This is because there is currently
    no JavaScript to make anything happen. Let's change that.
    
@@ -35,7 +35,7 @@ Complete the following tasks with a partner:
    
    Some hints:
    
-   * JavaScript does not require a parameter to be passed to a function when its called, even if a parameter is in
+   * JavaScript does not require a parameter to be passed to a function when it's called, even if a parameter is in
      the function definition. If this happens, then the missing parameter will evaluate to `false` inside of the
      function. For example, if the above function was called as `setBackgroundColor()`, the statement `if(color)` would
      be skipped over, but the corresponding `else` would run.
