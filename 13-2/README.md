@@ -11,7 +11,7 @@ Complete the following tasks with a partner:
    as well as a few additions.
    
 2. First, you are going to alter the existing code to take advantage of jQuery. No functionality of the app will change - 
-   just how it get implemented. jQuery has already been imported for you in `index.html`, and the form handling now uses
+   just how it gets implemented. jQuery has already been imported for you in `index.html`, and the form handling now uses
    jQuery. Now, you should complete the following:
    
    * Use jQuery to ensure none of your code will run until the page has finished loading (Hint: `.ready()`).
@@ -45,6 +45,6 @@ Complete the following tasks with a partner:
    * JavaScript's **`this`** keyword will come in handy. You don't need to completely understand how it works, but
      know that in the context of this problem, it can be used to reference a member of a group.
    
-   * You will need a way of keeping track of which tasks are completed or not.
+   * You will need a way of keeping track of which tasks are completed.
    
-5. Celebrate! You have completed a simple todo app finished your introduction to JavaScript!
+5. Celebrate! You have completed a simple todo app and finished your introduction to JavaScript!
