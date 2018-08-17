@@ -2,7 +2,7 @@
 
 As you begin to learn JavaScript and some basic programming concepts, it is also important to investigate how they
 relate to everything we have covered up until this point. JavaScript is called the "programming language
-of the web" because it is used to interact with HTML and CSS, therefore making website more dynamic. This assignment
+of the web" because it is used to interact with HTML and CSS, therefore making websites more dynamic. This assignment
 will begin to explore these connections.
 
 ![Boxalicious](demo/examples/boxalicious.gif)
@@ -15,7 +15,7 @@ this file, even though this is generally bad practice.
 
 Complete the following tasks with a partner:
 
-1. Open `index.html` in the browser. You'll notice that there is a simple box in the top right corner. As of now,
+1. After downloading the `demo/` directory, open `index.html` in the browser. You'll notice that there is a simple box in the top-left corner. As of now,
    it doesn't do a whole lot, so you are going to make it a little more interesting. In the following steps,
    all of your JavaScript will go inside the `<script>` tags in `index.html`. 
    
@@ -33,10 +33,9 @@ Complete the following tasks with a partner:
 4. Next, we need to be able to access information about the event that occurred. After the mouse moves, we need to
    know the new location of the mouse. JavaScript stores all of that data as an Object, which is one of JavaScript's
    complex data types. If you want to read more about Objects, you can do so [here](https://www.w3schools.com/js/js_objects.asp),
-   but it is not necessary for this assignment. You can access the information that gets stored though the `event` variable,
-   which is an Object.
+   but it is not necessary for this assignment. You can access the information that gets stored though the Object `event`.
    
-   So, we know that the mouse's updated position gets stored in the `event` Object. Before accessing it though, it's
+   So, we know that the mouse's updated position gets stored in `event`. Before accessing it though, it's
    important to understand how location is represented on the screen. A grid turns out to be a very intuitive way of
    doing this because your screen is a rectangle made up of pixels, or cells. JavaScript will, in fact, represent the
    mouse's location by giving you the X and Y coordinates on the grid, where the location (0, 0) is the top left corner
@@ -45,8 +44,8 @@ Complete the following tasks with a partner:
    
 5. Now you just need to be able to connect the mouse's location to the box. Create two more variables, `x` and `y`,
    which encode the new location that we want to move the box to. Then, use JavaScript to alter the box's CSS style and
-   change is position on screen. This can and should be done with only two lines of code. As an example, if you wanted
-   to set the box's `left` property to 20 pixels, you would use `box.style.left = "20px;`. Finally, open your page
+   change is position on screen. As an example, if you wanted
+   to set the box's `left` property to 20 pixels, you would use `box.style.left = "20px";`. Finally, open your page
    in the browser and enjoy your newly improved box!
    
 6. If everything has gone well up until this point, you have a box that follows your mouse around the screen. However,
@@ -59,7 +58,7 @@ Complete the following tasks with a partner:
 ## Challenge (Optional)
 
 Your box moves now, but the page is still pretty boring. You are going to make the page more colorful. First, give the
-background a nice pretty gradient (Hint: Look into CSS's `linear-gradient` function.). Then, using
+background a pretty gradient (Hint: Look into CSS's `linear-gradient` function.). Then, using
 [CSS Animations](https://www.w3schools.com/css/css3_animations.asp), make your box change color and shape, indefinitely.
 
 ![Challenge](demo/examples/challenge.gif)
