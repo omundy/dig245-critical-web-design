@@ -18,12 +18,15 @@ https://owenmundy.com/teaching/critical-web-design/
 
 Make a validator "bookmarklet":
 
-1. Select and copy the code below (hint: triple click to select the whole line)
+1. Select and copy the code below
 
 ```javascript
-javascript:(function(){var loc=document.location;var css=window.open("http://jigsaw.w3.org/css-validator/validator?profile=css3&amp;warning=0&amp;uri="+loc,"css");var html=window.open("http://validator.w3.org/check?verbose=1&amp;uri="+loc,"html");})();
+var loc = document.location;
+var css = window.open("http://jigsaw.w3.org/css-validator/validator?profile=css3&warning=0&uri=" + loc, "css");
+var html = window.open("http://validator.w3.org/check?verbose=1&uri=" + loc, "html");
 
 ```
 2. Paste it into the form [here](http://ted.mielczarek.org/code/mozilla/bookmarklet.html)
-3. Click "Crunch"
-4. Drag the "validate" link to your bookmark bar
+3. Change the name to `validate`
+4. Click "Crunch"
+5. Drag the "validate" link to your bookmark bar
