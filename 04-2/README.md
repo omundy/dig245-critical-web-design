@@ -12,3 +12,5 @@ is `#df232f`.
 If you finish the first poster before the end of class, then go ahead and work on [A3](https://docs.google.com/document/d/e/2PACX-1vTyxC8QLyEKx5TlT6LKVM3jx_8f0erQ1_3xlA6drn2vrGPoGENqtZCcoiNurLLh4jgfT9lOVX_9FfLo/pub) using any of the more challenging posters in the image below.
 
 ![More Posters](posters/more.png)
+
+[Higher resolution images](https://www.swissted.com/)
