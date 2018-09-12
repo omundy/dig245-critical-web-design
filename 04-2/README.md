@@ -7,7 +7,8 @@ is `#df232f`.
 
 ![Swiss](posters/swiss.jpg)
 
-If you finish the first poster before the end of class, then try to do the same thing with any of the more challenging
-posters in the image below.
+# A3: Swiss Design
+
+If you finish the first poster before the end of class, then go ahead and work on [A3](https://docs.google.com/document/d/e/2PACX-1vTyxC8QLyEKx5TlT6LKVM3jx_8f0erQ1_3xlA6drn2vrGPoGENqtZCcoiNurLLh4jgfT9lOVX_9FfLo/pub) using any of the more challenging posters in the image below.
 
 ![More Posters](posters/more.png)
