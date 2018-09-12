@@ -13,4 +13,4 @@ If you finish the first poster before the end of class, then go ahead and work o
 
 ![More Posters](posters/more.png)
 
-[Higher resolution images](https://www.swissted.com/)
+Posters by [Mike Joyce](http://www.stereotypenyc.com/) [High resolution images](https://www.swissted.com/)
