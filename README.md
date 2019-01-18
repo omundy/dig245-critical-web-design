@@ -1,6 +1,8 @@
 # Critical Web Design
 
-Fall 2018 course demos
+Tutorials, demos, and resources for 
+
+* DIG 245 Critical Web Design
 
 Course Website
 https://owenmundy.com/teaching/critical-web-design/
