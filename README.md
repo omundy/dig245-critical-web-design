@@ -2,17 +2,18 @@
 
 Tutorials, demos, and resources for 
 
-* DIG 245 Critical Web Design
-
-Course Website
-https://owenmundy.com/teaching/critical-web-design/
-
-
+* [DIG 245 Critical Web Design](https://owenmundy.com/teaching/critical-web-design/)
 
 
 
 
 ## Tools and Tips
+
+
+### References
+
+* [CWD Technical References](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
+* W3Schools [HTML](https://www.w3schools.com/tags/default.asp), [CSS](https://www.w3schools.com/cssref/default.asp), and [Javascript](https://www.w3schools.com/jsref/default.asp) references
 
 
 
