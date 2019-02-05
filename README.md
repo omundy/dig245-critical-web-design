@@ -12,6 +12,12 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 
 
+## Resources
+
+### Wordpress
+
+* [Understrap theme](https://understrap.com/) - [documentation](https://understrap.github.io/), [code](https://github.com/understrap/understrap), [demo](https://understrap.com/understrap/), and [showcase](https://github.com/understrap/understrap/issues/208)
+
 
 ## Tools and Tips
 
