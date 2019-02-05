@@ -19,6 +19,9 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 Drag the following link to your bookmarks bar: <a href="javascript:function validate(){alert('Hello World');} validate();">validate</a>
 
+    [Hello World](javascript:%28function%28%29%7Balert%28%22Hello%20World%22%29%7D%29%28%29%3B)
+
+
 Make a validator "bookmarklet":
 
 1. Select and copy the code below
