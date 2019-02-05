@@ -17,6 +17,8 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 ### HTML and CSS validator bookmarklet
 
+Drag the following link to your bookmarks bar: <a href="javascript:function validate(){alert('Hello World');} validate();">validate</a>
+
 Make a validator "bookmarklet":
 
 1. Select and copy the code below
