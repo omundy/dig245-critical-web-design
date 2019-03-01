@@ -37,3 +37,20 @@ var html = window.open("http://validator.w3.org/check?verbose=1&uri=" + loc, "ht
 3. Change the name to `validate`
 4. Click "Crunch"
 5. Drag the "validate" link to your bookmark bar
+
+
+### Website, Domain, and Server Tests
+
+* [CDN Planet](https://www.cdnplanet.com/) - A good check for server response time / CDN 
+* [Pingdom](https://tools.pingdom.com/) - Also good for checking server and website performance
+* [GTMetrix](https://gtmetrix.com/) - Another measurement for server and website performance
+* [WebPageTest](https://www.webpagetest.org/)
+* [Wordpress Checkup](https://premium.wpmudev.org/wp-checkup/ )
+
+* [ICANN WHOIS](https://whois.icann.org/en) - Lookup domain registration and nameservers
+* [Whats My DNS?](https://www.whatsmydns.net/) - Global DNS Propagation Checker
+* [MX Lookup](https://mxtoolbox.com/MXLookup.aspx) - Check the health of email on your server
+
+
+
+
