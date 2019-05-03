@@ -7,10 +7,11 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 ## Tutorials and References
 
+
+### General
+
 * [CWD Technical References](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
 * W3Schools [HTML](https://www.w3schools.com/tags/default.asp), [CSS](https://www.w3schools.com/cssref/default.asp), and [Javascript](https://www.w3schools.com/jsref/default.asp) references
-
-
 
 
 
@@ -21,11 +22,10 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 
 
-
-
 ### Leaflet Maps
 
-https://maptimeboston.github.io/leaflet-intro/
+* [Leaflet: Make a web map!](https://maptimeboston.github.io/leaflet-intro/)
+* [Web Map Workshop](http://duspviz.mit.edu/web-map-workshop/)
 
 
 
