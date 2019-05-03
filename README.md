@@ -5,21 +5,36 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 
 
-## References
+## Tutorials and References
 
 * [CWD Technical References](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
 * W3Schools [HTML](https://www.w3schools.com/tags/default.asp), [CSS](https://www.w3schools.com/cssref/default.asp), and [Javascript](https://www.w3schools.com/jsref/default.asp) references
 
 
 
-## Resources
+
+
 
 ### Wordpress
 
 * [Understrap theme](https://understrap.com/) - [documentation](https://understrap.github.io/), [code](https://github.com/understrap/understrap), [demo](https://understrap.com/understrap/), and [showcase](https://github.com/understrap/understrap/issues/208)
 
 
-## Tools and Tips
+
+
+
+### Leaflet Maps
+
+https://maptimeboston.github.io/leaflet-intro/
+
+
+
+
+
+
+
+## Testing and Validation
+
 
 ### HTML and CSS validator bookmarklet
 
@@ -38,7 +53,6 @@ var html = window.open("http://validator.w3.org/check?verbose=1&uri=" + loc, "ht
 4. Click "Crunch"
 5. Drag the "validate" link to your bookmark bar
 
-
 ### Website, Domain, and Server Tests
 
 * [CDN Planet](https://www.cdnplanet.com/) - A good check for server response time / CDN 
@@ -50,6 +64,9 @@ var html = window.open("http://validator.w3.org/check?verbose=1&uri=" + loc, "ht
 * [ICANN WHOIS](https://whois.icann.org/en) - Lookup domain registration and nameservers
 * [Whats My DNS?](https://www.whatsmydns.net/) - Global DNS Propagation Checker
 * [MX Lookup](https://mxtoolbox.com/MXLookup.aspx) - Check the health of email on your server
+
+
+
 
 
 
