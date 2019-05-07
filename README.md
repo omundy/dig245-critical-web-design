@@ -23,7 +23,7 @@ Download [Atom](https://atom.io/) and install the following packages:
 
 
 
-## Tutorials and References
+## Tutorials, Tools, and References
 
 
 ### General
@@ -46,6 +46,17 @@ Download [Atom](https://atom.io/) and install the following packages:
 * [Web Map Workshop](http://duspviz.mit.edu/web-map-workshop/)
 
 
+
+### Data
+
+* [jsonlint.com](https://jsonlint.com/) - The JSON validator
+* [geojson.io](http://geojson.io/) - The missing GUI for GEOJSON files
+
+
+### Graphics
+
+* [SVGOMG](https://jakearchibald.github.io/svgomg/) - The missing GUI for SVG files
+* [Coolers](https://coolors.co/) - Color scheme generator
 
 
 
