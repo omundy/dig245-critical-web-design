@@ -16,6 +16,7 @@ Download [Atom](https://atom.io/) and install the following packages:
 * [file-icons](https://atom.io/packages/file-icons) - Assign file extension icons and colours for improved visual grepping
 * [pigments](https://atom.io/packages/pigments) - A package to display colors in project and files
 * [remote-ftp](https://atom.io/packages/remote-ftp) - Enable browsing remote SFTP just like the built-in Tree View 
+* [linter](https://atom.io/packages/linter) - A [linter](https://en.wikipedia.org/wiki/Lint_(software)) for Atom 
 * [linter-jshint](https://atom.io/packages/linter-jshint) - Linter plugin for JavaScript, using jshint
 
 
