@@ -18,6 +18,10 @@ Download [Atom](https://atom.io/) and install the following packages:
 * [remote-ftp](https://atom.io/packages/remote-ftp) - Enable browsing remote SFTP just like the built-in Tree View 
 * [linter-jshint](https://atom.io/packages/linter-jshint) - Linter plugin for JavaScript, using jshint
 
+
+
+
+
 ## Tutorials and References
 
 
@@ -72,8 +76,7 @@ var html = window.open("http://validator.w3.org/check?verbose=1&uri=" + loc, "ht
 * [Pingdom](https://tools.pingdom.com/) - Also good for checking server and website performance
 * [GTMetrix](https://gtmetrix.com/) - Another measurement for server and website performance
 * [WebPageTest](https://www.webpagetest.org/)
-* [Wordpress Checkup](https://premium.wpmudev.org/wp-checkup/ )
-
+* [Wordpress Checkup](https://premium.wpmudev.org/wp-checkup/)
 * [ICANN WHOIS](https://whois.icann.org/en) - Lookup domain registration and nameservers
 * [Whats My DNS?](https://www.whatsmydns.net/) - Global DNS Propagation Checker
 * [MX Lookup](https://mxtoolbox.com/MXLookup.aspx) - Check the health of email on your server
