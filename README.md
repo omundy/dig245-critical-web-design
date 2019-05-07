@@ -4,6 +4,19 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 
 
+## Software and Packages
+
+
+### Atom
+
+Download [Atom](https://atom.io/) and install the following packages:
+
+* [atom-beautify](https://atom.io/packages/atom-beautify) - Beautify HTML, CSS, JavaScript, PHP, Python, and more!
+* [emmet](https://atom.io/packages/emmet) - The essential tool for web developers
+* [file-icons](https://atom.io/packages/file-icons) - Assign file extension icons and colours for improved visual grepping
+* [pigments](https://atom.io/packages/pigments) - A package to display colors in project and files
+* [remote-ftp](https://atom.io/packages/remote-ftp) - Enable browsing remote SFTP just like the built-in Tree View 
+* [linter-jshint](https://atom.io/packages/linter-jshint) - Linter plugin for JavaScript, using jshint
 
 ## Tutorials and References
 
