@@ -59,6 +59,10 @@ Download [Atom](https://atom.io/) and install the following packages:
 * [Coolers](https://coolors.co/) - Color scheme generator
 
 
+### Web Servers and Architectures
+
+* [Web Architecture 101](https://engineering.videoblocks.com/web-architecture-101-a3224e126947)
+
 
 
 
