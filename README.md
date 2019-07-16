@@ -30,7 +30,7 @@ Download [Atom](https://atom.io/) and install the following packages:
 
 * [CWD Technical References](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
 * W3Schools [HTML](https://www.w3schools.com/tags/default.asp), [CSS](https://www.w3schools.com/cssref/default.asp), and [Javascript](https://www.w3schools.com/jsref/default.asp) references
-
+* [http.cat](https://http.cat/)
 
 
 
