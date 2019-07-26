@@ -33,6 +33,10 @@ Download [Atom](https://atom.io/) and install the following packages:
 * [http.cat](https://http.cat/)
 
 
+### Javascript
+
+* [Async JavaScript, a Pocket Reference: Learn asynchronous programming in JavaScript](https://medium.com/@ajmeyghani/async-javascript-a-pocket-reference-2bb16ac40d21)
+
 
 ### Wordpress
 
