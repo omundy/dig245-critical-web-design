@@ -36,6 +36,7 @@ Download [Atom](https://atom.io/) and install the following packages:
 ### Javascript
 
 * [Async JavaScript, a Pocket Reference: Learn asynchronous programming in JavaScript](https://medium.com/@ajmeyghani/async-javascript-a-pocket-reference-2bb16ac40d21)
+* [W3Schools: Console Object](https://www.w3schools.com/jsref/obj_console.asp)
 
 
 ### Wordpress
