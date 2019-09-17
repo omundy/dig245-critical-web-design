@@ -1,6 +1,6 @@
 
 
-![html5 logo](images/html_logo_png_685083.png | width=100)
+![html5 logo](img/html_logo_png_685083.png | width=100)
 
 ## Reference Sheet - HTML
 
@@ -33,7 +33,7 @@ Term | Definition
 
 
 
-### An example HTML page 
+### An example HTML page
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -51,4 +51,3 @@ Term | Definition
 ### Sources
 * [Critical Web Design: HTML/CSS](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit?usp=sharing)
 * [W3Schools HTML](https://www.w3schools.com/html/)
-
