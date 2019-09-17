@@ -1,6 +1,6 @@
 
 
-![html5 logo](img/html_logo_png_685083.png)
+<img src="https://github.com/omundy/critical-web-design/blob/master/reference-sheets/img/html_logo_png_685083.png" width="400">
 
 ## Reference Sheet - HTML
 
@@ -17,7 +17,8 @@ Term | Definition
 [Attribute](https://www.w3schools.com/html/html_attributes.asp) | Provide additional information to HTML elements. Attributes are specified in the start tag and usually come in name/value pairs like: name="value". (e.g. `<a href="https://google.com">Google</a>` )
 [Block-level](https://www.w3schools.com/html/html_blocks.asp) | HTML elements have default `display` values depending the element type. A `block-level` element (e.g. `<div>`) always starts on a new line and takes up the full width of its parent element. `Inline elements` (e.g. `<span>`) do not start on a new line and only take as much width as necessary.
 [Bookmarks](https://www.w3schools.com/html/html_links.asp) | a.k.a. "targeted anchors" are used to allow readers to jump to specific parts of a Web page when clicked. (e.g. clicking `<a href="#section2">Jump to section 2</a>` will jump to `<p id="#section2">Content</p>`)
-
+[Absolute URLs](https://www.w3schools.com/html/html_links.asp) | Absolute URLs are the full path or "web address" and always start with `https://` or `file:///`. (e.g. `https://google.com`)
+[Relative URLs](https://www.w3schools.com/html/html_links.asp) | Relative URLs are *relative* path from one file to another. (e.g. `images/cat.png` or `../section2/file.html`)
 
 
 ### HTML Elements
