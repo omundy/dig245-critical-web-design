@@ -1,6 +1,6 @@
 
 
-![html5 logo](img/html_logo_png_685083.png | width=100)
+![html5 logo](img/html_logo_png_685083.png)
 
 ## Reference Sheet - HTML
 
