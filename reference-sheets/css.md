@@ -45,10 +45,15 @@ Below are some examples of CSS properties
 
 Property | Definition
 --- | ---
+[`background`](https://www.w3schools.com/css/css_background.asp) | The shortcut for background (e.g. `background: #ffffff url("tree.png") no-repeat right top;`)
+[`background-color`](https://www.w3schools.com/css/css_background.asp) | Sets the background color of an element
 [`color`](https://www.w3schools.com/css/css_colors.asp) | Sets the color of an element's text
+[`font`](https://www.w3schools.com/css/css_font.asp) | The shortcut for font (e.g. `font: 12px/16px Arial;`)
 [`font-family`](https://www.w3schools.com/css/css_font.asp) | Sets the font of an element's text
 [`font-style`](https://www.w3schools.com/css/css_font.asp) | Sets the style of an element's text
+[`font-size`](https://www.w3schools.com/css/css_font.asp) | Sets the size of an element's text
 [`font-weight`](https://www.w3schools.com/css/css_font.asp) | Sets the weight of an element's text
+[`text-align`](https://www.w3schools.com/css/css_align.asp) | Sets the alignment of text inside an element
 
 
 ### An example CSS document
