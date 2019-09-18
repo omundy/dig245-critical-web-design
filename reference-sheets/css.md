@@ -19,18 +19,36 @@ p {
 
 Term | Definition
 --- | ---
-[Selectors](https://www.w3schools.com/css/css_selectors.asp) | Used to "find" (or select) the HTML elements you want to style. (e.g. the `p` in the example above selects all `<p>` elements on the page)
+[Selectors](https://www.w3schools.com/css/css_syntax.asp) | Used to "find" (or select) the HTML elements you want to style. (e.g. the `p` in the example above selects all `<p>` elements on the page)
+[Declaration](https://www.w3schools.com/css/css_syntax.asp) | The declaration includes a CSS property name and a value, separated by a colon. (in the example above `font-family: verdana;` is a declaration)
+[Declaration block](https://www.w3schools.com/css/css_syntax.asp) | A "block" of one or more declarations (in the example above, everything between and include the curly braces `{}` is the declaration block)
+[Property](https://www.w3schools.com/css/css_syntax.asp) | CSS properties describe what aspect of an element is being modified (in the example above `font-family` is a property)
+[Value](https://www.w3schools.com/css/css_syntax.asp) | The value describes how the property will be changed (in the example above `verdana` is a value)
 
+
+### CSS Selectors
+Below are some examples of CSS selectors
+
+Selector | Definition
+--- | ---
+[`*`](https://www.w3schools.com/css/css_selectors.asp) | Select every element on the page
+[`p`](https://www.w3schools.com/css/css_selectors.asp) | Select all paragraph elements
+[`.callout`](https://www.w3schools.com/css/css_selectors.asp) | Select all elements with the class `callout`
+[`p.callout`](https://www.w3schools.com/css/css_selectors.asp) | Select *only* paragraph elements with the class `callout`
+[`div, h1`](https://www.w3schools.com/css/css_selectors.asp) | Select all `div` elements and `h1` elements
+[`div h1`](https://www.w3schools.com/css/css_selectors.asp) | Select only `h1` elements *inside* `div` elements
 
 
 
 ### CSS Properties
+Below are some examples of CSS properties
 
-Term | Definition
+Property | Definition
 --- | ---
 [`color`](https://www.w3schools.com/css/css_colors.asp) | Sets the color of an element's text
-
-
+[`font-family`](https://www.w3schools.com/css/css_font.asp) | Sets the font of an element's text
+[`font-style`](https://www.w3schools.com/css/css_font.asp) | Sets the style of an element's text
+[`font-weight`](https://www.w3schools.com/css/css_font.asp) | Sets the weight of an element's text
 
 
 ### An example CSS document
