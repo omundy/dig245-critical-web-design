@@ -4,23 +4,6 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 
 
-## Software and Packages
-
-
-### Atom
-
-Download [Atom](https://atom.io/) and install the following packages:
-
-* [atom-beautify](https://atom.io/packages/atom-beautify) - Beautify HTML, CSS, JavaScript, PHP, Python, and more!
-* [emmet](https://atom.io/packages/emmet) - The essential tool for web developers
-* [file-icons](https://atom.io/packages/file-icons) - Assign file extension icons and colours for improved visual grepping
-* [pigments](https://atom.io/packages/pigments) - A package to display colors in project and files
-* [remote-ftp](https://atom.io/packages/remote-ftp) - Enable browsing remote SFTP just like the built-in Tree View 
-* [linter](https://atom.io/packages/linter) - A [linter](https://en.wikipedia.org/wiki/Lint_(software)) for Atom 
-* [linter-jshint](https://atom.io/packages/linter-jshint) - Linter plugin for JavaScript, using jshint
-
-
-
 
 
 ## Tutorials, Tools, and References
@@ -28,6 +11,7 @@ Download [Atom](https://atom.io/) and install the following packages:
 
 ### General
 
+* Critical Web Design Reference Sheets: [HTML](reference-sheets/html.md), [CSS](reference-sheets/css.md), [Javascript](reference-sheets/javascript.md)
 * [CWD Technical References](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
 * W3Schools [HTML](https://www.w3schools.com/tags/default.asp), [CSS](https://www.w3schools.com/cssref/default.asp), and [Javascript](https://www.w3schools.com/jsref/default.asp) references
 * [http.cat](https://http.cat/)
@@ -67,6 +51,28 @@ Download [Atom](https://atom.io/) and install the following packages:
 ### Web Servers and Architectures
 
 * [Web Architecture 101](https://engineering.videoblocks.com/web-architecture-101-a3224e126947)
+
+
+
+
+
+## Software and Packages
+
+
+### Atom
+
+Download [Atom](https://atom.io/) and install the following packages:
+
+* [atom-beautify](https://atom.io/packages/atom-beautify) - Beautify HTML, CSS, JavaScript, PHP, Python, and more!
+* [emmet](https://atom.io/packages/emmet) - The essential tool for web developers
+* [file-icons](https://atom.io/packages/file-icons) - Assign file extension icons and colours for improved visual grepping
+* [pigments](https://atom.io/packages/pigments) - A package to display colors in project and files
+* [remote-ftp](https://atom.io/packages/remote-ftp) - Enable browsing remote SFTP just like the built-in Tree View 
+* [linter](https://atom.io/packages/linter) - A [linter](https://en.wikipedia.org/wiki/Lint_(software)) for Atom 
+* [linter-jshint](https://atom.io/packages/linter-jshint) - Linter plugin for JavaScript, using jshint
+
+
+
 
 
 
