@@ -38,6 +38,7 @@ Term | Definition
 
 
 ### HTML Elements
+Examples of common HTML elements
 
 Term | Definition
 --- | ---
