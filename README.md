@@ -21,6 +21,9 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 * [Async JavaScript, a Pocket Reference: Learn asynchronous programming in JavaScript](https://medium.com/@ajmeyghani/async-javascript-a-pocket-reference-2bb16ac40d21)
 * [W3Schools: Console Object](https://www.w3schools.com/jsref/obj_console.asp)
+* [Boost your JavaScript Debugging Skills With These Console Tricks](https://medium.com/better-programming/boost-your-javascript-debugging-skills-with-these-console-tricks-ab984c70298a)
+
+
 
 
 ### Wordpress
