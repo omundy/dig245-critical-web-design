@@ -19,18 +19,27 @@ var z = x + y;
 Term | Definition
 --- | ---
 [Variable](https://www.w3schools.com/js/js_variables.asp) | JavaScript variables are containers for storing data values. In the example above, x,y,z are variables.
+[Data types](https://www.w3schools.com/js/js_variables.asp) | JavaScript variables can hold many different types of data including primitives like [numbers](https://www.w3schools.com/js/js_numbers.asp) (`123` or `3.14`), [strings](https://www.w3schools.com/js/js_strings.asp) (`"alphanumeric characters"`), [booleans](https://www.w3schools.com/js/js_booleans.asp) (`true` or `false`); [arrays](https://www.w3schools.com/js/js_arrays.asp) like `[0,1,2,3]`, and [objects](https://www.w3schools.com/js/js_objects.asp) like `{"name":"Jane Doe"}`.
 
 
 
 
 
-### Javascript Methods
-Below are some examples of Javascript properties
+
+### Javascript Examples
+Below are some examples of Javascript statements, properties, and methods
 
 Property | Definition
 --- | ---
-[`alert("hello world!")`](https://www.w3schools.com/js/js_output.asp) | Output a string or variable to an alert box
-[`console.log("hello world!")`](https://www.w3schools.com/js/js_output.asp) | Output a string or variable to the Javascript console
+[`var greeting = "hello world!";`](https://www.w3schools.com/js/js_variables.asp) | Create a new variable and assign it's value to a string
+[`alert("hello world!");`](https://www.w3schools.com/js/js_output.asp) | Output a string or variable to an alert box
+[`console.log("hello world!");`](https://www.w3schools.com/js/js_output.asp) | Output a string or variable to the Javascript console
+[`Math.random();`](https://www.w3schools.com/js/js_math.asp) | Returns a random number between 0 (inclusive), and 1 (exclusive) (e.g. 0–.999999999999...)
+
+
+
+
+
 
 
 ### An example Javascript document
