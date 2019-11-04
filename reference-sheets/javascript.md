@@ -51,7 +51,7 @@ Statement | Outcome
 [`var myArr = [12,45,99]`](https://www.w3schools.com/js/js_arrays.asp)| Create an array with three indexes
 [`console.log( myArr[2] )`](https://www.w3schools.com/js/js_arrays.asp)| Print the value of the third array index ("99") to the console
 [`console.log( myArr.length )`](https://www.w3schools.com/js/js_arrays.asp)| Print the length of the array ("3") to the console
-
+[`function foo(str){ if (foo != "") { console.log(foo); }}`](https://www.w3schools.com/js/js_functions.asp) | A function that prints a string to the console (*if* that string is not empty).
 
 
 
