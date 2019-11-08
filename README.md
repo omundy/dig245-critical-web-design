@@ -3,7 +3,6 @@
 Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmundy.com/teaching/critical-web-design/)
 
 
-howdy!
 
 
 ## Tutorials, Tools, and References
