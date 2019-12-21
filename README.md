@@ -82,22 +82,35 @@ Download [Atom](https://atom.io/) and install the following packages:
 ## Testing and Validation
 
 
+### Make a bookmarklet
+
+1. Copy a JS code sample (e.g. below...)
+```
+javascript:alert("hello world!")
+```
+2. Paste it into [this form](http://ted.mielczarek.org/code/mozilla/bookmarklet.html)
+3. Change the name to something relevant, like `hello`
+4. Click "Crunch"
+5. Drag the bookmarklet link to your bookmark bar
+
+
+
 ### HTML and CSS validator bookmarklet
-
-Make a validator "bookmarklet":
-
-1. Select and copy the code below
-
+Use the code below and the above bookmarklet instructions
 ```javascript
 var loc = document.location;
 var css = window.open("http://jigsaw.w3.org/css-validator/validator?profile=css3&warning=0&uri=" + loc, "css");
 var html = window.open("http://validator.w3.org/check?verbose=1&uri=" + loc, "html");
-
 ```
-2. Paste it into the form [here](http://ted.mielczarek.org/code/mozilla/bookmarklet.html)
-3. Change the name to `validate`
-4. Click "Crunch"
-5. Drag the "validate" link to your bookmark bar
+
+### Last modified bookmarklet
+Use the code below and the above bookmarklet instructions
+```
+javascript:alert(document.lastModified)
+```
+
+
+
 
 ### Website, Domain, and Server Tests
 
