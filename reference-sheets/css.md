@@ -50,7 +50,7 @@ Selector | Definition
 
 
 ### CSS Properties
-Examples of common CSS properties
+Common CSS properties
 
 Property | Definition
 --- | ---
