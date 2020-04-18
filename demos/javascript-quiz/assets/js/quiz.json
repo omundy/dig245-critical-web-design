@@ -1,0 +1,56 @@
+{
+    "metadata": {
+        "settings": {
+            "randomize": true
+        }
+    },
+    "title-slide": {
+        "image": "https://sneakaway.studio/persuasion-architectures/assets/libs/bootstrap-carousel/slide1.svg",
+        "title": "My Awesome Quiz",
+        "subtitle": "This is the quiz subtitle",
+        "description": "Instructions for the quiz could go here in the description"
+    },
+    "questions": [{
+            "image": "https://sneakaway.studio/persuasion-architectures/assets/libs/bootstrap-carousel/slide2.svg",
+            "title": "The sky is falling",
+            "subtitle": "Question subtitle",
+            "description": "Question description",
+            "type": "true-false",
+            "options": [{
+                "answer": "True",
+                "correct": true
+            }, {
+                "answer": "False"
+            }]
+        },
+        {
+            "image": "https://sneakaway.studio/persuasion-architectures/assets/libs/bootstrap-carousel/slide3.svg",
+            "title": "Why is the sky blue?",
+            "subtitle": "Question subtitle",
+            "description": "Question description",
+            "type": "multiple-choice",
+            "options": [{
+                "answer": "This is choice number 1"
+            }, {
+                "answer": "This is choice number 2"
+            }, {
+                "answer": "This is choice number 3"
+            }, {
+                "answer": "This is choice number 4",
+                "correct": true
+            }]
+
+        }
+    ],
+    "final-slide": {
+        "image": "https://sneakaway.studio/persuasion-architectures/assets/libs/bootstrap-carousel/slide3.svg",
+        "title": "You have completed the quiz",
+        "subtitle": "This is the final slide subtitle",
+        "description": "More information about the quiz",
+        "cases": {
+            
+        }
+    }
+
+
+}
