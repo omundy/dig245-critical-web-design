@@ -131,7 +131,7 @@ Website health and performance
 * [WebPageTest](https://www.webpagetest.org/)
 * [Wordpress Checkup](https://premium.wpmudev.org/wp-checkup/)
 
-Domain name and 
+Domain name and DNS checks
 * [ICANN WHOIS](https://whois.icann.org/en) - Lookup domain registration and nameservers
 * [DNS Checker](https://dnschecker.org/) - Global DNS Propagation Checker
 * [MX Lookup](https://mxtoolbox.com/MXLookup.aspx) - Check the health of email on your server
