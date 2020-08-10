@@ -125,13 +125,15 @@ javascript:alert(document.lastModified)
 
 ### Website, Domain, and Server Tests
 
-* [CDN Planet](https://www.cdnplanet.com/) - A good check for server response time / CDN 
-* [Pingdom](https://tools.pingdom.com/) - Also good for checking server and website performance
+Website health and performance
+* [Pingdom](https://tools.pingdom.com/) - Check server and website performance
 * [GTMetrix](https://gtmetrix.com/) - Another measurement for server and website performance
 * [WebPageTest](https://www.webpagetest.org/)
 * [Wordpress Checkup](https://premium.wpmudev.org/wp-checkup/)
+
+Domain name and 
 * [ICANN WHOIS](https://whois.icann.org/en) - Lookup domain registration and nameservers
-* [Whats My DNS?](https://www.whatsmydns.net/) - Global DNS Propagation Checker
+* [DNS Checker](https://dnschecker.org/) - Global DNS Propagation Checker
 * [MX Lookup](https://mxtoolbox.com/MXLookup.aspx) - Check the health of email on your server
 
 
