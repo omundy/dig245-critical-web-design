@@ -29,11 +29,24 @@ document.getElementById("demo").innerHTML = "Hello JavaScript";
 Term | Definition
 --- | ---
 [Variable](https://www.w3schools.com/js/js_variables.asp) | JavaScript variables are containers for storing data values. In the example above, x,y,z are variables.
-[Data types](https://www.w3schools.com/js/js_variables.asp)<img width=200 height=1/> | JavaScript variables can hold many different types of data including primitives like [numbers](https://www.w3schools.com/js/js_numbers.asp) (`123` or `3.14`), [strings](https://www.w3schools.com/js/js_strings.asp) (`"alphanumeric characters"`), [booleans](https://www.w3schools.com/js/js_booleans.asp) (`true` or `false`); [arrays](https://www.w3schools.com/js/js_arrays.asp) like `[0,1,2,3]`, and [objects](https://www.w3schools.com/js/js_objects.asp) like `{"name":"Jane Doe"}`.
+[Data types](https://www.w3schools.com/js/js_variables.asp)<img width=200 height=1/> | Data type in programming is a category of data that is often represented in a specific way to be distinguished between each other. These data types have two categories: Primitive vs. Non-Primitive
 [Functions](https://www.w3schools.com/js/js_functions.asp) | A block of code designed to perform a particular task. Executed when other code invokes it (calls it).
 [Comparison operators](https://www.w3schools.com/js/js_comparisons.asp) | Comparison operators are used to test for true or false. <ul><li>`=` assigns a value (`num = 100`)</li><li>`==` compares values *irregardless of type* (`100 == "100"`) == `true`</li><li>`===` tests a value and a type (`100 === 100`) == `true`</li></ul>
 [Logical operators](https://www.w3schools.com/js/js_comparisons.asp) | Logical operators are used to determine the logic between variables or values. <ul><li>`&&` ("and") `(num > 10 && num < 101)` == `true`</li><li>`\|\|` ("or") `(num == 5 \|\| num == 100)` == `true`</li><li>`!` ("not") `!(num == 20)` == `true`</li></ul>
 
+
+### Javascript Data Types
+A table of Javascript data types with examples
+
+Statement | Outcome
+--- | ---
+[number](https://www.w3schools.com/js/js_numbers.asp) | A primitive type for any number; e.g. `123` or `3.14`
+[string](https://www.w3schools.com/js/js_strings.asp) | A primitive type for any text, including numbers. Must be enclosed in single `'string'` or double `"string"` quotes; e.g. `"alphanumeric characters"` or `"123"` (note the quotes)
+[boolean](https://www.w3schools.com/js/js_booleans.asp) | A primitive type for true or false; e.g. `true` or `false`
+Undefined | A primitive type. Undefined value is assigned to newly created variable that isn’t assigned with any value; e.g. `var newVar; console.log(typeof newVar);` --> `undefined`
+Null | A primitive type. `Null` represents a reference to a non-existent entity or some invalid address in memory. Similar to `undefined` but yet [different](https://www.w3schools.com/js/js_datatypes.asp) because `undefined == null` but `undefined !== null` (the type is still different)
+Object | A complex type. This includes [arrays](https://www.w3schools.com/js/js_arrays.asp) like `[0,1,2,3]`, and [objects](https://www.w3schools.com/js/js_objects.asp) like `{"name":"Jane Doe"}`.
+Function | [Functions](https://www.w3schools.com/js/js_functions.asp) are technically a complex data type; e.g. `function greeting(){ alert("hi!"); } console.log(typeof greeting);`
 
 
 
