@@ -28,7 +28,8 @@ p {
 
 Term | Definition
 --- | ---
-[Selectors](https://www.w3schools.com/css/css_syntax.asp) | Used to "find" (or select) the HTML elements you want to style. (e.g. the `p` in the example above selects all `<p>` elements on the page)
+[Rules](https://www.w3schools.com/Css/css_syntax.asp) | A CSS rule-set consists of a selector and a declaration block (e.g. above, `body { background-color: lightblue; }` is a rule-set
+[Selectors](https://www.w3schools.com/css/css_syntax.asp) | Selects the HTML elements you want to style. (e.g. the `p` in the example above selects all `<p>` elements on the page)
 [Declaration](https://www.w3schools.com/css/css_syntax.asp) | The declaration includes a CSS property name and a value, separated by a colon. (in the example above `font-family: verdana;` is a declaration)
 [Declaration block](https://www.w3schools.com/css/css_syntax.asp) | A "block" of one or more declarations (in the example above, everything between and include the curly braces `{}` is the declaration block)
 [Property](https://www.w3schools.com/css/css_syntax.asp) | CSS properties describe what aspect of an element is being modified (in the example above `font-family` is a property)
