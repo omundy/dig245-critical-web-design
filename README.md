@@ -14,20 +14,22 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 ### [HTML & CSS](#ref-html-css)
 
-- Critical Web Design course references:
-  - [HTML](reference-sheets/html.md) and [CSS](reference-sheets/css.md), [Javascript](reference-sheets/javascript.md) reference sheets
-  - [HTML/CSS slides](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit)
-  - [CWD Technical References](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
+Tutorials and references from the Critical Web Design course content
 
-Here are some popular tutorials/guides. You should **still look for other ones that you might like better**!
+- [HTML](reference-sheets/html.md) and [CSS](reference-sheets/css.md), [Javascript](reference-sheets/javascript.md) reference sheets
+- [HTML/CSS slides](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit)
+- [Intro & Technical Reference (concepts, software, etc.)](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
 
-1. Shay Howe's *[Learn to Code HTML & CSS](https://learn.shayhowe.com/)*
-1. Oliver James' *[HTML & CSS Is Hard (But Doesn't Have To Be)](https://www.internetingishard.com/html-and-css/)*
-1. Jessica Hische and Russ Maschmeyer's *[Don't Fear The Internet](http://www.dontfeartheinternet.com/)*
+Popular tutorials and guides. You should **still look for other ones that you might like better**!
 
-Here are some more reference-like resources. These might be slightly technical, but they're accurate and comprehensive. Learning to read technical reference material is its own (very valuable) skill.
+- W3Schools [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/)
+- Shay Howe's *[Learn to Code HTML & CSS](https://learn.shayhowe.com/)*
+- Oliver James' *[HTML & CSS Is Hard (But Doesn't Have To Be)](https://www.internetingishard.com/html-and-css/)*
+- Jessica Hische and Russ Maschmeyer's *[Don't Fear The Internet](http://www.dontfeartheinternet.com/)*
 
-- w3schools [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/)
+Technical references are the most accurate and comprehensive way to understand a tag or property. Learning to read these is its own (very valuable) skill.
+
+- W3Schools [HTML Element](https://www.w3schools.com/tags/default.asp) and [CSS](https://www.w3schools.com/cssref/default.asp)
 - MDN's [HTML: Hypertext Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - MDN's [CSS: Cascading Stylesheets](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [HTMLReference.io](https://htmlreference.io/)
