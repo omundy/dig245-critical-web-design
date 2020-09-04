@@ -122,7 +122,7 @@ Download [Atom](https://atom.io/) and install the following packages:
 * [remote-ftp](https://atom.io/packages/remote-ftp) - Enable browsing remote SFTP just like the built-in Tree View 
 * [linter](https://atom.io/packages/linter) - A [linter](https://en.wikipedia.org/wiki/Lint_(software)) for Atom 
 * [linter-jshint](https://atom.io/packages/linter-jshint) - Linter plugin for JavaScript, using jshint
-
+* [open-file](https://atom.io/packages/open-file) - Open a file from Atom in your default app (e.g. web browser)
 
 
 
