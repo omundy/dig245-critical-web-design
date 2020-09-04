@@ -12,7 +12,7 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 ## Tutorials, Tools, and References
 
 
-### [HTML & CSS](#ref-html-css)
+### HTML & CSS
 
 Tutorials and references from the Critical Web Design course content
 
