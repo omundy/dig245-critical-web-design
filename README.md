@@ -20,14 +20,14 @@ Tutorials and references from the Critical Web Design course content
 - [HTML/CSS slides](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit)
 - [Intro & Technical Reference (concepts, software, etc.)](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
 
-Popular tutorials and guides. You should **still look for other ones that you might like better**!
+Popular tutorials and guides - You should **still look for other ones that you might like better**!
 
 - W3Schools [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/)
 - Shay Howe's *[Learn to Code HTML & CSS](https://learn.shayhowe.com/)*
 - Oliver James' *[HTML & CSS Is Hard (But Doesn't Have To Be)](https://www.internetingishard.com/html-and-css/)*
 - Jessica Hische and Russ Maschmeyer's *[Don't Fear The Internet](http://www.dontfeartheinternet.com/)*
 
-Technical references are the most accurate and comprehensive way to understand a tag or property. Learning to read these is its own (very valuable) skill.
+Technical references - The most accurate and comprehensive way to understand a code language.
 
 - W3Schools [HTML Element](https://www.w3schools.com/tags/default.asp) and [CSS](https://www.w3schools.com/cssref/default.asp)
 - MDN's [HTML: Hypertext Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -166,6 +166,6 @@ Content, meta content, and errors
 * [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) - Evaluate your [Open Graph](https://ogp.me/) FB sharing tags
 * [Twitter Card Validator](https://cards-dev.twitter.com/validator) - Evaluate your Twitter sharing tags
 * [Google Rich Results Test](https://search.google.com/test/rich-results) - To examine your [schema.org tags](https://schema.org/docs/gs.html) 
-- [http.cat](https://http.cat/) - An essential visual reference for HTTP response codes
+* [http.cat](https://http.cat/) - An essential visual reference for HTTP response codes
 
 
