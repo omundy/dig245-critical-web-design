@@ -12,12 +12,28 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 ## Tutorials, Tools, and References
 
 
-### General
+### [HTML & CSS](#ref-html-css)
 
-* Critical Web Design Reference Sheets: [HTML](reference-sheets/html.md), [CSS](reference-sheets/css.md), [Javascript](reference-sheets/javascript.md)
-* [CWD Technical References](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
-* W3Schools [HTML](https://www.w3schools.com/tags/default.asp), [CSS](https://www.w3schools.com/cssref/default.asp), and [Javascript](https://www.w3schools.com/jsref/default.asp) references
-* [http.cat](https://http.cat/)
+- Critical Web Design course references:
+  - [HTML](reference-sheets/html.md) and [CSS](reference-sheets/css.md), [Javascript](reference-sheets/javascript.md) reference sheets
+  - [HTML/CSS slides](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit)
+  - [CWD Technical References](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
+
+Here are some popular tutorials/guides. You should **still look for other ones that you might like better**!
+
+1. Shay Howe's *[Learn to Code HTML & CSS](https://learn.shayhowe.com/)*
+1. Oliver James' *[HTML & CSS Is Hard (But Doesn't Have To Be)](https://www.internetingishard.com/html-and-css/)*
+1. Jessica Hische and Russ Maschmeyer's *[Don't Fear The Internet](http://www.dontfeartheinternet.com/)*
+
+Here are some more reference-like resources. These might be slightly technical, but they're accurate and comprehensive. Learning to read technical reference material is its own (very valuable) skill.
+
+- w3schools [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/)
+- MDN's [HTML: Hypertext Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- MDN's [CSS: Cascading Stylesheets](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [HTMLReference.io](https://htmlreference.io/)
+- [CSSReference.io](https://cssreference.io/)
+
+
 
 
 ### Version Control and Collaboration
@@ -29,6 +45,8 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 ### Javascript
 
+* Critical Web Design Reference Sheets: [Javascript](reference-sheets/javascript.md)
+* W3Schools [Javascript](https://www.w3schools.com/jsref/default.asp) reference
 * [Async JavaScript, a Pocket Reference: Learn asynchronous programming in JavaScript](https://medium.com/@ajmeyghani/async-javascript-a-pocket-reference-2bb16ac40d21)
 * [W3Schools: Console Object](https://www.w3schools.com/jsref/obj_console.asp)
 * [Boost your JavaScript Debugging Skills With These Console Tricks](https://medium.com/better-programming/boost-your-javascript-debugging-skills-with-these-console-tricks-ab984c70298a)
@@ -146,6 +164,6 @@ Content, meta content, and errors
 * [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) - Evaluate your [Open Graph](https://ogp.me/) FB sharing tags
 * [Twitter Card Validator](https://cards-dev.twitter.com/validator) - Evaluate your Twitter sharing tags
 * [Google Rich Results Test](https://search.google.com/test/rich-results) - To examine your [schema.org tags](https://schema.org/docs/gs.html) 
-
+- [http.cat](https://http.cat/) - An essential visual reference for HTTP response codes
 
 
