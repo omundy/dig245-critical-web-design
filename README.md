@@ -40,20 +40,39 @@ Technical references - The most accurate and comprehensive way to understand a c
 
 ### Version Control and Collaboration
 
-* [Github Git Cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
-* [Github Git Cheatsheet (education version)](https://education.github.com/git-cheat-sheet-education.pdf)
-* [Github Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+Tutorials and references from the Critical Web Design course content
+
+- [Git & Github Desktop slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit)
+
+Git and Github cheatsheets
+
+- [Github Cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
+- [Github Cheatsheet (education version)](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Github Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+
+
 
 
 ### Javascript
 
-* Critical Web Design Reference Sheets: [Javascript](reference-sheets/javascript.md)
+Tutorials and references from the Critical Web Design course content
+
+- [Javascript](reference-sheets/javascript.md) reference sheets
+- [Javascript slides](https://docs.google.com/presentation/d/1mTMY_jT3nVvrdE2JNrFNVsRBjnFFf90LhKB3W-2w3Fg/edit)
+- [Intro & Technical Reference (concepts, software, etc.)](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
+
+Technical references
+
 * W3Schools [Javascript](https://www.w3schools.com/jsref/default.asp) reference
 * [Async JavaScript, a Pocket Reference: Learn asynchronous programming in JavaScript](https://medium.com/@ajmeyghani/async-javascript-a-pocket-reference-2bb16ac40d21)
 * [W3Schools: Console Object](https://www.w3schools.com/jsref/obj_console.asp)
 * [Boost your JavaScript Debugging Skills With These Console Tricks](https://medium.com/better-programming/boost-your-javascript-debugging-skills-with-these-console-tricks-ab984c70298a)
 
 
+
+
+## Frameworks, Libraries, and other Tools
 
 
 ### Wordpress
