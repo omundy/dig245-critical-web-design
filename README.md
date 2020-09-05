@@ -2,7 +2,7 @@
 ![game controller](reference-sheets/img/network-black-512sq-150x150.png)
 
 
-# Critical Web Design
+# DIG 245 - Critical Web Design
 
 Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmundy.com/teaching/critical-web-design/)
 
