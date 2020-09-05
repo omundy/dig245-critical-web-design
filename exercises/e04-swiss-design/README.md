@@ -9,7 +9,7 @@ is `#df232f`.
 
 # A3: Swiss Design
 
-If you finish the first poster before the end of class, then go ahead and work on [A3](https://docs.google.com/document/d/e/2PACX-1vTyxC8QLyEKx5TlT6LKVM3jx_8f0erQ1_3xlA6drn2vrGPoGENqtZCcoiNurLLh4jgfT9lOVX_9FfLo/pub) using any of the more challenging posters in the image below.
+If you finish the first poster before the end of class, then go ahead and work on [A3](https://github.com/omundy/dig245-a3/) using any of the more challenging posters in the image below. Clone the files in https://github.com/omundy/dig245-a3/ to get started
 
 ![More Posters](posters/more.png)
 
