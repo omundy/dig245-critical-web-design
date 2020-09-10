@@ -1,7 +1,7 @@
 
-# Web Development Environment
+# Web Development
 
-Suggested software and settings for web development
+Suggested software and settings for your web development environment
 
 
 ## Software
