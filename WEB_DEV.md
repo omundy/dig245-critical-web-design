@@ -10,7 +10,7 @@ Suggested software and settings for your web development environment
 1. [NVM/Node](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
 1. [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03#file-mac-md)
 1. [Github Desktop](https://desktop.github.com/)
-1. [Atom](https://atom.io/)
+1. [Atom](https://atom.io/) - An excellent code editor (others: [Sublime Text](https://www.sublimetext.com/))
 1. [Chrome](https://www.google.com/chrome/), [Brave](https://brave.com/), [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 1. [Cyberduck](https://cyberduck.io/)
 1. [TablePlus](https://tableplus.com/download )
