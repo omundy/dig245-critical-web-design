@@ -119,9 +119,9 @@ Download [Atom](https://atom.io/) and install the following packages:
 * [emmet](https://atom.io/packages/emmet) - The essential tool for web developers
 * [file-icons](https://atom.io/packages/file-icons) - Assign file extension icons and colours for improved visual grepping
 * [pigments](https://atom.io/packages/pigments) - A package to display colors in project and files
-* [remote-ftp](https://atom.io/packages/remote-ftp) - Enable browsing remote SFTP just like the built-in Tree View 
-* [linter](https://atom.io/packages/linter) - A [linter](https://en.wikipedia.org/wiki/Lint_(software)) for Atom 
-* [linter-jshint](https://atom.io/packages/linter-jshint) - Linter plugin for JavaScript, using jshint
+* [remote-ftp](https://atom.io/packages/remote-ftp) - Enable browsing remote SFTP just like the built-in Tree View
+* [linter](https://atom.io/packages/linter) - A [linter](https://en.wikipedia.org/wiki/Lint_(software)) for Atom
+* [linter-jshint](https://atom.io/packages/linter-jshint) - Linter plugin for JavaScript; [jshint docs](https://jshint.com/docs/options/), sample `.jshintrc` [browser](https://github.com/omundy/sample-extension-listener/blob/master/.jshintrc) and [node](https://github.com/omundy/sample-node-osm-leaflet/blob/master/.jshintrc)
 * [open-file](https://atom.io/packages/open-file) - Open a file from Atom in your default app (e.g. web browser)
 
 
@@ -180,11 +180,9 @@ Domain name, email, and SSL checks
 * [SSL Checker](https://www.sslshopper.com/ssl-checker.html) - Diagnose problems with your SSL certificate installation
 
 Content, meta content, and errors
-* [Google Webmaster Tools](https://www.google.com/webmasters/tools) - Check your sitemap, robots file, and 404s 
-* [Open Graph Checker](http://opengraphcheck.com) - Do you have meta information for the open graph? 
+* [Google Webmaster Tools](https://www.google.com/webmasters/tools) - Check your sitemap, robots file, and 404s
+* [Open Graph Checker](http://opengraphcheck.com) - Do you have meta information for the open graph?
 * [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) - Evaluate your [Open Graph](https://ogp.me/) FB sharing tags
 * [Twitter Card Validator](https://cards-dev.twitter.com/validator) - Evaluate your Twitter sharing tags
-* [Google Rich Results Test](https://search.google.com/test/rich-results) - To examine your [schema.org tags](https://schema.org/docs/gs.html) 
+* [Google Rich Results Test](https://search.google.com/test/rich-results) - To examine your [schema.org tags](https://schema.org/docs/gs.html)
 * [http.cat](https://http.cat/) - An essential visual reference for HTTP response codes
-
-
