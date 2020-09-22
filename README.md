@@ -9,6 +9,16 @@ Tutorials, demos, and resources for [DIG 245 Critical Web Design](https://owenmu
 
 
 
+
+
+## Assignments, Milestones, and Sample code
+
+- Assignments: [dig245-a1](https://github.com/omundy/dig245-a1), [dig245-a2](https://github.com/omundy/dig245-a2), [dig245-a3](https://github.com/omundy/dig245-a3), [dig245-a4](https://github.com/omundy/dig245-a4), [dig245-a5](https://github.com/omundy/dig245-a5)
+- Milestones: [git-milestones](https://github.com/omundy/learn-git-milestones), [html-css-milestones](https://github.com/omundy/learn-html-css-milestones), [js-milestones](https://github.com/omundy/learn-js-milestones)
+- Samples: [/demos](demos/)
+
+
+
 ## Tutorials, Tools, and References
 
 

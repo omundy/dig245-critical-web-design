@@ -1,12 +1,12 @@
 {
-"esversion": 8,
-	"strict": "implied",
+	"esversion": 8,
+	"strict": "global",
 	"devel": true,
-    "browser": true,
-    "indent": 1,
+	"browser": true,
+	"indent": 1,
 	"undef": true,
 	"unused": false,
-    "globals": {
-        "$": false,
-    }
+	"globals": {
+		"$": false
+	}
 }
