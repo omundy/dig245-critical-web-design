@@ -50,14 +50,8 @@ Technical references - The most accurate and comprehensive way to understand a c
 
 ### Version Control and Collaboration
 
-Tutorials and references from the Critical Web Design course content
-
-- [Git & Github Desktop slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit)
-
-Git and Github cheatsheets
-
+- DIG 250 [Git & Github Desktop slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit)
 - [Github Cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
-- [Github Cheatsheet (education version)](https://education.github.com/git-cheat-sheet-education.pdf)
 - [Github Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 
