@@ -1,0 +1,14 @@
+
+/* styles.css file for JS single page application */
+
+
+body {
+	padding-top: 65px; /* bootstrap header fix */
+}
+
+
+.red { color: red }
+.green { color: green }
+.blue { color: blue }
+
+#myChart { height: 300px; width: 100%; }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Learning Javascript</title>
+</head>
+<body>
+
+<div id="myId1">myId1</div>
+<div id="myId2">myId2</div>
+
+<div class="myClass">myClass 1</div>
+<div class="myClass">myClass 2</div>
+<div class="myClass">myClass 3</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+// this assigns an event to all div
+$("div").mouseenter();
+
+// ... but we need an anonymous function inside the
+// parentheses to determine what should happen
+// So, when we hoever over a div all the code inside the 
+// anonymous function is performed.
+$("div").mouseenter(function(){
+	// this code simply logs a message
+    console.log("This is a div!!!!");
+});
+
+// this assigns a click event to .myClass
+$(".myClass").click(function(){
+	// $(this) is shorthand to refer to the current selection
+	// we could also say $(".myClass") but $(this) requires
+	// less typing !!!
+	$(this).hide();
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Learning Javascript</title>
+</head>
+<body>
+
+<div id="myId"></div>
+<div class="myClass"></div>
+
+<script>
+
+// Just like the properties and functions of window can be accessed with the dot notation
+// window.alert() or window.document
+// we can use dot notation with other objects in Javascript to access functions
+
+// Math.random() for example gives us a "normalized" random number (between 0 and 1)
+var randomNumber = Math.random();
+// keep hitting refresh on the browser to see it change
+document.getElementById("myId").innerHTML = randomNumber;
+
+// Math.ceil() will round the number up 
+var randomNumber2 = Math.ceil(Math.random() * 50);
+// to get a number between 0 and n we can multiply by n
+document.getElementsByClassName("myClass")[0].innerHTML = randomNumber2;
+
+// alternately Math.floor() rounds down
+var randomColor1 = Math.floor(Math.random() * 10);
+var randomColor2 = Math.floor(Math.random() * 10);
+var randomColor3 = Math.floor(Math.random() * 10);
+document.body.style.backgroundColor = "#"+ randomColor1 + randomColor2 + randomColor3;
+
+</script>
+</body>
+</html>

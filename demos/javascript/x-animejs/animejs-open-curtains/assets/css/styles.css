@@ -1,0 +1,33 @@
+
+
+/* GLOBAL (applies to more than one) */
+body { padding: 0; margin: 0; color: white; font: 12px Arial; text-align: center}
+#curtains { position: relative; margin: 100px; height: 300px; width: 300px; overflow: hidden;}
+.curtainLeft { width: 150px; height: 300px; position: absolute; }
+.curtainRight { left:150px; width: 150px; height: 300px; position: absolute; }
+.curtainBehind { width: 300px; height: 300px; position: absolute; z-index: -1}
+
+
+/* RED */
+#redCurtains { z-index: 3; position: absolute; }
+#redCurtainBehind { padding-top: 150px; background: red; }
+.redCurtainTexture { background-image: url(https://slm-assets0.secondlife.com/assets/7901350/view_large/Satin_drapes_curtains_3_s.jpg?1371118815); }
+
+
+/* GREEN */
+#greenCurtains { z-index: 2; position: absolute; }
+#greenCurtainBehind { padding-top: 150px; background: green; }
+.greenCurtainTexture { background-image: url(https://slm-assets0.secondlife.com/assets/11041023/view_large/Starry_curtains_2_s.jpg?1423141225); }
+
+
+/* FINAL */
+#finalBehind { padding-top: 150px; background: blue}
+
+
+/* INTERACTIVE */
+#buttons { position: absolute; top: 10px;}
+#buttons a { padding: 5px; }
+#redCurtonButton { background: red; cursor: pointer; color: white; }
+#redCurtonExitButton { background: red; cursor: pointer; color: white; }
+#greenCurtonButton { background: green; cursor: pointer; color: white; }
+#greenCurtonExitButton { background: green; cursor: pointer; color: white; }

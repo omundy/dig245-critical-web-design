@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Learning Javascript</title>
+<style>
+body { 
+	font: 12px/14px Arial;	
+}
+#answer {
+	color: #fff;
+	font: 100px/120px Arial;	
+}
+</style>
+</head>
+<body>
+
+<form>
+Name <input type="text" id="name"><br>
+Fav color <input type="text" id="color"><br>
+Birthyear <input type="text" id="year"><br>
+<input type="submit" id="submitButton"><br>
+</form>
+
+<div id="answer">Hello</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+// set the value of a form element
+$('#name').val("owen");
+$('#color').val("purple");
+
+$('#submitButton').click(function(){
+
+	// get the value of a form elements
+	var name = $('#name').val();
+	var color = $('#color').val();
+	var year = $('#year').val();
+	var currentYear = new Date().getFullYear();
+	var age = currentYear - parseInt(year);
+
+	$('#answer').html("Hello, my name is "+ name +", and in "+ currentYear +" I'll be "+ age +" years old.")
+	// change the background color
+	$('body').css({'background-color':color})
+
+
+	// do something with the data
+	// send to the webserver
+	// or use to manipulate the page
+	// we'll just log for now
+	console.log("User's name is "+ name +", and favorite color is "+ color);
+
+	// do not perform the default form action
+	return false;
+});
+
+
+
+</script>
+</body>
+</html>

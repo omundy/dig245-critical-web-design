@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Learning Javascript</title>
+</head>
+<body>
+
+<div id="result">state is...</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+// create a boolean variable
+var state = true;
+
+
+function checkState(){
+
+	if (state){
+		// if state is true
+		$('#result').html("state = true");
+		$('#result').css({"color":"green"});
+	} else {
+		// state is not true
+		$('#result').html("state = false");
+		$('#result').css({"color":"red"});
+	}
+}
+
+$('#result').on("click", function(){
+	state = !state;
+	checkState();
+});
+
+</script>
+</body>
+</html>
+

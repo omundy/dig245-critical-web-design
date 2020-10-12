@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Learning Javascript</title>
+</head>
+<body>
+
+<div id="result">state is...</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+
+function checkTime(){
+
+	// create a new date object and get seconds
+	var sec = new Date().getSeconds();
+
+	console.log("checkTime called!",sec)
+
+	// display seconds
+	$('#result').html(sec);
+
+	// do something based on the condition
+	if (sec < 20){
+		$('body').css({"background":"red"});
+	} else if (sec < 40) {
+		$('body').css({"background":"green"});
+	} else {
+		$('body').css({"background":"blue"});
+	}
+
+}
+var timer = setInterval(function(){ checkTime() }, 1000);
+
+
+</script>
+</body>
+</html>
+

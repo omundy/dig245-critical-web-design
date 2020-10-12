@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Learning Javascript</title>
+</head>
+<body>
+
+<div id="myId1">myId1</div>
+<div id="myId2">myId2</div>
+
+<div class="myClass">myClass 1</div>
+<div class="myClass">myClass 2</div>
+<div class="myClass">myClass 3</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+// select all divs, set backgrounds red
+$('div').css({ 'background': 'red' });
+
+// select element with myId1, set content
+$('#myId1').html('this is myId1 new content');
+
+// select element with myId2, hides it
+$('#myId2').hide();
+
+// select all elements with myClass, add text to end
+$('.myClass').append(' - here is some new text');
+
+
+</script>
+</body>
+</html>

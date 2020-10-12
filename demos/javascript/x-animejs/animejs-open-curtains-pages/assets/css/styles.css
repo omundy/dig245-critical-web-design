@@ -1,0 +1,33 @@
+
+
+/* GLOBAL (applies to more than one) */
+body { padding: 0; margin: 0; color: white; font: 12px Arial; text-align: center}
+#curtains { position: relative; margin: 100px; height: 600px; width: 600px; overflow: hidden;}
+.curtainLeft { width: 300px; height: 600px; position: absolute; }
+.curtainRight { left: 300px; width: 300px; height: 600px; position: absolute; }
+.curtainBehind { width: 600px; height: 600px; position: absolute; z-index: -1}
+
+#page1-bg { background-color: #faa; overflow: auto; height: 100%; }
+#page2-bg { background-color: #afa; overflow: auto; height: 100%; }
+#page3-bg { background-color: #aaf; overflow: auto; height: 100%; }
+
+
+/* RED */
+#redCurtains { z-index: 3; position: absolute; }
+#redCurtainBehind { padding-top: 300px; background: red; }
+.redCurtainTexture {
+    background-image: url(https://slm-assets0.secondlife.com/assets/7901350/view_large/Satin_drapes_curtains_3_s.jpg?1371118815);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/* INTERACTIVE */
+#buttons { position: absolute; top: 10px;}
+#buttons a { padding: 5px; }
+#button1 { background: red; cursor: pointer; color: white; }
+#button2 { background: green; cursor: pointer; color: white; }
+#button3 { background: blue; cursor: pointer; color: white; }
