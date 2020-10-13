@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Learning Javascript</title>
+	<style media="screen">
+		#light {
+			width: 300px;
+			height: 450px;
+			background-repeat: no-repeat;
+		}
+
+		.off {
+		background-image: url("img/light-off.png");
+		}
+
+		.on {
+		background-image: url("img/light-on.png");
+		}
+	</style>
+</head>
+
+<body>
+
+	<p>What is programming?</p>
+
+	<button id="turnOnLamp">
+		Turn on lamp
+	</button>
+	<button id="plugInLamp">
+		Plug in lamp
+	</button>
+	<button id="replaceBulb">
+		Replace bulb
+	</button>
+
+	<pre id="display">
+
+	</pre>
+
+	<div id="light" class="off">
+
+	</div>
+
+
+	<script>
+		// track the state of things
+		var lampIsOn = false;
+		var lampPluggedIn = false;
+		var lampBulbWorks = false;
+
+		function turnOnLamp() {
+			console.log("Turning on lamp...");
+			// decision making process
+			if (!lampIsOn && lampPluggedIn && lampBulbWorks) {
+				// update state
+				lampIsOn = true;
+			} else {
+				lampIsOn = false;
+			}
+			// update the display
+			updateDisplay();
+		}
+
+		function plugInLamp() {
+			console.log("Plugging in lamp...");
+			// update state
+			lampPluggedIn = true;
+			// update the display
+			updateDisplay();
+		}
+
+		function replaceBulb() {
+			console.log("Replacing bulb...");
+			// update state
+			lampBulbWorks = true;
+			// update the display
+			updateDisplay();
+		}
+
+
+
+
+		function updateDisplay() {
+			if (lampIsOn) {
+				document.getElementById("turnOnLamp").style.backgroundColor = "green";
+				document.getElementById("light").className = "on";
+			} else {
+				document.getElementById("turnOnLamp").style.backgroundColor = "red";
+				document.getElementById("light").className = "off";
+			}
+			if (lampPluggedIn) {
+				document.getElementById("plugInLamp").style.backgroundColor = "green";
+			} else {
+				document.getElementById("plugInLamp").style.backgroundColor = "red";
+			}
+			if (lampBulbWorks) {
+				document.getElementById("replaceBulb").style.backgroundColor = "green";
+			} else {
+				document.getElementById("replaceBulb").style.backgroundColor = "red";
+			}
+
+			// log state to console
+			let str = "\nLamp is on = " + lampIsOn +
+				"\nLamp plugged-in = " + lampPluggedIn +
+				"\nLamp bulb is OK = " + lampBulbWorks;
+			console.log(str);
+			document.getElementById("display").innerHTML = str;
+		}
+
+
+		// event listeners
+		document.getElementById("turnOnLamp").addEventListener("click", turnOnLamp);
+		document.getElementById("plugInLamp").addEventListener("click", plugInLamp);
+		document.getElementById("replaceBulb").addEventListener("click", replaceBulb);
+	</script>
+
+
+</body>
+
+</html>
