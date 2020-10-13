@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Learning Javascript</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 	<style media="screen">
 		#light {
 			width: 300px;
@@ -12,37 +14,40 @@
 		}
 
 		.off {
-		background-image: url("img/light-off.png");
+			background-image: url("img/light-off.png");
 		}
 
 		.on {
-		background-image: url("img/light-on.png");
+			background-image: url("img/light-on.png");
 		}
 	</style>
 </head>
 
 <body>
 
-	<p>What is programming?</p>
+	<div class="container my-5">
 
-	<button id="turnOnLamp">
-		Turn on lamp
-	</button>
-	<button id="plugInLamp">
-		Plug in lamp
-	</button>
-	<button id="replaceBulb">
-		Replace bulb
-	</button>
 
-	<pre id="display">
 
-	</pre>
+		<h4>What is programming?</h4>
 
-	<div id="light" class="off">
+		<p>Programming means writing instructions to be performed by a computer.</p>
+
+		<button class="btn btn-danger" id="turnOnLamp">
+			Turn on lamp
+		</button>
+		<button class="btn btn-danger" id="plugInLamp">
+			Plug in lamp
+		</button>
+		<button class="btn btn-danger" id="replaceBulb">
+			Replace bulb
+		</button>
+
+		<pre id="display"></pre>
+
+		<div id="light" class="off"></div>
 
 	</div>
-
 
 	<script>
 		// track the state of things
@@ -51,7 +56,7 @@
 		var lampBulbWorks = false;
 
 		function turnOnLamp() {
-			console.log("Turning on lamp...");
+			console.log("\nTurning on lamp...");
 			// decision making process
 			if (!lampIsOn && lampPluggedIn && lampBulbWorks) {
 				// update state
@@ -64,7 +69,7 @@
 		}
 
 		function plugInLamp() {
-			console.log("Plugging in lamp...");
+			console.log("\nPlugging in lamp...");
 			// update state
 			lampPluggedIn = true;
 			// update the display
@@ -72,7 +77,7 @@
 		}
 
 		function replaceBulb() {
-			console.log("Replacing bulb...");
+			console.log("\nReplacing bulb...");
 			// update state
 			lampBulbWorks = true;
 			// update the display
@@ -83,22 +88,25 @@
 
 
 		function updateDisplay() {
+			// update button styles
 			if (lampIsOn) {
-				document.getElementById("turnOnLamp").style.backgroundColor = "green";
+				document.getElementById("turnOnLamp").className = "btn btn-success";
+				document.getElementById("turnOnLamp").textContent = "Turn off lamp";
 				document.getElementById("light").className = "on";
 			} else {
-				document.getElementById("turnOnLamp").style.backgroundColor = "red";
+				document.getElementById("turnOnLamp").className = "btn btn-danger";
+				document.getElementById("turnOnLamp").textContent = "Turn on lamp";
 				document.getElementById("light").className = "off";
 			}
 			if (lampPluggedIn) {
-				document.getElementById("plugInLamp").style.backgroundColor = "green";
+				document.getElementById("plugInLamp").className = "btn btn-success";
 			} else {
-				document.getElementById("plugInLamp").style.backgroundColor = "red";
+				document.getElementById("plugInLamp").className = "btn btn-danger";
 			}
 			if (lampBulbWorks) {
-				document.getElementById("replaceBulb").style.backgroundColor = "green";
+				document.getElementById("replaceBulb").className = "btn btn-success";
 			} else {
-				document.getElementById("replaceBulb").style.backgroundColor = "red";
+				document.getElementById("replaceBulb").className = "btn btn-danger";
 			}
 
 			// log state to console
@@ -106,6 +114,7 @@
 				"\nLamp plugged-in = " + lampPluggedIn +
 				"\nLamp bulb is OK = " + lampBulbWorks;
 			console.log(str);
+			// update display
 			document.getElementById("display").innerHTML = str;
 		}
 
@@ -117,6 +126,9 @@
 	</script>
 
 
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
