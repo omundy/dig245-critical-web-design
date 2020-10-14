@@ -3,6 +3,7 @@
 	"strict": "global",
 	"devel": true,
 	"browser": true,
+	"node": true,
 	"indent": 1,
 	"undef": true,
 	"unused": false,
