@@ -17,14 +17,17 @@
 <script>
 
 // Option 1: Pure Javascript
+
 // change data in all divs with myClass
 var ele = document.getElementsByClassName('myClass');
 for (var i = 0; i < ele.length; ++i) {
-	var item = ele[i];  
+	var item = ele[i];
 	item.innerHTML += ' ++ new data (pure js)';
 }
 
+
 // Option 2: Javascript + jQuery
+
 // change data in all divs with myClass using jquery
 $('.myClass').append(' ## new data (jquery)');
 

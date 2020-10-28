@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Learning Javascript</title>
+</head>
+<body>
+
+<h3>Javascript Objects</h3>
+<p>Open the console to see messages</p>
+
+
+<script>
+
+
+/**
+ *	Array example
+ */
+
+// this is an array with two strings
+var myFirstArray = ["hello","world"];
+// this is also an array with 3 numbers and whitespace
+var mySecondArray = [
+	12,
+	44,
+	97
+];
+// log the length
+console.log("mySecondArray.length", mySecondArray.length);
+// change an index to array
+mySecondArray[2] = "some text";
+// add a new index to array
+mySecondArray.push(35);
+// print the whole array to the console
+console.log("mySecondArray", mySecondArray);
+// print a single index to the console
+console.log("mySecondArray[2]", mySecondArray[2]);
+
+
+/**
+ *	Object example
+ */
+
+// this is an object with two properties
+var myFirstObject = { color1: "#990000", color2: "#009900" };
+// this is also an object (with whitespace)
+var mySecondObject = {
+	fname: "Jane",
+	lname: "Doe"
+};
+// add a new property to the object
+mySecondObject["age"] = 23;
+// change a property on the object (dot notation)
+mySecondObject.fname = "Janet";
+// print the whole object to the console
+console.log(mySecondObject);
+// print a single property to the console
+console.log("The lname property is: " + mySecondObject.lname);
+
+
+
+</script>
+</body>
+</html>
