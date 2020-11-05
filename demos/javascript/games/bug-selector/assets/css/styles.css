@@ -1,3 +1,8 @@
+
+body {
+	background-image: url(../img/bugs.png);
+}
+
 .bug-bg {
 	position: relative;
 	width: 700px;
