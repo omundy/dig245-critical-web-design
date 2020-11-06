@@ -1,14 +1,15 @@
+"use strict";
 
 /* main.js file for JS single page application */
 
 // variables to store each answer
 var answers = {
-	"red":0, 
-	"green":0, 
+	"red":0,
+	"green":0,
 	"blue":0
 };
 
-// load intro page by default 
+// load intro page by default
 $("#main").load('views/intro.html');
 
 // click event to display voting page
@@ -18,7 +19,7 @@ $(document).on('click','.displayVotingPage',function(){
 
 // display the results page
 $(document).on('submit',"#colorVote",function(){
-    
+
     // tally results
     var answer = $('input[name=color]:checked').val();
     // testing
@@ -49,8 +50,8 @@ $(document).on('submit',"#colorVote",function(){
 		        datasets: [{
 		            label: '# of Votes',
 		            data: [
-		            	answers.red, 
-		            	answers.green, 
+		            	answers.red,
+		            	answers.green,
 		            	answers.blue
 		            ],
 		            backgroundColor: [
@@ -81,5 +82,3 @@ $(document).on('submit',"#colorVote",function(){
 	// don't perform default form behavior
     return false;
 });
-
-

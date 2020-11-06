@@ -1,3 +1,4 @@
+"use strict";
 
 /* main.js file for JS single page application */
 
@@ -15,7 +16,7 @@ var pages = {
 		"title": "This is the contact page",
 		"content": "This is the content of the contact page"
 	}
-}
+};
 
 // display page function
 function displayPage(id){
@@ -38,10 +39,10 @@ function displayPage(id){
 
 	// testing
 	console.log("displayPage()",id);
-	
+
 	// display html
 	$('#main').html( html);
-	
+
     // remove active class from all links
 	$('.nav-item a').removeClass('active');
 	// add active class to active link
@@ -57,7 +58,3 @@ $(document).on('click','.nav-link',function(){
     // call displayPage function
     displayPage(id);
 });
-
-
-
-
