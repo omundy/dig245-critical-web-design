@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+<div class="container">
+	<div class="row my-3">
+		<div class="col">
+			<h3>Simple loops</h3>
+			<p>Four examples of loops, using arrays and random numbers. Refresh to see random variables.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-3">
+			<h5>Example1</h5>
+			<div class="example1"></div>
+		</div>
+		<div class="col-3">
+			<h5>Example2</h5>
+			<div class="example2"></div>
+		</div>
+		<div class="col-3">
+			<h5>Example3</h5>
+			<div class="example3"></div>
+		</div>
+		<div class="col-3">
+			<h5>Example4</h5>
+			<div class="example4"></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+	var colors = [
+		"Chocolate",
+		"Tan",
+		"LightGray",
+		"Thistle",
+		"Orchid",
+		"GoldenRod",
+		"PaleVioletRed",
+		"Crimson",
+		"Gainsboro",
+		"Plum",
+		"BurlyWood"
+	];
+
+	// count up
+	function countUpToMax() {
+		// define vars
+		var max = 10;
+		var result = "";
+		// loop
+		for (var i = 0; i <= max; i++) {
+			// add the value of i + an html line break
+			result += i + "<br>";
+		}
+		// return the string
+		return result;
+	}
+
+
+	// count up, then count back down
+	function countUpFromMinToMax() {
+		// define vars
+		var max = 10;
+		var min = -max;
+		var result = "";
+		// loop from the min val to the max val
+		for (var i = min; i <= max; i++) {
+			// add the value of i + an html line break
+			result += i + "<br>";
+		}
+		// return the string
+		return result;
+	}
+
+	// pick a random color using Math.random()
+	function pickARandomIndex() {
+		// var to hold return string
+		var result = "";
+		// loop through the array
+		for (var i = 0; i <= colors.length; i++) {
+			// if the random number is higher than .7 (IOW, 3 out of 10 times )
+			if (Math.random() > 0.7) {
+				// add the value of i + an html line break
+				result += "<div style='background-color:" + colors[i] + "'>" + colors[i] + "</div>";
+				// break out of the loops
+				break;
+			}
+		}
+		// return the string
+		return result;
+	}
+
+
+	/*
+	 * Randomize array in-place using Durstenfeld shuffle algorithm
+	 * Credit: https://stackoverflow.com/a/12646864/441878
+	 */
+	function shuffleArray(array) {
+		for (var i = array.length - 1; i > 0; i--) {
+			var j = Math.floor(Math.random() * (i + 1));
+			var temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
+	}
+
+
+	// randomize colors and print
+	function randomizeColorArray() {
+		// var to hold return string
+		var result = "";
+		// suffle the array
+		shuffleArray(colors);
+		// loop through the array
+		for (var i = 0; i <= colors.length - 1; i++) {
+			// add the value of i + an html line break
+			result += "<div style='background-color:" + colors[i] + "'>" + colors[i] + "</div>";
+		}
+		// return the string
+		return result;
+	}
+
+
+	// run all the examples
+	$(".example1").html(countUpToMax());
+	$(".example2").html(countUpFromMinToMax());
+	$(".example3").html(pickARandomIndex());
+	$(".example4").html(randomizeColorArray());
+</script>
+</body>
+
+</html>
