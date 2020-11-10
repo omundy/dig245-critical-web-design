@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+	<div class="container">
+		<div class="row my-3">
+			<div class="col">
+				<h3>Why we need loops</h3>
+				<p>These two code examples do nearly the same thing, one procedurally (line by line), and the other using a for loop.
+The for loop example has a built-in condition, and therefore can respond dynamically to whatever data you are dealing with. The first example prints undefined because it does not.
+</p>
+			</div>
+		</div>
+		<div class="row my-3">
+			<div class="col">
+				<h5>Procedurally </h5>
+				<p>Without a for loop we add undefined variables. Also, much typing.</p>
+				<ul class="result1"></ul>
+			</div>
+			<div class="col">
+				<h5>For loop</h5>
+				<p>With a for loop we can add a condition. It is more efficient to type as well.</p>
+				<ul class="result2"></ul>
+			</div>
+		</div>
+		<div class="row my-3">
+			<div class="col">
+				<p>Also see <a href="https://medium.com/@LiliOuakninFelsen/functional-vs-object-oriented-vs-procedural-programming-a3d4585557f3">Functional vs Object-Oriented vs Procedural Programming</a> </p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+
+
+		// cars only has four indexes
+		var cars = [
+			"honda",
+			"pontiac",
+			"toyota",
+			"ford"
+		];
+
+		// example 1 - this will add undefined variables, also not efficient
+		var example1 = "";
+		example1 += "<li>" + cars[0] + "</li>";
+		example1 += "<li>" + cars[1] + "</li>";
+		example1 += "<li>" + cars[2] + "</li>";
+		example1 += "<li>" + cars[3] + "</li>";
+		example1 += "<li>" + cars[4] + "</li>";
+		example1 += "<li>" + cars[5] + "</li>";
+		$(".result1").html(example1);
+
+		// example 2 - loops run as many times as needed (until !condition)
+		var example2 = "";
+		for (var i = 0; i < cars.length; i++) {
+			example2 += "<li>" + cars[i] + "</li>";
+		}
+		$(".result2").html(example2);
+
+
+	</script>
+</body>
+
+</html>
