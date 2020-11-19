@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+<title>Get data examples</title>
+</head>
+
+<body>
+
+<div class="container my-3">
+	<div class="row">
+		<div class="col">
+			<h3>Get data examples</h3>
+			<label for="remote-url">Add a full url below or
+				<button type="button" name="button" class="btn btn-sm btn-dark random-btn">select random</button>
+			</label>
+			<input type="text" name="remote-url" class="form-control remote-url" placeholder="Enter full url here" value="">
+			<small>
+				Note: Some domains (like google.com and github.com, though not github.io) use a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank">CORS policy</a> that blocks remote resource sharing. This includes any resource (text from web pages as well as images). Open the console to see <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors">errors</a> generated.</li>
+				Also notice that resources imported with these methods <b><i>from the same domain</i></b> will fail if you are loading this page from your local filesytem (i.e. using file:// method). However you can load files (webpages or JSON) from the same domain if you run this page in a web server environment such as <a href="https://websitebeaver.com/set-up-localhost-on-macos-high-sierra-apache-mysql-and-php-7-with-sslhttps" target="_blank">localhost</a> or <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server" target="_blank">python -m SimpleHTTPServer</a>
+
+				</small>
+		</div>
+	</div>
+</div>
+
+<div class="container my-3">
+	<div class="row">
+		<div class="col">
+			<h5>Example 1</h5>
+			<p>
+				<button type="button" name="button" class="btn btn-sm btn-dark b1">Load</button>
+				a remote web page into the body of this page using <code>.load()</code>. This will replace <i>everything</i> on the page
+			</p>
+		</div>
+		<div class="col">
+			<h5>Example 2</h5>
+			<p>
+				<button type="button" name="button" class="btn btn-sm btn-dark b2">Load</button>
+				a remote web page into a div using <code>.html()</code>. This method is a bit "hacky" and will fail without errors if a CORS policy blocks access.
+			</p>
+			<div class="result2"></div>
+		</div>
+		<div class="col">
+			<h5>Example 3</h5>
+			<p>
+				<button type="button" name="button" class="btn btn-sm btn-dark b3">Load</button>
+				a remote web page into this textarea using <code>.get()</code>.
+			</p>
+			<textarea class="result3 form-control" name="name" rows="8" cols="2"></textarea>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+	var url = "";
+
+	$(".b1").on("click", function() {
+		updateUrl();
+		$("body").load(url);
+	});
+	$(".b2").on("click", function() {
+		updateUrl();
+		$(".result2").html('<object data="' + url + '">');
+	});
+	$(".b3").on("click", function() {
+		updateUrl();
+		$.get(url, function(data) {
+			$('.result3').val(data);
+		});
+	});
+
+	// update the url var from the input value
+	function updateUrl() {
+		console.log($('.remote-url').val());
+		// replace url value if user adds one to the form
+		if ($('.remote-url').val())
+			url = $('.remote-url').val();
+		// otherwise default to this one
+		else
+			url = randomUrl();
+	}
+
+	var urls = [
+		"https://thqtcher.github.io/dig245-a2/",
+		"https://davidson.edu",
+		"https://google.com",
+		"https://owenmundy.com",
+		"https://github.com",
+		"https://cnn.com",
+		"https://github.com/omundy/dig245-critical-web-design",
+		"https://omundy.github.io/dig245-critical-web-design/",
+		"./get-data-examples.html"
+	];
+	// return a random url
+	function randomUrl() {
+		return urls[Math.floor(Math.random() * urls.length)];
+	}
+
+	// add random url on click
+	$(".random-btn").on("click", function() {
+		$('.remote-url').val(randomUrl());
+	});
+	// trigger this button on load to populate
+	$(".random-btn").trigger("click");
+</script>
+</body>
+
+</html>
