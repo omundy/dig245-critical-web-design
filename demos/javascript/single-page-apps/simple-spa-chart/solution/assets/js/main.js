@@ -9,6 +9,9 @@ var answers = {
 	"blue":0
 };
 
+// to remember the previous choice
+var lastColorVote;
+
 // load intro page by default
 $("#main").load('views/intro.html');
 
@@ -22,6 +25,8 @@ $(document).on('submit',"#colorVote",function(){
 
     // tally results
     var answer = $('input[name=color]:checked').val();
+	// store it the answer to show in case they go back
+	lastColorVote = answer; 
     // testing
     console.log("vote was",answer);
 
