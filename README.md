@@ -74,6 +74,10 @@ Technical references
 * [Boost your JavaScript Debugging Skills With These Console Tricks](https://medium.com/better-programming/boost-your-javascript-debugging-skills-with-these-console-tricks-ab984c70298a)
 
 
+Common JS problems
+
+- [Swap images with Javascript / jQuery](https://codepen.io/owenmundy/pen/OJRWQoY)
+
 
 
 ## Frameworks, Libraries, and other Tools
