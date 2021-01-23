@@ -1,6 +1,6 @@
 
 
-<img src="https://github.com/omundy/critical-web-design/blob/master/reference-sheets/img/html_logo_png_685083.png" width="400">
+<img src="img/html_logo_png_685083.png" width="400">
 
 ## Reference Sheet - HTML
 

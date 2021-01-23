@@ -1,6 +1,6 @@
 
 
-<img src="https://github.com/omundy/critical-web-design/blob/master/reference-sheets/img/CSS.3.svg.png" width="100">
+<img src="img/CSS.3.svg.png" width="100">
 
 ## Reference Sheet - CSS
 

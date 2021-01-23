@@ -1,6 +1,6 @@
 
 
-<img src="https://github.com/omundy/critical-web-design/blob/master/reference-sheets/img/js-strict.svg.png" width="120">
+<img src="img/js-strict.svg.png" width="120">
 
 ## Reference Sheet - Javascript
 
