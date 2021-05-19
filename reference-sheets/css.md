@@ -1,6 +1,6 @@
 
 
-<img src="img/CSS.3.svg.png" width="100">
+<img src="../assets/img/CSS.3.svg.png" width="100">
 
 ## Reference Sheet - CSS
 
