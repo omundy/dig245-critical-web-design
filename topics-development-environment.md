@@ -11,6 +11,7 @@ Learn to setup your web development environment!
 
 1. [Learning Objectives](#learning-objectives)
 1. [Introduction](#introduction) `5 min`
+1. [Web Browsers](#web-browsers) `5 min`
 
 
 
@@ -42,29 +43,48 @@ Students who complete the following will be able to:
 
 ## Web Browsers
 
-Listed in order [of market share](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit#slide=id.g910ec85d8b_0_224)
+A web browser (or just, "browser") is the software we use to access the World Wide Web. A browser is also called a **client** for it is dependent upon a **server** to request and render web pages and their content. For example, for every page visited on the internet:
+
+1. A user clicks on a link on a page (in the browser).
+1. The browser [requests](https://bytesofgigabytes.com/networking/how-http-request-and-response-works/) the new web page from that website's server (a computer where the files are stored).
+1. The browser receives the HTML page that was requested.
+1. The browser then requests all other web page content (stylesheets, javascript, image and other media).
+1. Once received, the browser renders the content on the user's device (and they continue the process).
+
+<img src="assets/img/http-requests.png">
 
 
-Market Share* | Browser | Platform(s)
---- | --- | ---
-62% | ![chrome](assets/img/icons-browsers/chrome_16x16.png) [Google Chrome](https://www.google.com/chrome/)** | Windows, MacOS, Linux
-20% | ![chrome](assets/img/icons-browsers/chrome_16x16.png) Safari Browser | MacOS only 😢
- 4% | <img width=20 src="assets/img/icons-browsers/chrome.svg"> Firefox Browser | Windows, MacOS, Linux
- 2% | <img width=20 src="assets/img/icons-browsers/chrome.svg"> Opera Browser** | Windows, MacOS, Linux
- 2% | <img width=20 src="assets/img/icons-browsers/chrome.svg"> Microsoft Edge | Windows, MacOS
- 2% | <img width=20 src="assets/img/icons-browsers/chrome.svg"> UC Browser | Windows only 😢
+### Discussion
 
-*≈ Approximate, based on data from
-**Based on Chromium like [Brave](https://brave.com/), Opera et al
+The web browser is the primary vehicle through which users will encounter your web pages. But they are not all created the same. Some only run on desktop, or mobile. Others only run on certain operating systems. Besides the difference in display size there are big differences in how browsers follow (or not!) the [WC3 standards](https://www.w3.org/standards/) when they render the pages you build. Even the different versions of the browsers can be quite different. For example, just ask any veteran web developer what it was like to deal with the bugs on [Internet Explorer 6](https://www.theverge.com/2014/4/8/5593584/the-most-hated-browser-in-the-world-is-finally-dead)!
 
+It follows then, that it is extremely important to make sure that you code and test your pages on the same (or representative) browsers of your users. While this could mean testing the [many](https://en.wikipedia.org/wiki/List_of_web_browsers) different browsers, operating systems, some are more popular than others.
 
-1. Safari
-1. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-1. Microsoft Edge
-1. Opera
+With your group, examine the following table containing usage share on ***all*** (desktop and mobile) browsers:
+
+1. What do you notice?
+2. Based on this data, what do you think the three most important browsers are to install and use in testing?
+
+Next, compare the data from [Wikipedia browser usage share article](https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_tables), the [StatCounter](https://gs.statcounter.com/browser-market-share), and [Wikimedia](https://analytics.wikimedia.org/dashboards/browsers/#all-sites-by-browser).
+
+3. What do you notice now?
+4. Did your top three browsers change?
 
 
 
+Browser | [StatCounter](https://gs.statcounter.com/browser-market-share) <sup>8/2021</sup> | [Wikimedia](https://analytics.wikimedia.org/dashboards/browsers/#all-sites-by-browser) <sup>11/2019</sup> | Platform(s)
+--- | ---: | ---: | ---
+<img width=20 src="assets/img/logos/browsers/chrome_24x24.png"> [Google Chrome](https://www.google.com/chrome/)* | 65.1% | 48.7% | Windows, MacOS, iOS, Linux
+<img width=20 src="assets/img/logos/browsers/safari_24x24.png"> [Safari Browser](https://www.apple.com/safari/) | 18.6% | 22.0% | MacOS & iOS only 😢
+<img width=20 src="assets/img/logos/browsers/firefox_24x24.png"> [Firefox Browser](https://www.mozilla.org/en-US/firefox/new/) | 3.4% | 4.9% | Windows, MacOS, iOS, Linux
+<img width=20 src="assets/img/logos/browsers/edge_24x24.png"> [Microsoft Edge](https://www.microsoft.com/en-us/edge)* | 3.4% | 1.9% | Windows, MacOS
+<img width=20 src="assets/img/logos/browsers/samsung-internet_24x24.png"> [Samsung Internet](https://en.wikipedia.org/wiki/Samsung_Internet)* | 3.1% | 2.7% | Android & Tizen only 😢
+<img width=20 src="assets/img/logos/browsers/opera_24x24.png"> [Opera Browser](https://www.opera.com/)* | 2.1% | 1.1% | Windows, MacOS, iOS, Linux
+<img width=20 src="assets/img/logos/browsers/internet-explorer-tile_10-11_24x24.png"> [Internet Explorer](https://www.opera.com/) | 0.6% | 3.9% | Windows only 😢
+Others | 4.6% | 14.5% | ---
+
+
+*Desktop or mobile version (or both) based on <img width=20 src="assets/img/logos/browsers/chromium_24x24.png"> [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) like <img width=20 src="assets/img/logos/browsers/brave_24x24.png"> [Brave](https://brave.com/).
 
 
 
@@ -72,7 +92,18 @@ Market Share* | Browser | Platform(s)
 
 
 
-Recommended browser extensions
+
+
+
+
+
+
+
+
+
+
+
+## Browser extensions for web development
 
 - [Markdown Viewer](https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk/related?hl=en) let's you preview `.md` files in your browser so you can work on your README files locally.
 - [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US) will highlight and format JSON in the browser to help you analyze and work with it.
@@ -133,3 +164,13 @@ Download [Atom](https://atom.io/) and install the following packages:
 
 1. [Rectangle](https://rectangleapp.com/)
 1. [Notational Velocity](http://notational.net/)
+
+
+
+
+
+
+
+## References
+
+1. Browser logos from [alrra/browser-logos](https://github.com/alrra/browser-logos)

@@ -1,6 +1,6 @@
 
 
-<img src="../assets/img/js-strict.svg.png" width="120">
+<img src="../assets/img/logos/logo-js.png" width="120">
 
 ## Reference Sheet - Javascript
 
