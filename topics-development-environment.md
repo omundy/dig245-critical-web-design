@@ -43,7 +43,19 @@ Students who complete the following will be able to:
 
 ## Web Browsers
 
-A web browser (or just, "browser") is the software we use to access the World Wide Web. A browser is also called a **client** for it is dependent upon a **server** to request and render web pages and their content. For example, for every page visited on the internet:
+A web browser is more than the software we use to access data on the internet.
+
+What we think of as "the web" is technically a massive collection of text and image files sitting on web servers.
+
+The interconnectivity of these files, the rendering of them as complete web sites and web applications, is made possible by **web browsers** (or just, "browsers").
+
+
+
+
+A browser provides a **client** through which users can make requests to **server** for content, which is then rendered as web pages
+
+
+For every page visited on the internet:
 
 1. A user clicks on a link on a page (in the browser).
 1. The browser [requests](https://bytesofgigabytes.com/networking/how-http-request-and-response-works/) the new web page from that website's server (a computer where the files are stored).
@@ -56,9 +68,9 @@ A web browser (or just, "browser") is the software we use to access the World Wi
 
 ### Discussion
 
-The web browser is the primary vehicle through which users will encounter your web pages. But they are not all created the same. Some only run on desktop, or mobile. Others only run on certain operating systems. Besides the difference in display size there are big differences in how browsers follow (or not!) the [WC3 standards](https://www.w3.org/standards/) when they render the pages you build. Even the different versions of the browsers can be quite different. For example, just ask any veteran web developer what it was like to deal with the bugs on [Internet Explorer 6](https://www.theverge.com/2014/4/8/5593584/the-most-hated-browser-in-the-world-is-finally-dead)!
+The web browser is the primary vehicle through which users will encounter your web pages. But they are not all created the same. Some only run on desktop or mobile. Others only run on specific operating systems. There are big differences in how browsers follow (or not!) the [WC3 standards](https://www.w3.org/standards/) when they render the pages you build. Even the browser versions can be quite distinct. Ask any veteran web developer what it was like to work around the bugs on [Internet Explorer 6](https://www.theverge.com/2014/4/8/5593584/the-most-hated-browser-in-the-world-is-finally-dead)!
 
-It follows then, that it is extremely important to make sure that you code and test your pages on the same (or representative) browsers of your users. While this could mean testing the [many](https://en.wikipedia.org/wiki/List_of_web_browsers) different browsers, operating systems, some are more popular than others.
+It follows then, that it is extremely important to make sure that you code and test your pages in the same environment of users. While it would be overwhelming to test the [many](https://en.wikipedia.org/wiki/List_of_web_browsers) different browsers, operating systems, and display sizes, lucky for us, some are more popular than others.
 
 With your group, examine the following table containing usage share on ***all*** (desktop and mobile) browsers:
 
@@ -131,6 +143,11 @@ Download [Atom](https://atom.io/) and install the following packages:
 #### Atom Settings
 
 1. Hide Ignored Names - This will make sure you `.git` and `.DS_store` files don't clutter up the tree view. `CMD + ,` then choose Packages > Tree View and [x] `Hide Ignored Names`
+
+How can I open the Atom editor from the command line in OS X?
+With the Atom editor open, in the menu bar:
+Click Atom → Install Shell Commands
+
 
 
 

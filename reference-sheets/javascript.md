@@ -1,14 +1,15 @@
 
+[<](README.md)
 
 <img src="../assets/img/logos/logo-js.png" width="120">
 
-## Reference Sheet - Javascript
+## Javascript Reference
 
 
 
 
 
-### An example Javascript document
+## An example Javascript document
 ```
 // create three new variables and assign numeric values to them
 var x = 5;
@@ -24,7 +25,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript";
 ```
 
 
-### Javascript Terms
+## Javascript Terms
 A table of basic Javascript key words and concepts
 
 Term | Definition
@@ -36,7 +37,7 @@ Term | Definition
 [Logical operators](https://www.w3schools.com/js/js_comparisons.asp) | Logical operators are used to determine the logic between variables or values. <ul><li>`&&` ("and") `(num > 10 && num < 101)` == `true`</li><li>`\|\|` ("or") `(num == 5 \|\| num == 100)` == `true`</li><li>`!` ("not") `!(num == 20)` == `true`</li></ul>
 
 
-### Javascript Data Types
+## Javascript Data Types
 A table of Javascript data types with examples. Use `typeof <data or var>` to output a type; e.g. `typeof "hello";` ouputs: `string`
 
 Type | Description
@@ -73,7 +74,25 @@ Statement | Outcome
 
 
 
+## References
 
-### Sources
-* [Critical Web Design: HTML/CSS](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit?usp=sharing)
-* [W3Schools CSS](https://www.w3schools.com/js/default.asp)
+Critical Web Design Tutorials and references
+
+- [HTML](html.md), [CSS](css.md), and [Javascript](javascript.md) reference sheets
+- [HTML/CSS slides](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit?usp=sharing)
+- [Introduction to course concepts & software slides](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
+
+Popular tutorials and guides - You should **still look for other ones that you might like better**!
+
+- W3Schools [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/)
+- Shay Howe's *[Learn to Code HTML & CSS](https://learn.shayhowe.com/)*
+- Oliver James' *[HTML & CSS Is Hard (But Doesn't Have To Be)](https://www.internetingishard.com/html-and-css/)*
+- Jessica Hische and Russ Maschmeyer's *[Don't Fear The Internet](http://www.dontfeartheinternet.com/)*
+
+Technical references - The most accurate and comprehensive way to understand a code language.
+
+- W3Schools [HTML Element](https://www.w3schools.com/tags/default.asp) and [CSS](https://www.w3schools.com/cssref/default.asp)
+- MDN's [HTML: Hypertext Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- MDN's [CSS: Cascading Stylesheets](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [HTMLReference.io](https://htmlreference.io/)
+- [CSSReference.io](https://cssreference.io/)

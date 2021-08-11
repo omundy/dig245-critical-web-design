@@ -1,11 +1,17 @@
 
+[<](README.md)
 
 <img src="../assets/img/logos/logo-html5.png" width="400">
 
-## Reference Sheet - HTML
+# HTML Reference
+
+- HTML is short for HyperText Markup Language and describes the structure of web pages.
+- HTML elements tell the browser how to display the content they contain or "wrap".
+- HTML elements are represented by tags which label pieces of content such as `<p>` (paragraph), `<h1>` (heading), etc.
 
 
-### An example HTML page
+
+## An example HTML page
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +27,7 @@
 ```
 
 
-### HTML Terms
+## HTML Terms
 
 Term | Definition
 --- | ---
@@ -37,7 +43,7 @@ Term | Definition
 
 
 
-### HTML Elements
+## HTML Elements
 Examples of common HTML elements
 
 Term | Definition
@@ -54,7 +60,25 @@ Term | Definition
 
 
 
+## References
 
-### Sources
-* [Critical Web Design: HTML/CSS](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit?usp=sharing)
-* [W3Schools HTML](https://www.w3schools.com/html/)
+Critical Web Design Tutorials and references
+
+- [HTML](html.md), [CSS](css.md), and [Javascript](javascript.md) reference sheets
+- [HTML/CSS slides](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit?usp=sharing)
+- [Introduction to course concepts & software slides](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
+
+Popular tutorials and guides - You should **still look for other ones that you might like better**!
+
+- W3Schools [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/)
+- Shay Howe's *[Learn to Code HTML & CSS](https://learn.shayhowe.com/)*
+- Oliver James' *[HTML & CSS Is Hard (But Doesn't Have To Be)](https://www.internetingishard.com/html-and-css/)*
+- Jessica Hische and Russ Maschmeyer's *[Don't Fear The Internet](http://www.dontfeartheinternet.com/)*
+
+Technical references - The most accurate and comprehensive way to understand a code language.
+
+- W3Schools [HTML Element](https://www.w3schools.com/tags/default.asp) and [CSS](https://www.w3schools.com/cssref/default.asp)
+- MDN's [HTML: Hypertext Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- MDN's [CSS: Cascading Stylesheets](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [HTMLReference.io](https://htmlreference.io/)
+- [CSSReference.io](https://cssreference.io/)

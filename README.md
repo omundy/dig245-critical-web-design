@@ -13,8 +13,11 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 
 ## Assignments, Milestones, and Sample code
 
-- Assignments: [dig245-a1](https://github.com/omundy/dig245-a1), [dig245-a2](https://github.com/omundy/dig245-a2), [dig245-a3](https://github.com/omundy/dig245-a3), [dig245-usability-test](https://github.com/omundy/dig245-usability-test), [dig245-final](https://github.com/omundy/dig245-final)
-- Milestones: [git-milestones](https://github.com/omundy/learn-git-milestones), [html-css-milestones](https://github.com/omundy/learn-html-css-milestones), [js-milestones](https://github.com/omundy/learn-js-milestones)
+- Assignments: See class assignment document
+- Milestones:
+	- [git-milestones](https://github.com/omundy/learn-git-milestones)
+	- [html-css-milestones](https://github.com/omundy/learn-html-css-milestones)
+	- [js-milestones](https://github.com/omundy/learn-js-milestones)
 - Samples: [/demos](demos/)
 
 
@@ -26,24 +29,7 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 
 Tutorials and references from the Critical Web Design course content
 
-- [HTML](reference-sheets/html.md) and [CSS](reference-sheets/css.md), [Javascript](reference-sheets/javascript.md) reference sheets
-- [HTML/CSS slides](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit)
-- [Intro & Technical Reference (concepts, software, etc.)](https://docs.google.com/presentation/d/1OVCMHMfB_0gYgTtv2iMK_aCktJtCSRp1aRvH3T1W0JU/edit?usp=sharing)
-
-Popular tutorials and guides - You should **still look for other ones that you might like better**!
-
-- W3Schools [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/)
-- Shay Howe's *[Learn to Code HTML & CSS](https://learn.shayhowe.com/)*
-- Oliver James' *[HTML & CSS Is Hard (But Doesn't Have To Be)](https://www.internetingishard.com/html-and-css/)*
-- Jessica Hische and Russ Maschmeyer's *[Don't Fear The Internet](http://www.dontfeartheinternet.com/)*
-
-Technical references - The most accurate and comprehensive way to understand a code language.
-
-- W3Schools [HTML Element](https://www.w3schools.com/tags/default.asp) and [CSS](https://www.w3schools.com/cssref/default.asp)
-- MDN's [HTML: Hypertext Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- MDN's [CSS: Cascading Stylesheets](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [HTMLReference.io](https://htmlreference.io/)
-- [CSSReference.io](https://cssreference.io/)
+- [HTML](reference-sheets/html.md), [CSS](reference-sheets/css.md), and [Javascript](reference-sheets/javascript.md) reference sheets
 
 
 
