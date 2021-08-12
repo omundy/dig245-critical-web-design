@@ -16,6 +16,17 @@ Creating a moodboard will help you collect and flesh out visual ideas for your p
 
 
 
+## Fonts
+
+
+![install fonts](assets/img/fonts-install.png)
+
+Install
+https://fonts.google.com/specimen/Open+Sans?query=open+sans
+
+
+
+
 ## Inspiration
 
 

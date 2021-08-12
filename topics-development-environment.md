@@ -5,9 +5,9 @@
 
 # Web Development Environment
 
-Learn to setup your web development environment!
-
 <!--
+
+Set up your web development environment!
 
 ### Contents
 
@@ -30,13 +30,10 @@ Students who complete the following will be able to:
 
 -->
 
-
-## Crash course
-
 Get ready for this course. Install / create accounts:
 
 - [Slack](#slack) - communication
-- [Terminal](#command-line) - basic computing
+- [Command line](#command-line) - basic computing
 - [Visual editor](#visual-editor) - design
 - [Web browsers](#web-browsers) - to test your web pages
 - [Code Editors](#code-editors) - to build
@@ -45,12 +42,21 @@ Get ready for this course. Install / create accounts:
 
 
 
-
-
 ## Slack
 
 - Class communication will happen via [Slack](https://slack.com/)
-- Download the desktop and mobile app and enable notifications.
+- Download the desktop and mobile app and enable notifications. You will receive an invitation to join the class Slack.
+
+
+
+
+
+## Command line
+
+- The command line allows you to control your computer via a text interface.
+- Complete the [command line crash course](https://github.com/omundy/learn-computing/blob/main/topics-command-line.md#crash-course) before proceeding.
+
+
 
 
 
@@ -128,7 +134,7 @@ Browser | [StatCounter](https://gs.statcounter.com/browser-market-share) <sup>8/
 Others | 4.6% | 14.5% | ---
 
 
-<sup>*Desktop or mobile version (or both) based on <img width=20 src="assets/img/logos/browsers/chromium_24x24.png"> [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) like <img width=20 src="assets/img/logos/browsers/brave_24x24.png"> [Brave](https://brave.com/).</sup>
+<sup>*Desktop or mobile version (or both) based on <img width=20 src="assets/img/logos/browsers/chromium_24x24.png"> [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) like <img width=20 src="assets/img/logos/browsers/brave_24x24.png"> [Brave](https://brave.com/). ([logos](https://github.com/alrra/browser-logos))</sup>
 
 
 Next, compare the data from the Wikipedia [browser usage share article](https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_tables), the [StatCounter](https://gs.statcounter.com/browser-market-share), and [Wikimedia](https://analytics.wikimedia.org/dashboards/browsers/#all-sites-by-browser).
@@ -156,20 +162,19 @@ Did you guess, "I should install all of them?" That's not an incorrect answer. T
 
 ## Code Editors
 
+There are many great source code editors, like [Sublime text](https://www.sublimetext.com/) and [Visual Studio Code](https://code.visualstudio.com/), which are also both multi-platform, free, and highly capable. However, my preferred editor for web development, and this class, is Atom.
 
 
-### Atom
 
-<img src="assets/img/logos/atom-icon-png.png" width=100 >
+
+<img src="assets/img/logos/atom-icon-png.png" width=100>
+
+
+### Install Atom
 
 Atom is a free and open-source text and source code editor for macOS, Linux, and Windows. It has support for plug-ins written in JavaScript, embedded Git Control, and is developed by GitHub.
 
-> There are many great source code editors, like [Sublime text](https://www.sublimetext.com/) and [Visual Studio Code](https://code.visualstudio.com/), which are also both multi-platform, free, and highly capable. However, my preferred editor for web development, and this class, is Atom.
-
-
-#### Installation
-
-Download and install [Atom](https://atom.io/) and then install the following packages in Atom > Settings:
+Download and install [Atom](https://atom.io/). Then, install the following packages in Atom > Settings:
 
 - [atom-beautify](https://atom.io/packages/atom-beautify) - Beautify HTML, CSS, JavaScript, PHP, Python, etc. code to make it more readable.
 - [emmet](https://atom.io/packages/emmet) - The essential tool for web developers
@@ -181,7 +186,7 @@ Download and install [Atom](https://atom.io/) and then install the following pac
 - [open-terminal-here](https://atom.io/packages/open-terminal-here) - Open the command line in the location you choose in the tree view.
 
 
-#### How to install a package in Atom:
+### How to install a package in Atom:
 
 1. Access Settings:
 	- Use the key command: `CMD + ,`
@@ -194,20 +199,24 @@ Download and install [Atom](https://atom.io/) and then install the following pac
 
 
 
-#### Atom Tips
+### Atom Tips
 
-1. Hide Ignored Names - to keep `.git` and `.DS_store` files from cluttering up the tree view:
-	1. Go go `Settings > Packages`
-	1. Search for "Tree View"
-	1. Check `Hide Ignored Names`
-1. Install Atom Shell Commands
-	1. Click Atom → Install Shell Commands
-1. Open Atom from the command line in MacOS
-	1. In Terminal, `cd` to the directory you want to open
-	1. Type `atom .` to open the current directory in the editor
+#### Hide Ignored Names
+To keep `.git` and `.DS_store` files from cluttering up the tree view:
+1. Go go Settings → Packages
+1. Search for "Tree View"
+1. Check `Hide Ignored Names`
 
 
+#### Open Atom from the command line in MacOS
+1. Click Atom → Install Shell Commands
+1. In Terminal, `cd` to the directory you want to open
+1. Type `atom .` to open the current directory in the editor
 
+#### Format "beautify" your code
+This is essential for source coding editing.
+- In any file, either press `Ctl + Option + B`
+- or Choose Packages → Atom Beautify → Beautify
 
 
 
@@ -218,12 +227,4 @@ Download and install [Atom](https://atom.io/) and then install the following pac
 
 We will be using Git and Github Desktop for version control, demos, turning in assignments, and collaboration.
 
-If you have finished all of the above, go ahead and jump into the [Git & Github Desktop slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.g9165d0d9fd_0_120).
-
-
-
-
-
-## References
-
-1. [alrra/browser-logos](https://github.com/alrra/browser-logos)
+- After you finish the above, start reviewing the [Git & Github Desktop slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.g9165d0d9fd_0_120).
