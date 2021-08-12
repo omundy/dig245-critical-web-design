@@ -207,17 +207,23 @@ To keep `.git` and `.DS_store` files from cluttering up the tree view:
 1. Search for "Tree View"
 1. Check `Hide Ignored Names`
 
+### Open a project folder in Atom
+Any of the below:
+- Atom: Choose File > Open and select the folder
+- Finder: Drag the project folder into the Atom icon in the dock (Mac)
+- Github Desktop:
+	- Choose Repository > Open in Atom
+	- Or press Command + A
 
-#### Open Atom from the command line in MacOS
+#### Open a project in Atom from the command line in MacOS
 1. Click Atom → Install Shell Commands
 1. In Terminal, `cd` to the directory you want to open
 1. Type `atom .` to open the current directory in the editor
 
 #### Format "beautify" your code
-This is essential for source coding editing.
-- In any file, either press `Ctl + Option + B`
-- or Choose Packages → Atom Beautify → Beautify
-
+This is essential for source code editing. In any file, either
+- press `Ctl + Option + B`
+- or choose Packages → Atom Beautify → Beautify
 
 
 
