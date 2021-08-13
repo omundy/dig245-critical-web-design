@@ -34,6 +34,7 @@ Get ready for this course. Install / create accounts:
 
 - [Slack](#slack) - communication
 - [Command line](#command-line) - basic computing
+- [Project folder](#project-folder) - where you'll keep all your projects for the class
 - [Visual editor](#visual-editor) - design
 - [Web browsers](#web-browsers) - to test your web pages
 - [Code Editors](#code-editors) - to build
@@ -57,6 +58,22 @@ Get ready for this course. Install / create accounts:
 - Complete the [command line crash course](https://github.com/omundy/learn-computing/blob/main/topics-command-line.md#crash-course) before proceeding.
 
 
+
+
+
+## Project folder
+
+This will be the main folder for all your class projects, and will be mentioned in all the tutorials in class.
+
+1. Go to your [home folder](https://github.com/omundy/learn-computing/blob/main/topics-files-folders.md) - Path is:
+	- Mac: `/Users/<yourusername>/`
+	- Windows: `C:\Users\<yourusername>\`
+1. Create a new folder in your home called Sites (yes, uppercase S) - Path should now be:
+	- Mac: `/Users/<yourusername>/Sites/`
+	- Windows: `C:\Users\<yourusername>\Sites\`
+1. Create a new folder in Sites called `critical-web-design` - Path should now be:
+	- Mac: `/Users/<yourusername>/Sites/critical-web-design/`
+	- Windows: `C:\Users\<yourusername>\Sites\critical-web-design\`
 
 
 
