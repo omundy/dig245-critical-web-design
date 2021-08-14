@@ -267,6 +267,17 @@ View the [full W3Schools CSS Reference](https://www.w3schools.com/cssref/default
 
 
 
+## CSS Validation
+
+- The latest CSS standard released was 2.1 (in 2016!) but all [major browsers support *almost* all of CSS 3.0](https://caniuse.com/?search=css3).
+- The W3C [CSS](https://jigsaw.w3.org/css-validator/) defaults to 3.0 but allows you to select other versions.
+- When validating CSS while using Bootstrap only worry about *your* CSS files. Bootstrap's built-in support for older browsers will not validate, but *will* ensure your pages look the same across major browsers.
+
+
+
+
+
+
 
 ## References
 
