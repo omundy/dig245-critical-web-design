@@ -60,7 +60,7 @@ Get ready for this course. Install / create accounts:
 
 
 
-<img src="assets/img/project-folder.png" width=700>
+<img src="assets/img/project-folder.png">
 
 <sup>Follow instructions (below) to set up your project folder.</sup>
 
