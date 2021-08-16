@@ -45,8 +45,9 @@ Get ready for this course. Install / create accounts:
 
 ## Slack
 
-- Class communication will happen via [Slack](https://slack.com/)
-- Download the desktop and mobile app and enable notifications. You will receive an invitation to join the class Slack.
+- Class communication will happen via [Slack](https://slack.com/).
+- Watch for an invitation to join the class Slack.
+- [Download](https://slack.com/download) the desktop and mobile app and enable notifications. I do.
 
 
 
@@ -66,7 +67,7 @@ Get ready for this course. Install / create accounts:
 
 ## Project folder
 
-This will be the main folder for all your class projects, and will be mentioned in all the tutorials in class.
+This will be the main folder for all your class projects, and will be used in all class tutorials.
 
 1. Go to your [home folder](https://github.com/omundy/learn-computing/blob/main/topics-files-folders.md) - Path is:
 	- Mac: `/Users/<yourusername>/`
@@ -92,17 +93,38 @@ This will be the main folder for all your class projects, and will be mentioned 
 
 You need a visual editor to design websites
 
-- It is essential to pre-visualize what you plan to code, before you start coding.
-- Good design requires iteration to compare versions as you improve.
-- When you design you need to make and judge lots of visual changes quickly. Coding can be slow.
-- I recommend starting with pencil / paper for [wireframes](https://www.google.com/search?q=wireframe&sxsrf=ALeKk00LBL378L-L6vFVoAIpOtV5ohu-Ag:1628726643589&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiVu5vIl6ryAhWkRDABHYgVDr8Q_AUoAXoECAEQAw&biw=1920&bih=1096), then transition to a tool where you visualize your design as close to the final outcome. This means the same color (RGB), resolution (pixel dimensions), and graphics representing exactly what you will represent in code.
+- It is essential to pre-visualize what you plan to code, before you code.
+- Good design requires iteration. It allows you to compare and improve on previous versions.
+- When you design you need to make and judge lots of visual changes quickly. Coding is slow.
 
 
-### Options
+<img src="assets/img/logos/logo-figma.png" width=100>
 
-- [Figma](https://www.figma.com/) - [free](https://www.figma.com/pricing/), widely used to layout, animate, and prototype websites and apps.
-- Photoshop - an industry standard but expensive. Use it for free in VAC 212 (CAT Card access 8am–1am).
-- [Gimp](https://www.gimp.org/) - free, open source Photoshop alternative. Opens PSDs and [tutorials available](https://www.google.com/search?q=gimp+web+design+tutorial).
+### Recommendation
+
+1. Start with pencil / paper or whiteboard to create [wireframes](https://www.google.com/search?q=wireframe&sxsrf=ALeKk00LBL378L-L6vFVoAIpOtV5ohu-Ag:1628726643589&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiVu5vIl6ryAhWkRDABHYgVDr8Q_AUoAXoECAEQAw&biw=1920&bih=1096).
+1. Transition to [Figma](https://www.figma.com/).
+	- Use a free [account](https://www.figma.com/)
+	- Create designs that exactly match (color, resolution, graphics) what you will code.
+	- You can even prototype your projects, adding [animation](https://help.figma.com/hc/en-us/articles/360039818874-Create-advanced-animations-with-Smart-Animate) and [interaction](https://www.youtube.com/watch?v=-sAAa-CCOcg)
+
+
+#### Comparison
+
+Product | Cost | Description | Cons
+--- | --- | --- | ---
+[Figma](https://www.figma.com/) | [free](https://www.figma.com/pricing/) | Widely used to layout, illustrate, animate, and prototype websites and apps. | ?
+Photoshop | $$$ | Industry standard, uses pixels, capable of web design and much more. | Expensive. Large learning curve.
+Illustrator | $$$ | Excellent at vector graphics, therefore should only be used for illustration and print work. | Expensive. Large learning
+[Gimp](https://www.gimp.org/) | free | Open source Photoshop alternative. Opens PSDs. [Tutorials available](https://www.google.com/search?q=gimp+web+design+tutorial). | Interface can feel clunky. Not widely used.
+
+<sup>*Use Adobe products for free in VAC 212 (CAT Card access 8am–1am).</sup>
+
+
+
+
+
+
 
 
 
@@ -187,7 +209,7 @@ There are many great source code editors, like [Sublime text](https://www.sublim
 
 
 
-<img src="assets/img/logos/atom-icon-png.png" width=100>
+<img src="assets/img/logos/logo-atom.png" width=100>
 
 
 ### Install Atom

@@ -71,14 +71,14 @@ Critical Web Design Tutorials and references
 Popular tutorials and guides - You should **still look for other ones that you might like better**!
 
 - W3Schools [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/)
+- MDN [Learn web development](https://developer.mozilla.org/en-US/docs/Learn), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - Shay Howe's *[Learn to Code HTML & CSS](https://learn.shayhowe.com/)*
 - Oliver James' *[HTML & CSS Is Hard (But Doesn't Have To Be)](https://www.internetingishard.com/html-and-css/)*
 - Jessica Hische and Russ Maschmeyer's *[Don't Fear The Internet](http://www.dontfeartheinternet.com/)*
+- [Learn web development as an absolute beginner (2021)](https://coder-coder.com/learn-web-development/)
 
 Technical references - The most accurate and comprehensive way to understand a code language.
 
-- W3Schools [HTML Element](https://www.w3schools.com/tags/default.asp) and [CSS](https://www.w3schools.com/cssref/default.asp)
-- MDN's [HTML: Hypertext Markup Language](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- MDN's [CSS: Cascading Stylesheets](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [HTMLReference.io](https://htmlreference.io/)
-- [CSSReference.io](https://cssreference.io/)
+- W3Schools Reference [HTML](https://www.w3schools.com/tags/default.asp), [CSS](https://www.w3schools.com/cssref/default.asp)
+- MDN Reference [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [htmlreference.io](https://htmlreference.io/) and [cssreference.io](https://cssreference.io/)
