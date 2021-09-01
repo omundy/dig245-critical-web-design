@@ -11,16 +11,6 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 
 
 
-## Assignments, Milestones, and Sample code
-
-- Assignments: See class assignment document
-- Milestones:
-	- [git-milestones](https://github.com/omundy/learn-git-milestones)
-	- [html-css-milestones](https://github.com/omundy/learn-html-css-milestones)
-	- [js-milestones](https://github.com/omundy/learn-js-milestones)
-- Samples: [/demos](demos/)
-
-
 
 ## Tutorials, Tools, and References
 

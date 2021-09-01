@@ -1,7 +1,7 @@
 
 [<](README.md)
 
-<img width="300" src="assets/img/banner-web-servers.png">
+<img width="300" src="assets/img/banner-web-servers-cloud-meme.png">
 
 # Web Servers
 
