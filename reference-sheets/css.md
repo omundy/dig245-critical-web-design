@@ -33,7 +33,7 @@ p {
 ## CSS Anatomy
 An example CSS rule
 
-![css anatomy](../assets/img/code-anatomy-css.png)
+![css anatomy](../assets/img/code-css-anatomy.png)
 
 
 
