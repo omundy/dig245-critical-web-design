@@ -27,6 +27,13 @@
 ```
 
 
+## HTML Anatomy
+
+
+![HTML anatomy](../assets/img/code-html-anatomy.png)
+
+
+
 ## HTML Terms
 
 Term | Definition
