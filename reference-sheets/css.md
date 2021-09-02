@@ -70,7 +70,7 @@ Selector | Definition
 - The CSS box model defines the containing box for every HTML element.
 - It includes (starting from the outside) the margin, border, padding, and content of every [box-level element](https://www.w3schools.com/html/html_blocks.asp).
 
-<img src="../assets/img/code-css-anatomy.png" width=600>
+<img src="../assets/img/code-css-box-model.png" width=600>
 
 
 
