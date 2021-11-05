@@ -57,7 +57,7 @@ A website consists of several parts:
 
 
 
-![web-servers](assets/img/web-servers-dns.png)
+![web-servers](../../assets/img/web-servers-dns.png)
 
 ## Domain Name System (DNS)
 
@@ -70,7 +70,7 @@ The Domain Name System (DNS) is a central part of the Internet, providing a way 
 
 
 
-![web-servers](assets/img/web-servers-hosting.png)
+![web-servers](../../assets/img/web-servers-hosting.png)
 
 ## Web Hosting
 
@@ -92,7 +92,7 @@ When a user requests files from your site then your computer makes a request to 
 
 
 
-![web-servers](assets/img/web-servers-publish-ftp.gif)
+![web-servers](../../assets/img/web-servers-publish-ftp.gif)
 
 ### FTP / SFTP
 
@@ -103,7 +103,7 @@ Using FTP (File Transfer Protocol) to manage server files but there are drawback
 - No backups
 
 
-![web-servers](assets/img/web-servers-publish-git.jpg)
+![web-servers](../../assets/img/web-servers-publish-git.jpg)
 
 ### Git
 
@@ -116,7 +116,7 @@ Publishing a website on a server with Git / Github makes it much easier to maint
 
 
 
-![web-servers](assets/img/web-servers-cdn.png)
+![web-servers](../../assets/img/web-servers-cdn.png)
 
 
 ## CDN

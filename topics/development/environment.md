@@ -61,7 +61,7 @@ Get ready for this course. Install / create accounts:
 
 
 
-<img src="assets/img/project-folder.png">
+<img src="../../assets/img/project-folder.png">
 
 <sup>Follow instructions (below) to set up your project folder.</sup>
 
@@ -85,7 +85,7 @@ This will be the main folder for all your class projects, and will be used in al
 
 
 
-<img src="assets/img/tally-wireframe-to-finished.png" width=700>
+<img src="../../assets/img/tally-wireframe-to-finished.png" width=700>
 
 <sup>Wireframes / post-it note brainstorm on the left, Photoshop mockup on the right. [View final version](https://tallysavestheinternet.com/).</sup>
 
@@ -98,7 +98,7 @@ You need a visual editor to design websites
 - When you design you need to make and judge lots of visual changes quickly. Coding is slow.
 
 
-<img src="assets/img/logos/logo-figma.png" width=100>
+<img src="../../assets/img/logos/logo-figma.png" width=100>
 
 ### Recommendation
 
@@ -134,7 +134,7 @@ Illustrator | $$$ | Excellent at vector graphics, therefore should only be used 
 
 A web browser is more than the software we use to access data on the internet. Browsers manage requests for hundreds of remote files on web servers, combine and render response data as media-rich "web pages", and make them interactive to provide the essential hyperlink ([1965](https://en.wikipedia.org/wiki/Hyperlink#History)) function that "connects"" information on the internet.
 
-<img src="assets/img/http-requests.png">
+<img src="../../assets/img/http-requests.png">
 
 For every page visited:
 
@@ -166,17 +166,17 @@ With your group, examine the following table containing usage share on ***all***
 
 Browser | [StatCounter](https://gs.statcounter.com/browser-market-share) <sup>8/2021</sup> | [Wikimedia](https://analytics.wikimedia.org/dashboards/browsers/#all-sites-by-browser) <sup>11/2019</sup> | Platform(s)
 --- | ---: | ---: | ---
-<img width=20 src="assets/img/logos/browsers/chrome_24x24.png"> [Google Chrome](https://www.google.com/chrome/)* | 65.1% | 48.7% | Windows, MacOS, iOS, Linux
-<img width=20 src="assets/img/logos/browsers/safari_24x24.png"> [Safari Browser](https://www.apple.com/safari/) | 18.6% | 22.0% | MacOS & iOS only 😢
-<img width=20 src="assets/img/logos/browsers/firefox_24x24.png"> [Firefox Browser](https://www.mozilla.org/en-US/firefox/new/) | 3.4% | 4.9% | Windows, MacOS, iOS, Linux
-<img width=20 src="assets/img/logos/browsers/edge_24x24.png"> [Microsoft Edge](https://www.microsoft.com/en-us/edge)* | 3.4% | 1.9% | Windows, MacOS
-<img width=20 src="assets/img/logos/browsers/samsung-internet_24x24.png"> [Samsung Internet](https://en.wikipedia.org/wiki/Samsung_Internet)* | 3.1% | 2.7% | Android & Tizen only 😢
-<img width=20 src="assets/img/logos/browsers/opera_24x24.png"> [Opera Browser](https://www.opera.com/)* | 2.1% | 1.1% | Windows, MacOS, iOS, Linux
-<img width=20 src="assets/img/logos/browsers/internet-explorer-tile_10-11_24x24.png"> [Internet Explorer](https://www.opera.com/) | 0.6% | 3.9% | Windows only 😢
+<img width=20 src="../../assets/img/logos/browsers/chrome_24x24.png"> [Google Chrome](https://www.google.com/chrome/)* | 65.1% | 48.7% | Windows, MacOS, iOS, Linux
+<img width=20 src="../../assets/img/logos/browsers/safari_24x24.png"> [Safari Browser](https://www.apple.com/safari/) | 18.6% | 22.0% | MacOS & iOS only 😢
+<img width=20 src="../../assets/img/logos/browsers/firefox_24x24.png"> [Firefox Browser](https://www.mozilla.org/en-US/firefox/new/) | 3.4% | 4.9% | Windows, MacOS, iOS, Linux
+<img width=20 src="../../assets/img/logos/browsers/edge_24x24.png"> [Microsoft Edge](https://www.microsoft.com/en-us/edge)* | 3.4% | 1.9% | Windows, MacOS
+<img width=20 src="../../assets/img/logos/browsers/samsung-internet_24x24.png"> [Samsung Internet](https://en.wikipedia.org/wiki/Samsung_Internet)* | 3.1% | 2.7% | Android & Tizen only 😢
+<img width=20 src="../../assets/img/logos/browsers/opera_24x24.png"> [Opera Browser](https://www.opera.com/)* | 2.1% | 1.1% | Windows, MacOS, iOS, Linux
+<img width=20 src="../../assets/img/logos/browsers/internet-explorer-tile_10-11_24x24.png"> [Internet Explorer](https://www.opera.com/) | 0.6% | 3.9% | Windows only 😢
 Others | 4.6% | 14.5% | ---
 
 
-<sup>*Desktop or mobile version (or both) based on <img width=20 src="assets/img/logos/browsers/chromium_24x24.png"> [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) like <img width=20 src="assets/img/logos/browsers/brave_24x24.png"> [Brave](https://brave.com/). ([logos](https://github.com/alrra/browser-logos))</sup>
+<sup>*Desktop or mobile version (or both) based on <img width=20 src="../../assets/img/logos/browsers/chromium_24x24.png"> [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) like <img width=20 src="../../assets/img/logos/browsers/brave_24x24.png"> [Brave](https://brave.com/). ([logos](https://github.com/alrra/browser-logos))</sup>
 
 
 Next, compare the data from the Wikipedia [browser usage share article](https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_tables), the [StatCounter](https://gs.statcounter.com/browser-market-share), and [Wikimedia](https://analytics.wikimedia.org/dashboards/browsers/#all-sites-by-browser).
@@ -209,7 +209,7 @@ There are many great source code editors, like [Sublime text](https://www.sublim
 
 
 
-<img src="assets/img/logos/logo-atom.png" width=100>
+<img src="../../assets/img/logos/logo-atom.png" width=100>
 
 
 ### Install Atom
@@ -237,7 +237,7 @@ Download and install [Atom](https://atom.io/). Then, install the following packa
 1. In Settings, click on the Install tab and search for a package
 1. Verify the name (they don't always sort correctly by popularity) and click Install
 
-![install packages](assets/img/software-atom-packages.png)
+![install packages](../../assets/img/software-atom-packages.png)
 
 
 
@@ -276,3 +276,30 @@ This is essential for source code editing. In any file, either
 We will be using Git and Github Desktop for version control, demos, turning in assignments, and collaboration.
 
 - After you finish the above, start reviewing the [Git & Github Desktop slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.g9165d0d9fd_0_120).
+
+
+
+
+
+
+
+
+## Advanced Web Development Environment
+
+So you're already familiar with standard front-end web development and ready to try full-stack?
+
+- NVM, NPM, Node.js
+- [Homebrew](https://brew.sh/)
+- [NVM/Node](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
+- SFTP (Secure File Transfer Protocol) clients make it easy to transfer files between computers using a GUI.
+	- [Cyberduck](https://cyberduck.io/) or [FileZilla](https://filezilla-project.org/) (Windows, MacOS, Linux)
+	- [remote-ftp](https://atom.io/packages/remote-ftp) - Enable browsing remote SFTP just like the built-in Tree View
+- Databases
+	- [TablePlus](https://tableplus.com/download)
+- Productivity
+	- [Rectangle](https://rectangleapp.com/)
+	- [Notational Velocity](http://notational.net/)    
+- Browser extensions
+    - [Markdown Viewer](https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk/related?hl=en) let's you preview `.md` files in your browser so you can work on your README files locally.
+    - [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US) will highlight and format JSON in the browser to help you analyze and work with it.
+    - [Adblock Plus](https://adblockplus.org/) will help you preserve your sanity (and maybe your privacy) while working online.
