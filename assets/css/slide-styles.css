@@ -1,0 +1,61 @@
+/* @theme owen */
+@import 'default';
+
+/* Styles for slides only, they don't work on github.com */
+
+.caption {
+    color: #999;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+}
+
+.small {
+    font-size: .7rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+}
+
+.block {
+    display: block;
+}
+
+section {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Create two col layout */
+.twocolumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    text-align: left;
+}
+
+/* Adds "Page" prefix and total page number
+local pagination directive still required */
+section::after {
+    font-size: .9rem !important;
+    content: attr(data-marpit-pagination) ' / 'attr(data-marpit-pagination-total);
+}
+
+/*
+
+header,
+footer {
+    position: fixed;
+    left: 50px;
+    right: 50px;
+    height: 20px;
+    background-color: blue;
+}
+
+header {
+    top: 30px;
+}
+
+footer {
+    bottom: 30px;
+}
+
+*/

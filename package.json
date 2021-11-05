@@ -1,0 +1,41 @@
+{
+    "name": "dig245-critical-web-design",
+    "version": "1.0.0",
+    "description": "Tutorials, demos, and resources for DIG 245 Critical Web Design",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/omundy/dig245-critical-web-design.git"
+    },
+    "author": "Owen Mundy",
+    "license": "Attribution-NonCommercial 4.0 International",
+    "bugs": {
+        "url": "https://github.com/omundy/dig245-critical-web-design/issues"
+    },
+    "homepage": "https://github.com/omundy/dig245-critical-web-design#readme",
+
+    "marp": {
+        "author": "Owen Mundy",
+        "title": "DIG 245 Critical Web Design",
+        "keywords": "html, css, bootstrap, web design, usability, javascript, js, jquery",
+
+        "allowLocalFiles": true,
+        "html": true,
+        "inputDir": "topics",
+        "output": "slides",
+        "watch": true,
+        "bespoke": {
+            "progress": true
+        },
+        "theme": "owen",
+        "themeSet": ["assets/css/"],
+        "minifyCSS": false,
+        "script": {
+            "source": ["assets/js/"]
+        }
+    }
+
+}

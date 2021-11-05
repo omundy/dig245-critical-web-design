@@ -1,5 +1,5 @@
 
-[<](README.md)
+[<](../README.md)
 
 <img src="../assets/img/logos/logo-html5.png" width="400">
 
