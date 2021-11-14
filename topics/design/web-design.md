@@ -15,7 +15,9 @@
 
 ## Design Critiques
 
-1.
+1. [Design Critique: Three things](https://docs.google.com/presentation/d/1BiIHVEQjmIb2k2vB6N3x1g_S3KSLyZq2YCniq1ONjg8/edit#slide=id.ga1e6b74fb3_0_5)
+1. [ Design Critique: Visual Hierarchy](https://docs.google.com/presentation/d/1BiIHVEQjmIb2k2vB6N3x1g_S3KSLyZq2YCniq1ONjg8/edit#slide=id.g6c9d5c036c_0_13)
+1. [Design Critique: Eye Movement Test](https://docs.google.com/presentation/d/1BiIHVEQjmIb2k2vB6N3x1g_S3KSLyZq2YCniq1ONjg8/edit#slide=id.gf16dac508b_0_0)
 1. [Final design checklist](https://docs.google.com/presentation/d/1BiIHVEQjmIb2k2vB6N3x1g_S3KSLyZq2YCniq1ONjg8/edit#slide=id.gf7e0af7835_0_0)
 
 
@@ -50,13 +52,10 @@ How to install fonts on your computer
 
 
 
-
+<!--
 
 
 ## Design Inspiration
-
-
-
 
 ### Studios & Agencies
 
@@ -80,7 +79,7 @@ How to install fonts on your computer
 - [awwwards.com](https://www.awwwards.com/)
 - [dribbble.com](https://dribbble.com/search/web%20design)
 - [bestwebgallery.com](http://bestwebgallery.com/)
-- [unmatchedstyle.com](http://unmatchedstyle.com/gallery)
+- [unmatchedstyle.com](http://unmatchedstyle.com/gallery) -->
 
 
 
