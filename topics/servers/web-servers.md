@@ -149,51 +149,109 @@ Generally speaking, a **production server** is the live website or web applicati
 
 You can create a development server on a remote machine, or your personal computer. Your development server should match the **environment** (server software version, settings, etc.) of the production server as much as possible.
 
+
+
+### Python http.server
+
+Python's [http.server](https://docs.python.org/3.9/library/http.server.html#module-http.server) is perhaps the most simple local server.
+
+1. Navigate to your Sites (or any folder you wish) directory
+
+```bash
+cd ~/Sites/
+```
+
+2. Start the Python server
+
+Python 3
+
+```bash
+python -m http.server 7777
+```
+
+Python 2.7
+
+```bash
+python -m SimpleHTTPServer 7777
+```
+
+3. Then visit http://0.0.0.0:7777/ to see your files.
+
+
+There are [options in PHP and node](https://css-tricks.com/snippets/html/start-a-web-server-with-one-terminal-command-on-os-x/) as well. 
+
+
+
+### Install Apache on a Mac
+
 The most popular server software are free and open source:
 
 1. [Apache HTTP Server](https://httpd.apache.org/)
 1. [Nginx](https://www.nginx.com/)
 
+MacOS (releases before 2022) already has Apache and PHP installed. To enable them, it is usually best to search the web for a tutorial that matches your version. For example [High Sierra (10.13)](https://websitebeaver.com/set-up-localhost-on-macos-high-sierra-apache-mysql-and-php-7-with-sslhttps), [Mojave (10.14)](https://jasonmccreary.me/articles/install-apache-php-mysql-mac-os-x-mojave/), or [Catalina (10.15)](https://tech-cookbook.com/2019/10/07/setting-up-your-local-server-on-macos-catalina-2019-mamp/). The basics process is:
 
-### Install Apache on a Mac
-
-MacOS (releases before 2022) already has Apache and PHP installed. To enable them, it is usually best to search the web for a tutorial that matches your version. For example [High Sierra](https://websitebeaver.com/set-up-localhost-on-macos-high-sierra-apache-mysql-and-php-7-with-sslhttps) or [Mojave](https://jasonmccreary.me/articles/install-apache-php-mysql-mac-os-x-mojave/). The basics are:
-
-1. Start the server (using sudo to perform as root)
+1. Start the server (`sudo` means you are performing a command as a "superuser" and will require a password)
 
 ```bash
 sudo apachectl start
 ```
 
-At this point you can visit http://localhost/ to see if it works. Now you'll need to change some configuration options...
+At this point you can visit http://localhost/ to see if it works.
 
-2. Make a backup of your configuration file
+![it works!](../../assets/img/web-servers-it-works.png)
 
-```bash
-cd /etc/apache2/
-cp httpd.conf httpd.conf.bak
-```
+Now you'll need to change some configuration options...
 
-3. Edit the Apache configuration file
+2. Make a backup of your Apache configuration file
 
 ```bash
-nano httpd.conf
+sudo cd /etc/apache2/
+sudo cp httpd.conf httpd.conf.bak
 ```
 
-4. Configuration - Uncomment the following line (remove #) to enable PHP
+3. Edit the configuration file
+
+```bash
+sudo nano httpd.conf
+```
+
+4. Configuration => Uncomment the following line (remove #) to enable PHP
 
 ```text
 LoadModule php7_module libexec/apache2/libphp7.so
 ```
 
-5. Configuration - Set documents directory
+5. Configuration => Set the web server directory by replacing both instances of
 
-Search for `/Library/WebServer/Documents` and replace both instances with `/Users/<username>/Sites`.
+```
+/Library/WebServer/Documents
+```
 
-6. Configuration - Enable index viewing
+with this, replacing `<username>` with your own:
 
-Search for `Options FollowSymLinks Multiviews` directives and add `Indexes` so it looks like `Indexes Options FollowSymLinks Multiviews`
+```
+/Users/<username>/Sites
+```
 
+6. Configuration => Enable index viewing by searching for these directives
+
+```
+Options FollowSymLinks Multiviews
+```
+
+... and adding `Indexes` so it looks like
+
+```
+Indexes Options FollowSymLinks Multiviews
+```
+
+
+7. Finally, restart the server and you should see a list of the files in your Sites directory at http://localhost/
+
+```bash
+sudo apachectl restart
+```
 
 
 

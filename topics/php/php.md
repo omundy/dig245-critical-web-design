@@ -97,6 +97,29 @@ For example, while both of these urls work, the second one hides the `p` variabl
 
 
 
+### Use GET to increment a value
+
+Another common pattern with PHP is to pass variables using GET to a different page that handles the database update and redirects back to the original page.
+
+```html
+<!-- courses.php -->
+<a href="rate.php?id=321&rating=1">Up button</a>
+```
+
+```php
+<!-- rate.php -->
+<?php
+// 1. make sure the values are what you expect first, then...
+// 2. update database using id and rating from GET variables
+// 3. redirect back to the original page
+header("Location: courses.php");
+die();
+```
+
+
+
+
+
 
 
 ## References
