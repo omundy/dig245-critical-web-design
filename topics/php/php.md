@@ -99,11 +99,6 @@ For example, while both of these urls work, the second one hides the `p` variabl
 
 
 
-
-## Discussion
-
--
-
 ## References
 
 - [W3Schools PHP](https://www.w3schools.com/php/php_intro.asp)

@@ -1,11 +1,11 @@
 
 [<](../../README.md)
 
-<img width="375" src="../../assets/img/banner-web-servers-cloud-meme.png">
+<img width="375" src="../../assets/img/banner-web-servers.png">
 
 # Web Servers
 
-An overview of the DNS, servers, CDNs, FTP, and more.
+An overview of servers, including installing development servers, DNS, CDNs, FTP, and more.
 
 ### Contents
 
@@ -39,6 +39,13 @@ A website consists of several parts:
 - Finally, the HTML and CSS code you write are just plain text files until someone actually uses a web browser to render them.
 
 
+## What is a server?
+
+There are many types of web servers available today. In its most basic form, a web server is a computer that has special software that can accept **requests** (via URLs) and return **responses** (text files like html, css, js, or media like images, video, audio, etc.).
+
+![diagram](../../assets/img/banner-web-servers-static.png)
+
+
 
 ### WWW vs The Internet
 
@@ -50,9 +57,6 @@ A website consists of several parts:
 
 
 
-## The Cloud
-
-- blah
 
 
 
@@ -129,6 +133,90 @@ A content delivery network can speed up your websites but they also create cachi
 - Browsers, switches, ISPs, CDNs all use caches to speed up content delivery.
 - As a developer you do not want to see the cached content. Hold SHIFT and click refresh.
 
+
+
+
+
+
+
+
+
+
+
+## Development Servers
+
+Generally speaking, a **production server** is the live website or web application that is available to the world. A **development server** is a separate machine where you can build, test, and/or stage your work until it is ready to go live.
+
+You can create a development server on a remote machine, or your personal computer. Your development server should match the **environment** (server software version, settings, etc.) of the production server as much as possible.
+
+The most popular server software are free and open source:
+
+1. [Apache HTTP Server](https://httpd.apache.org/)
+1. [Nginx](https://www.nginx.com/)
+
+
+### Install Apache on a Mac
+
+MacOS (releases before 2022) already has Apache and PHP installed. To enable them, it is usually best to search the web for a tutorial that matches your version. For example [High Sierra](https://websitebeaver.com/set-up-localhost-on-macos-high-sierra-apache-mysql-and-php-7-with-sslhttps) or [Mojave](https://jasonmccreary.me/articles/install-apache-php-mysql-mac-os-x-mojave/). The basics are:
+
+1. Start the server (using sudo to perform as root)
+
+```bash
+sudo apachectl start
+```
+
+At this point you can visit http://localhost/ to see if it works. Now you'll need to change some configuration options...
+
+2. Make a backup of your configuration file
+
+```bash
+cd /etc/apache2/
+cp httpd.conf httpd.conf.bak
+```
+
+3. Edit the Apache configuration file
+
+```bash
+nano httpd.conf
+```
+
+4. Configuration - Uncomment the following line (remove #) to enable PHP
+
+```text
+LoadModule php7_module libexec/apache2/libphp7.so
+```
+
+5. Configuration - Set documents directory
+
+Search for `/Library/WebServer/Documents` and replace both instances with `/Users/<username>/Sites`.
+
+6. Configuration - Enable index viewing
+
+Search for `Options FollowSymLinks Multiviews` directives and add `Indexes` so it looks like `Indexes Options FollowSymLinks Multiviews`
+
+
+
+
+
+### Other methods for running a local development server
+
+You can also use [homebrew]() to [install Apache server](https://medium.com/@crmcmullen/how-to-install-apache-on-macos-10-13-high-sierra-and-10-14-mojave-using-homebrew-3cb6bf6e3cd4)
+
+
+
+
+
+
+
+
+
+
+
+## The Cloud
+
+![diagram](../../assets/img/banner-web-servers-cloud-meme.png)
+
+- blah
 
 
 
