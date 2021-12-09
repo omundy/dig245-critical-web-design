@@ -151,34 +151,16 @@ You can create a development server on a remote machine, or your personal comput
 
 
 
+---
+
+
 ### Python http.server
 
-Python's [http.server](https://docs.python.org/3.9/library/http.server.html#module-http.server) is perhaps the most simple local server.
-
-1. Navigate to your Sites (or any folder you wish) directory
-
-```bash
-cd ~/Sites/
-```
-
-2. Start the Python server
-
-Python 3
-
-```bash
-python -m http.server 7777
-```
-
-Python 2.7
-
-```bash
-python -m SimpleHTTPServer 7777
-```
-
-3. Then visit http://0.0.0.0:7777/ to see your files.
+Instructions are here:
+https://github.com/omundy/learn-computing/blob/main/topics/web-servers.md#python-httpserver
 
 
-There are [options in PHP and node](https://css-tricks.com/snippets/html/start-a-web-server-with-one-terminal-command-on-os-x/) as well. 
+---
 
 
 
