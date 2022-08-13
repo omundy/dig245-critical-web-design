@@ -1,7 +1,7 @@
 
 [<](../../README.md)
 
-![network diagram](../../assets/img/logos/network-black-512sq-150x150.png)
+![network diagram](../../assets/img/logos/network-black-clear-150sq.png)
 
 # Web Design
 
