@@ -1,7 +1,7 @@
 
 [<](../README.md)
 
-<img src="../assets/img/logos/logo-html5.png" width="400">
+<img src="../../assets/img/logos/logo-html5.png" width="400">
 
 # HTML Reference
 
@@ -30,7 +30,7 @@
 ## HTML Anatomy
 
 
-![HTML anatomy](../assets/img/code-html-anatomy.png)
+![HTML anatomy](../../assets/img/code-html-anatomy.png)
 
 
 
