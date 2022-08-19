@@ -6,8 +6,10 @@
 # Critical Design
 
 
+https://docs.google.com/presentation/d/1OWc_e1pquvwKi4qxJShsZ1Rqia1dbDBcwpxYwdOic7o/edit#slide=id.g2830aed7f5_0_0
 
 
+<!--
 ---
 
 ### wwwwwwwww&#46;jodi&#46;org
@@ -17,9 +19,4 @@
 ![jodi](media/jodi-wwwwwwwww-1.png)
 ![jodi](media/jodi-wwwwwwwww-2.png)
 
-
-
----
-
-theyrule.net (2001)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OVT4T7OR3iQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-->
