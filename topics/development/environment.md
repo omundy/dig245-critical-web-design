@@ -32,13 +32,13 @@ Students who complete the following will be able to:
 
 Get ready for this course. Install / create accounts:
 
-- [Slack](#slack) - communication
-- [Command line](#command-line) - basic computing
-- [Project folder](#project-folder) - where you'll keep all your projects for the class
-- [Visual editor](#visual-editor) - design
-- [Web browsers](#web-browsers) - to test your web pages
-- [Code Editors](#code-editors) - to build
-- [Version Control](#version-control) - to access class demos, manage code versions, and turn in assignments
+1. [Slack](#slack) - communication
+1. [Command line](#command-line) - basic computing
+1. [Project folder](#project-folder) - where you'll keep all your projects for the class
+1. [Visual editor](#visual-editor) - design
+1. [Web browsers](#web-browsers) - to test your web pages
+1. [Code Editors](#code-editors) - to build
+1. [Version Control](#version-control) - to access class demos, manage code versions, and turn in assignments
 
 
 
@@ -46,8 +46,8 @@ Get ready for this course. Install / create accounts:
 ## Slack
 
 - Class communication will happen via [Slack](https://slack.com/).
+- [Download](https://slack.com/download) the desktop and mobile app and enable notifications.
 - Watch for an invitation to join the class Slack.
-- [Download](https://slack.com/download) the desktop and mobile app and enable notifications. I do.
 
 
 
@@ -85,7 +85,6 @@ This will be the main folder for all your class projects, and will be used in al
 
 
 
-<img src="../../assets/img/tally-wireframe-to-finished.png" width=700>
 
 <sup>Wireframes / post-it note brainstorm on the left, Photoshop mockup on the right. [View final version](https://tallysavestheinternet.com/).</sup>
 
@@ -121,6 +120,7 @@ Illustrator | $$$ | Excellent at vector graphics, therefore should only be used 
 <sup>*Use Adobe products for free in VAC 212 (CAT Card access 8am–1am).</sup>
 
 
+<img src="../../assets/img/tally-wireframe-to-finished.png" width=700>
 
 
 
