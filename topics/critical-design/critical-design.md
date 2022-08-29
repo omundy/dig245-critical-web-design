@@ -5,7 +5,7 @@
 
 # Critical Design
 
-
+See this presentation
 https://docs.google.com/presentation/d/1OWc_e1pquvwKi4qxJShsZ1Rqia1dbDBcwpxYwdOic7o/edit#slide=id.g2830aed7f5_0_0
 
 

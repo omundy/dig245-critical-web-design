@@ -26,7 +26,9 @@ javascript:alert("hello world!")
 
 
 ### HTML and CSS validator bookmarklet
+
 Use the code below and the above bookmarklet instructions
+
 ```javascript
 var loc = document.location;
 var css = window.open("http://jigsaw.w3.org/css-validator/validator?profile=css3&warning=0&uri=" + loc, "css");
