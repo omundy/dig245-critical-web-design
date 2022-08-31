@@ -222,8 +222,7 @@ Download and install [Atom](https://atom.io/). Then, install the following packa
 - [emmet](https://atom.io/packages/emmet) - The essential tool for web developers
 - [file-icons](https://atom.io/packages/file-icons) - Assign file extension icons and colours for improved visual grepping
 - [pigments](https://atom.io/packages/pigments) - A package to display colors in project and files
-- [linter](https://atom.io/packages/linter) - A [linter](https://en.wikipedia.org/wiki/Lint_(software)) for Atom
-- [linter-jshint](https://atom.io/packages/linter-jshint) - Linter plugin for JavaScript; [jshint docs](https://jshint.com/docs/options/), sample `.jshintrc` [browser](https://github.com/omundy/sample-extension-listener/blob/master/.jshintrc) and [node](https://github.com/omundy/sample-node-osm-leaflet/blob/master/.jshintrc)
+- [linter-jshint](https://atom.io/packages/linter-jshint) - [linter](https://en.wikipedia.org/wiki/Lint_(software)) for JavaScript; [jshint docs](https://jshint.com/docs/options/), sample `.jshintrc` [browser](https://github.com/omundy/sample-extension-listener/blob/master/.jshintrc) and [node](https://github.com/omundy/sample-node-osm-leaflet/blob/master/.jshintrc) (this will also prompt to install dependent packages like [linter](https://atom.io/packages/linter))
 - [open-file](https://atom.io/packages/open-file) - Open a file from Atom in your default app (e.g. web browser)
 - [open-terminal-here](https://atom.io/packages/open-terminal-here) - Open the command line in the location you choose in the tree view.
 
