@@ -175,17 +175,20 @@ This class will set the [`border-radius`](https://www.w3schools.com/cssref/css3_
 
 ### Text
 
-Set the `font-` [`family`](https://www.w3schools.com/css/css_font.asp), [`size`](https://www.w3schools.com/css/css_font.asp), [`style`](https://www.w3schools.com/css/css_font.asp), [`weight`](https://www.w3schools.com/css/css_font.asp), [`line-height`](https://www.w3schools.com/cssref/pr_dim_line-height.asp), [`text-align`](https://www.w3schools.com/css/css_align.asp), and [`color`](https://www.w3schools.com/css/css_colors.asp) the text where `id` is `logo`.
+Set the `font-` [`family`](https://www.w3schools.com/css/css_font.asp), [`size`](https://www.w3schools.com/css/css_font.asp), [`line-height`](https://www.w3schools.com/cssref/pr_dim_line-height.asp), [`style`](https://www.w3schools.com/css/css_font.asp), [`weight`](https://www.w3schools.com/css/css_font.asp), [`text-align`](https://www.w3schools.com/css/css_align.asp), [`opacity`](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity#values), [`color`](https://www.w3schools.com/css/css_colors.asp), [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color), [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) of text with `id`=`logo`.
 
 ```css
 #logo {
-	font-family: Arial, Helvetica, sans-serif; /* Displays the first available font */
-	font-size: 12px;
-	line-height: 16px;
-	font-style: italic;
-	font-weight: bold;
-	text-align: left;
-	color: purple;
+	font-family: Arial, Helvetica, sans-serif; /* Sets typeface, using the first available */
+	font-size: 12px;    /* px | em | rem */
+	line-height: 16px;  /* px | em | rem */
+	font-style: italic; /* normal | italic */
+	font-weight: bold;  /* normal | bold */
+	text-align: left;   /* Align left, right, center within parent container */
+	opacity: 1;         /* value between 0 - 1 */
+	color: rgb(100,100,100); /* inherit | hex | rgb | rgba */
+	background-color: white; /* inherit | hex | rgb | rgba */
+	background-image: url("file.png");
 }
 ```
 
