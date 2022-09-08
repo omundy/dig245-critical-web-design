@@ -226,6 +226,10 @@ Download and install [Atom](https://atom.io/). Then, install the following packa
 - [open-file](https://atom.io/packages/open-file) - Open a file from Atom in your default app (e.g. web browser)
 - [open-terminal-here](https://atom.io/packages/open-terminal-here) - Open the command line in the location you choose in the tree view.
 
+#### Optional
+
+- On Windows the [copy-path](https://atom.io/packages/copy-path) can convert backslashes to forward slashes, which are required for paths on the www.
+
 
 ### How to install a package in Atom:
 
