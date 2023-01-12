@@ -7,6 +7,8 @@
 	"undef": true,
 	"unused": true,
 	"globals": {
-		"$": false
-	}
+		"$": false,
+		"fetch": true
+	},
+	"-W079": false
 }
