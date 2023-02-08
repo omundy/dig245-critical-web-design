@@ -209,6 +209,17 @@ There are many great source code editors, like [Sublime text](https://www.sublim
 
 
 
+
+
+## Install and Configure VS Code
+
+
+- [open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser) to open a page in your default web browser
+
+
+
+
+
 <img src="../../assets/img/logos/logo-atom.png" width=100>
 
 
