@@ -151,7 +151,7 @@ Browsers are not all created the same. Some only run on desktop or mobile. Other
 <img src="../../assets/img/browser-wars-2008-2019.png">
 <sup>Graphic depicting usage share during the 2nd <a href="https://en.wikipedia.org/wiki/Browser_wars">browser wars</a> (2008–)</sup>
 
-The web browser is the primary vehicle through which users will encounter your web pages. It follows then, that it is extremely important to make sure that you code and test your pages in the same environment of users. While it would be overwhelming to test the [many](https://en.wikipedia.org/wiki/List_of_web_browsers) different browsers, operating systems, and display sizes, lucky for us, some are more popular than others.
+Since the browser is the primary vehicle through which users will encounter your web pages, it follows that it is essential to test your coded pages in the same environment. It would be overwhelming to test every page in all the [different browsers, operating systems, and display sizes that are available](https://en.wikipedia.org/wiki/List_of_web_browsers), but lucky for us, some browsers are more popular than others.
 
 ### Discussion
 
@@ -204,7 +204,7 @@ Did you guess, "I should install all of them?" That's not an incorrect answer. T
 
 ## Code Editors
 
-There are many great source code editors, like [Sublime text](https://www.sublimetext.com/) and [Visual Studio Code](https://code.visualstudio.com/), which are also both multi-platform, free, and highly capable. However, my preferred editor for web development, and this class, is Atom.
+There are many great source code editors, like [Sublime text](https://www.sublimetext.com/) and [VS (Visual Studio) Code](https://code.visualstudio.com/), which are also both multi-platform, free, and highly capable. However, my preferred editor for web development, and this class, is Atom.
 
 
 
@@ -213,6 +213,9 @@ There are many great source code editors, like [Sublime text](https://www.sublim
 
 ## Install and Configure VS Code
 
+VS Code is a free source code editor for macOS, Linux, and Windows. It has support for extensions to add functionality to the editor and embedded Git controls. VS Code is developed Microsoft.
+
+Download and install [VS Code](https://code.visualstudio.com/download) then install the following extensions:
 
 - [open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser) to open a page in your default web browser
 
@@ -225,7 +228,7 @@ There are many great source code editors, like [Sublime text](https://www.sublim
 
 ### Install Atom
 
-Atom is a free and open-source text and source code editor for macOS, Linux, and Windows. It has support for plug-ins written in JavaScript, embedded Git Control, and is developed by GitHub.
+Atom *was* a free and open-source source code editor for macOS, Linux, and Windows. It has support for plug-ins written in JavaScript, embedded Git controls, and is developed by GitHub.
 
 Download and install [Atom](https://atom.io/). Then, install the following packages in Atom > Settings:
 
