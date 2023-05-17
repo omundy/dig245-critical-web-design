@@ -5,30 +5,41 @@
 
 # Web Development Environment
 
-<!--
-
 Set up your web development environment!
 
-### Contents
 
-1. [Learning Objectives](#learning-objectives)
-1. [Class communication](#class-communication) `1 min`
-1. [Visual editors](#visual-editors) `2 min`
-1. [Web Browsers](#web-browsers) `10 min`
-1. [Text Editor](#web-browsers) `10 min`
-1. [Discussion](#discussion) `5 min`
-1. [References](#references)
+---
 
-## Learning Objectives
+## Introduction
+
+Review the following sections and perform the activities on your own or with your group.
+
+Perform the task(s) when you see this 👉  emoji
+
+<details>
+<summary>Learning Objectives</summary>
+
+Students who complete this module will be able to:
 
 Students who complete the following will be able to:
 
-- Discuss popular web browsers, and rank them by browser market share
+- Compare popular web browsers by browser market share
 - List essential tools for frontend web development and describe their purpose
-- Recall popular code editors and their features
 - Demonstrate how to install and configure software for a web development environment
 
--->
+</details>
+
+
+
+
+
+
+
+
+
+---
+
+## Contents
 
 Get ready for this course. Install / create accounts:
 
@@ -41,41 +52,39 @@ Get ready for this course. Install / create accounts:
 1. [Version Control](#version-control) - to access class demos, manage code versions, and turn in assignments
 
 
-
+---
 
 ## Slack
 
 - Class communication will happen via [Slack](https://slack.com/).
-- [Download](https://slack.com/download) the desktop and mobile app and enable notifications.
+- 👉 [Download](https://slack.com/download) the desktop and mobile app and enable notifications.
 - Watch for an invitation to join the class Slack.
 
 
 
-
+---
 
 ## Command line
 
 - The command line allows you to control your computer via a text interface.
-- Complete the [command line crash course](https://github.com/omundy/learn-computing/blob/main/topics-command-line.md#crash-course) before proceeding.
+- 👉 Complete the [command line crash course](https://github.com/omundy/learn-computing/blob/main/topics/command-line.md#crash-course) before proceeding.
 
 
+---
 
+## Sites folder
 
 <img src="../../assets/img/project-folder.png">
 
-<sup>Follow instructions (below) to set up your project folder.</sup>
+👉 Follow these steps to create a Sites folder for all your class projects and demos.
 
-## Project folder
-
-This will be the main folder for all your class projects, and will be used in all class tutorials.
-
-1. Go to your [home folder](https://github.com/omundy/learn-computing/blob/main/topics-files-folders.md) - Path is:
+1. Go to your [home folder](https://github.com/omundy/learn-computing/blob/main/topics/files-folders.md#paths). The path (depending on your OS) is:
 	- Mac: `/Users/<yourusername>/`
 	- Windows: `C:\Users\<yourusername>\`
-1. Create a new folder in your home called Sites (yes, uppercase S) - Path should now be:
+1. Create a new folder in your `home` called Sites (yes, uppercase S). The path will be:
 	- Mac: `/Users/<yourusername>/Sites/`
 	- Windows: `C:\Users\<yourusername>\Sites\`
-1. Create a new folder in Sites called `critical-web-design` - Path should now be:
+1. Create a new folder in Sites called `critical-web-design`. The path will be:
 	- Mac: `/Users/<yourusername>/Sites/critical-web-design/`
 	- Windows: `C:\Users\<yourusername>\Sites\critical-web-design\`
 
@@ -83,36 +92,26 @@ This will be the main folder for all your class projects, and will be used in al
 
 
 
-
-
-
-<sup>Wireframes / post-it note brainstorm on the left, Photoshop mockup on the right. [View final version](https://tallysavestheinternet.com/).</sup>
+---
 
 ## Visual Editor
 
-You need a visual editor to design websites
+Designing websites requires a visual editor:
 
-- It is essential to pre-visualize what you plan to code, before you code.
-- Good design requires iteration. It allows you to compare and improve on previous versions.
-- When you design you need to make and judge lots of visual changes quickly. Coding is slow.
+- Good design requires multiple iterations. A visual editor lets you compare and improve on previous versions of a design.
+- Coding is slow. When you design you need to make and quickly judge many visual changes. With a design tool you can pre-visualize the layout before you code.
+- Start new designs with pencil and paper or a whiteboard to create [wireframes](https://www.google.com/search?q=wireframe&sxsrf=ALeKk00LBL378L-L6vFVoAIpOtV5ohu-Ag:1628726643589&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiVu5vIl6ryAhWkRDABHYgVDr8Q_AUoAXoECAEQAw&biw=1920&bih=1096). Then transition to [Figma](https://www.figma.com/) to complete detailed versions of your design that exactly match (color, resolution, graphics) what you will code. You can even prototype your projects, adding [animation](https://help.figma.com/hc/en-us/articles/360039818874-Create-advanced-animations-with-Smart-Animate) and [interaction](https://www.youtube.com/watch?v=-sAAa-CCOcg) to see how the user experience *feels*.
 
-
-<img src="../../assets/img/logos/logo-figma.png" width=100>
-
-### Recommendation
-
-1. Start with pencil / paper or whiteboard to create [wireframes](https://www.google.com/search?q=wireframe&sxsrf=ALeKk00LBL378L-L6vFVoAIpOtV5ohu-Ag:1628726643589&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiVu5vIl6ryAhWkRDABHYgVDr8Q_AUoAXoECAEQAw&biw=1920&bih=1096).
-1. Transition to [Figma](https://www.figma.com/).
-	- Use a free [account](https://www.figma.com/)
-	- Create designs that exactly match (color, resolution, graphics) what you will code.
-	- You can even prototype your projects, adding [animation](https://help.figma.com/hc/en-us/articles/360039818874-Create-advanced-animations-with-Smart-Animate) and [interaction](https://www.youtube.com/watch?v=-sAAa-CCOcg)
+👉 Create a free [Figma account](https://www.figma.com/) and start experimenting!
 
 
-#### Comparison
+---
+
+## Product comparison
 
 Product | Cost | Description | Cons
 --- | --- | --- | ---
-[Figma](https://www.figma.com/) | [free](https://www.figma.com/pricing/) | Widely used to layout, illustrate, animate, and prototype websites and apps. | ?
+<img src="../../assets/img/logos/logo-figma.png" width=30> [Figma](https://www.figma.com/) | [free](https://www.figma.com/pricing/) | Widely used to layout, illustrate, animate, and prototype websites and apps. | ?
 Photoshop | $$$ | Industry standard, uses pixels, capable of web design and much more. | Expensive. Large learning curve.
 Illustrator | $$$ | Excellent at vector graphics, therefore should only be used for illustration and print work. | Expensive. Large learning
 [Gimp](https://www.gimp.org/) | free | Open source Photoshop alternative. Opens PSDs. [Tutorials available](https://www.google.com/search?q=gimp+web+design+tutorial). | Interface can feel clunky. Not widely used.
@@ -128,11 +127,17 @@ Illustrator | $$$ | Excellent at vector graphics, therefore should only be used 
 
 
 
-
+---
 
 ## Web Browsers
 
-A web browser is more than the software we use to access data on the internet. Browsers manage requests for hundreds of remote files on web servers, combine and render response data as media-rich "web pages", and make them interactive to provide the essential hyperlink ([1965](https://en.wikipedia.org/wiki/Hyperlink#History)) function that "connects"" information on the internet.
+A web browser is more than the software you use to access data on the internet. Browsers manage requests for hundreds of remote files on web servers, combine and render response data as media-rich "web pages", and make them interactive to provide the essential hyperlink ([1965](https://en.wikipedia.org/wiki/Hyperlink#History)) function that "connects"" information on the internet.
+
+
+
+---
+
+## Request > Response <
 
 <img src="../../assets/img/http-requests.png">
 
@@ -144,7 +149,9 @@ For every page visited:
 1. Finally, the browser renders the all this content on a user's device and they continue the process.
 
 
-### The Browser Wars
+---
+
+## The Browser Wars
 
 Browsers are not all created the same. Some only run on desktop or mobile. Others only run on specific operating systems. There are big differences in how browsers follow (or not!) the [WC3 standards](https://www.w3.org/standards/) when they render the pages you build. Even the browser versions can be quite distinct. Ask any veteran web developer what it was like to work around the bugs on [Internet Explorer 6](https://www.theverge.com/2014/4/8/5593584/the-most-hated-browser-in-the-world-is-finally-dead)!
 
@@ -153,7 +160,7 @@ Browsers are not all created the same. Some only run on desktop or mobile. Other
 
 Since the browser is the primary vehicle through which users will encounter your web pages, it follows that it is essential to test your coded pages in the same environment. It would be overwhelming to test every page in all the [different browsers, operating systems, and display sizes that are available](https://en.wikipedia.org/wiki/List_of_web_browsers), but lucky for us, some browsers are more popular than others.
 
-### Discussion
+### 👉 Discussion
 
 With your group, examine the following table containing usage share on ***all*** (desktop and mobile) browsers:
 
@@ -194,41 +201,58 @@ Did you guess, "I should install all of them?" That's not an incorrect answer. T
 
 - 50% of all users are now mobile users. This affects not only the browsers you test on but how you accommodate different display resolutions and devices.
 - And, Chrome is a clone, but it is far and wide the most popular iteration of the Chromium browser.
+- 👉 Install Chrome and Firefox
 
 </details>
 
 
 
 
-
+---
 
 ## Code Editors
 
-There are many great source code editors, like [Sublime text](https://www.sublimetext.com/) and [VS (Visual Studio) Code](https://code.visualstudio.com/), which are also both multi-platform, free, and highly capable. However, my preferred editor for web development, and this class, is Atom.
+[Source-code editors](https://en.wikipedia.org/wiki/Source-code_editor) are text editors designed for writing source code. They might be standalone programs, or run in an integrated development environment (IDE) or a web browser. There are [many great source code editors](https://en.wikipedia.org/wiki/Comparison_of_text_editors), many of which are multi-platform, free, and highly capable. Here are a few that I have found useful:
+
+- [VS Code](https://code.visualstudio.com/)
+- [Sublime text](https://www.sublimetext.com/)
+- ~~Atom Editor~~ [Pulsar](https://pulsar-edit.dev/)
+- [Komodo Edit](https://www.activestate.com/products/komodo-edit/)
 
 
 
-
-
+---
 
 ## Install and Configure VS Code
 
-VS Code is a free source code editor for macOS, Linux, and Windows. It has support for extensions to add functionality to the editor and embedded Git controls. VS Code is developed Microsoft.
+<img src="../../assets/img/logos/logo-vscode.png" width=70> 
 
-Download and install [VS Code](https://code.visualstudio.com/download) then install the following extensions:
+VS ("Visual Studio") Code is a free source code editor for macOS, Linux, and Windows. It has support for extensions to add functionality to the editor and embedded Git controls. VS Code is developed Microsoft.
 
-- [open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser) to open a page in your default web browser
+👉 Download and install [VS Code](https://code.visualstudio.com/download) then follow the tips below.
+
+- [Mac](https://code.visualstudio.com/docs/setup/mac) and [Windows](https://code.visualstudio.com/docs/setup/windows) installation
+- MacOS: [Enable command line launching](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) (e.g. `code .` to open a project)
+- Install [open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser) extension to open a page in your default web browser
+- Review these introductions on the [user interface](https://code.visualstudio.com/docs/getstarted/userinterface) and [HTML support](https://code.visualstudio.com/Docs/languages/html)
 
 
 
 
 
-<img src="../../assets/img/logos/logo-atom.png" width=100>
 
 
-### Install Atom
+---
 
-Atom *was* a free and open-source source code editor for macOS, Linux, and Windows. It has support for plug-ins written in JavaScript, embedded Git controls, and is developed by GitHub.
+## Atom
+
+<img src="../../assets/img/logos/logo-atom.png" width="80px">
+
+Atom [***was***](https://github.blog/2022-06-08-sunsetting-atom/) a free and open-source source code editor for macOS, Linux, and Windows. Built by GitHub using the [Electron framework](https://en.wikipedia.org/wiki/Electron_(software_framework)), it supported plug-ins written in JavaScript, embedded Git controls, and more. Fans for Atom should migrate to the open source fork called [Pulsar](https://pulsar-edit.dev/) 
+
+
+<details>
+<summary>Atom Install Instructions (depreciated)</summary>
 
 Download and install [Atom](https://atom.io/). Then, install the following packages in Atom > Settings:
 
@@ -240,7 +264,7 @@ Download and install [Atom](https://atom.io/). Then, install the following packa
 - [open-file](https://atom.io/packages/open-file) - Open a file from Atom in your default app (e.g. web browser)
 - [open-terminal-here](https://atom.io/packages/open-terminal-here) - Open the command line in the location you choose in the tree view.
 
-#### Optional
+### Optional
 
 - On Windows the [copy-path](https://atom.io/packages/copy-path) can convert backslashes to forward slashes, which are required for paths on the www.
 
@@ -256,11 +280,11 @@ Download and install [Atom](https://atom.io/). Then, install the following packa
 
 ![install packages](../../assets/img/software-atom-packages.png)
 
+---
 
+## Atom Tips
 
-### Atom Tips
-
-#### Hide Ignored Names
+### Hide Ignored Names
 To keep `.git` and `.DS_store` files from cluttering up the tree view:
 1. Go go Settings → Packages
 1. Search for "Tree View"
@@ -274,22 +298,26 @@ Any of the below:
 	- Choose Repository > Open in Atom
 	- Or press Command + A
 
-#### Open a project in Atom from the command line in MacOS
+### Open a project in Atom from the command line in MacOS
 1. Click Atom → Install Shell Commands
 1. In Terminal, `cd` to the directory you want to open
 1. Type `atom .` to open the current directory in the editor
 
-#### Format "beautify" your code
+### Format "beautify" your code
 This is essential for source code editing. In any file, either
 - press `Ctl + Option + B`
 - or choose Packages → Atom Beautify → Beautify
 
+</details>
 
 
 
+
+
+---
 
 ## Version Control
 
 We will be using Git and Github Desktop for version control, demos, turning in assignments, and collaboration.
 
-- After you finish the above, start reviewing the [Git & Github Desktop slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.g9165d0d9fd_0_120).
+👉 Review the [Git & Github Desktop slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.g9165d0d9fd_0_120)
