@@ -32,7 +32,12 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 
 ### HTML/CSS
 
-- [HTML](https://github.com/omundy/dig245-critical-web-design/blob/main/topics/html-css/html.md), [CSS](https://github.com/omundy/dig245-critical-web-design/blob/main/topics/html-css/css.md), [JS](https://github.com/omundy/dig245-critical-web-design/blob/main/topics/javascript/javascript.md)
+- Course references [HTML](https://github.com/omundy/dig245-critical-web-design/blob/main/topics/html-css/html.md), [CSS](https://github.com/omundy/dig245-critical-web-design/blob/main/topics/html-css/css.md), [JS](https://github.com/omundy/dig245-critical-web-design/blob/main/topics/javascript/javascript.md)
+- [Mozilla Developer Guides](https://developer.mozilla.org/en-US/docs/Web/Guide)
+- W3Schools [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/css/), [JS](https://www.w3schools.com/js/)
+- https://github.com/omundy/learn-javascript
+
+
 
 ### Figma 
 
@@ -55,4 +60,8 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 - Figma Design Basics: [11-Visual Hierarchy](https://www.figma.com/resources/learn-design/hierarchy/) (1-8) 
 - Figma Design Basics: [12-Typography](https://www.figma.com/resources/learn-design/typography/) (1-15)
 
+
 ### Bootstrap 
+
+- Bootstrap [documentation](https://getbootstrap.com/docs/)
+- Sam Norton [Understanding Bootstrap 5 Layout](https://designmodo.com/bootstrap-5-layout/) (2023)
