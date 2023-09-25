@@ -95,6 +95,7 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 - 📚 Bruce Sterling [A Short History of the Internet](https://www.internetsociety.org/internet/history-internet/short-history-of-the-internet/) (1-6) (1993)
 - 📚 Rob Larson Intro (1-12), The Flaw of Gravity (13-26) in Bit Tyrants
 - 📚 B.J. Keeton [The History Behind “Hello World”](https://www.elegantthemes.com/blog/wordpress/the-history-behind-hello-world) (2020)
+- Josh On [theyrule.net](https://theyrule.net) | [Simple Net Art Diagram](https://anthology.rhizome.org/simple-net-art-diagram)
 
 
 ### View Source
@@ -103,6 +104,9 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 - 📚 Michael Bierut “Warning: May Contain Non-Design Content” (11-13) in Seventy-nine Short Essays on Design
 - 📚 Frank Chimero [How and Why](https://shapeofdesignbook.com/chapters/01-how-and-why/) (18-27) in [The Shape of Design](https://shapeofdesignbook.com/chapters/01-how-and-why/) (18-27)
 - 📚 Figma [02-What is Graphic Design](https://www.figma.com/resource-library/what-is-graphic-design/) (1-9) 
+- [csszengarden.com](http://www.csszengarden.com/) | JODI [wwwwwwwww.jodi.org](wwwwwwwww.jodi.org)
+
+
 
 ### Critical Design
 
@@ -110,6 +114,7 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 - 📚 Ian Bogost [The App That Does Nothing](https://www.theatlantic.com/technology/archive/2017/06/the-app-that-does-nothing/529764/) (2017) 
 - 📚 Frank Chimero [Introduction](https://shapeofdesignbook.com/chapters/00-introduction/) in [The Shape of Design](https://shapeofdesignbook.com/) (2012)
 - 📚 Aaron Draplin [logo design challenge](https://www.youtube.com/watch?v=gVUVUoXrPzM) (16:20) 
+- [clickclickclick.click](https://clickclickclick.click) | [Binky](https://www.binky.rocks/)
 
 
 ### On the Grid
@@ -118,49 +123,110 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 - 📚 Andrew Maher [How You Make A Grid](https://kupdf.net/download/grid-design-for-graphic-designers-by-andrew-maher_58f4a3f0dc0d60a14ada97de_pdf) (2-9) (2011)
 - 📚 Frank Chimero [Craft and Beauty](https://shapeofdesignbook.com/chapters/02-craft-and-beauty/) (28-34) in [The Shape of Design](https://shapeofdesignbook.com/) (2012)
 - 📚 Aigars Silkalns [20 Excellent Websites With Responsive Web Design](https://colorlib.com/wp/responsive-web-design/) (2023)
+- [loremipsum.io](https://loremipsum.io/) | Rafaël Rozendaal [abstractbrowsing.net](http://www.abstractbrowsing.net) | Ben Grosser [Safebook](https://bengrosser.com/projects/safebook/)
 
 
 ### Usability & Forms
 
 - 📚 Jakob Nielsen [Usability 101: Introduction to Usability](http://www.useit.com/alertbox/20030825.html) (2012)
+- 📚 Brian Jackson [The Ultimate Step-by-Step Guide on Website Usability Testing](https://kinsta.com/blog/website-usability-testing/) (2022)
 - 📚 Dmitry Fadeyev [10 Usability Findings and Guidelines](https://www.smashingmagazine.com/2009/09/10-useful-usability-findings-and-guidelines/) (2009)
 - 📚 Cyndi Wiley [Nothing About Us Without Us…Including Pizza: The Practice of Designing with Accessibility in Mind](https://educators.aiga.org/nothing-about-us-without-us-including-pizza-the-practice-of-designing-with-accessibility-in-mind/) (2020) 
 - 📚 Amy Schade, Yunnuo Cheng and Samyukta Sherugar [Top Ten (Enduring) Mistakes in Web Design](https://www.nngroup.com/articles/top-10-enduring/) (2016)
-- W3C [Web Content Accessibility Guidelines (WCAG) 2.1 at a Glance](https://www.w3.org/WAI/standards-guidelines/wcag/glance/)
-- usability.gov [System Usability Scale (SUS)](https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html)
-- Brian Jackson [The Ultimate Step-by-Step Guide on Website Usability Testing](https://kinsta.com/blog/website-usability-testing/) (2022)
-- Eric Rowell [Eye Movement Patterns in Web Design](https://onextrapixel.com/eye-movement-patterns-in-web-design/) (2010)
-- [Funkify Disability (Cognition, Dyslexia, Motor, Vision) Simulator extension](https://www.funkify.org/simulators/)
-- Meg Miller and Ilaria Parogni [The Hidden Image Descriptions Making the Internet Accessible](https://www.nytimes.com/interactive/2022/02/18/arts/alt-text-images-descriptions.html) The New York Times (2022)
+- [cantunsee.space](https://cantunsee.space) | [userinyerface.com](https://userinyerface.com) | [Seeing Theory](https://seeing-theory.brown.edu/)
 
 
 ### Off the Grid
 
+- 📚 David Bryant Copeland [Guidelines for Brutalist Web Design](https://brutalist-web.design/) (2022)
+- 📚 Frank Chimero [The Web’s Grain](https://frankchimero.com/writing/the-webs-grain/) (2015) 
+
+
 
 ### Ethical Design
 
+- 📚 Harry Brignull [Dark Patterns: Deception vs. Honesty in UI Design](https://alistapart.com/article/dark-patterns-deception-vs-honesty-in-ui-design/) (2011) 
+- 📚 Jennifer Valentino‑DeVries [How E‑Commerce Sites Manipulate You Into Buying Things You May Not Want](https://www.nytimes.com/2019/06/24/technology/e-commerce-dark-patterns-psychology.html) (2019)
+- 📚 Roberta Smith [Barbara Kruger: A Way With Words](https://www.nytimes.com/2022/07/14/arts/design/barbara-kruger-artist-moma-zwirner-feminist.html) The New York Times (2022)
+- [deceptive.design](https://deceptive.design) | Neal Agarwal [Dark Patterns](https://neal.fun/dark-patterns/)
 
 
 ### Generative Design
+
+- 📚 Erik Devaney [8 Guidelines for Exceptional Web Design, Usability, and User Experience](https://blog.hubspot.com/blog/tabid/6307/bid/30557/6-guidelines-for-exceptional-website-design-and-usability.aspx) (2022) 
+- 📚 Karla Cook [What Is Whitespace? 9 Websites to Inspire Your Web Design](https://blog.hubspot.com/marketing/whitespace-web-design) (2022)
+- 📚 Figma Best Practices [Everything you need to know about layout grids in Figma](https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/)
+- Design Lab: [Figma 101: Day 3 | Create a logo and icon set](https://trydesignlab.com/figma-101-course/create-a-logo-and-icon-set/)
+- 📚 Emily Grace Adiseshiah [5 design philosophies to live and design by](https://www.justinmind.com/blog/5-design-philosophies-to-live-and-design-by/) (2017)
+- JODI [404.jodi.org](http://404.jodi.org) | Jonas Lund [imhereandthere.com](http://imhereandthere.com/) | Mark Napier [Shredder 1.1](http://www.potatoland.org/shredder/) | Mark Sample [Two Moji](https://fugitivetexts.net/twomoji/) | [MIT Media Lab Identity Redesign](https://www.fastcompany.com/1663378/mit-media-labs-brilliant-new-logo-has-40000-permutations-video) | [endless.horse](http://endless.horse) | [Codepen Spark](https://codepen.io/spark)
+
+
 
 
 ### Data Tracking
 
 - 📚 Tobias Rose-Stockwell [This Is How Your Fear and Outrage Are Being Sold for Profit](https://medium.com/the-mission/the-enemy-in-our-feeds-e86511488de) (2017) 
-- 📚 Steve Lambert [“Add-Art: Sharing, Freedom, and Beer”](https://visitsteve.com/made/the-add-art-story/) in Net Works: Case Studies in Web Art and Design (ed. xtine burrough) (2012) ↪ [add-art.org](https://add-art.org) (2011-)
+- 📚 Steve Lambert [“Add-Art: Sharing, Freedom, and Beer”](https://visitsteve.com/made/the-add-art-story/) in Net Works: Case Studies in Web Art and Design (ed. xtine burrough) (2012) [add-art.org](https://add-art.org) (2011-)
 - 📚 [Do Not Track documentary](https://donottrack-doc.com/en/episodes/) (2015)
+- Design Lab: [Figma 101: Day 2 | Design an app screen](https://trydesignlab.com/figma-101-course/design-an-app-screen/)
+- [Anatomy of a computer virus (Stuxnet)](https://vimeo.com/25118844) (3:21) | Ubermorgen [Vote-Auction](https://anthology.rhizome.org/vote-auction) (2000) | Steve Lambert [The Most Awkward 404 Page on the Internet](https://visitsteve.com/404) | [tosdr.org](https://tosdr.org/)
+
+
+
+
+### Design & Power
+
+- 📚 Wilneida Negrón [10 tech issues that will impact social justice in 2017](https://www.fordfoundation.org/ideas/equals-change-blog/posts/10-tech-issues-that-will-impact-social-justice-in-2017/) 
+- 📚 Brooke Singer “Superfund365.org” in Net Works: Case Studies in Web Art and Design (ed. xtine burrough) (2012)
+- 📚 George Aye [Design Education’s Big Gap: Understanding the Role of Power](https://medium.com/greater-good-studio/design-educations-big-gap-understanding-the-role-of-power-1ee1756b7f08) (2017)
+- Brooke Singer [superfund365.org](https://superfund365.org) and [toxicsites.us](https://toxicsites.us) | Ben Grosser [Facebook Demetricator](http://bengrosser.com/projects/facebook-demetricator/) | fffff.at [Google Alarm extension](http://www.jamiedubs.com/googlealarm/) | JODI [geogoo.net](https://www.youtube.com/watch?v=7GB9Txb5_0E) | Daniel Temkin [esoteric.codes](https://esoteric.codes) 
+
+
+
+### Publishing & Professional Work
+
+- [fastgood.cheap](https://fastgood.cheap) | [shouldiworkforfree.com](http://shouldiworkforfree.com) 
 
 
 
 
 ## Inspiration
 
-[Critical Web Design examples](https://docs.google.com/spreadsheets/d/1mQ0doWT6tGXm2W-hB5zuz3I8mijGhLSkAe_XrcfMdok/edit#gid=0) 
+See [Critical Web Design examples](https://docs.google.com/spreadsheets/d/1mQ0doWT6tGXm2W-hB5zuz3I8mijGhLSkAe_XrcfMdok/edit#gid=0) for examples of internet art, critical design online, and other cultural works. A selection follows:
+
+- [clickclickclick.click](https://clickclickclick.click)
+- [cowclicker.com](http://www.cowclicker.com/)
+- [Google Will Eat Itself](https://paolocirio.net/work/gwei/)
+- [theyrule.net](https://theyrule.net)
+- [Binky](https://www.binky.rocks/)
+- [endless.horse](http://endless.horse)
+- [thenicestplace.net](https://thenicestplace.net/)
+- [Form Art](http://www.c3.hu/collection/form)
+- [queeringthemap.com](https://www.queeringthemap.com/)
+- [kathack.com](http://kathack.com/)
+
+
+
+### Interactive Documentary
+
+- [Do Not Track](https://donottrack-doc.com/en/episodes/)
+- [anatomyof.ai](https://anatomyof.ai/)
+- [docubase.mit.edu](https://docubase.mit.edu/)
+- [Who Are These Kids? (music interactive)](https://www.nytimes.com/interactive/2021/03/10/magazine/jd-beck-domi.html) The New York Times
+- Meg Miller and Ilaria Parogni [The Hidden Image Descriptions Making the Internet Accessible](https://www.nytimes.com/interactive/2022/02/18/arts/alt-text-images-descriptions.html) The New York Times (2022)
+
+
+
+
+## Design Inspiration
 
 
 ### Design Award Sites
 
 - [awwwards.com](https://www.awwwards.com/) 
+- [siteinspire.com](https://www.siteinspire.com/)
+- [dribbble.com](https://dribbble.com/)
+- [CSS+galleries](https://www.google.com/search?q=CSS+galleries)
 
 
 
@@ -168,13 +234,9 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 
 - [onepagelove.com](https://onepagelove.com/)
 - [humaaans.com](https://humaaans.com)
+- [tallysavestheinternet.com](https://tallysavestheinternet.com)
 - [hyperflow.co](https://hyperflow.co)
 - [overrrides.com](https://overrrides.com)
 - [akashtyagi.com](https://akashtyagi.com)
 - [shape.xyz](https://shape.xyz)
-
-
-
-### Interactive Documentary
-
-- Meg Miller and Ilaria Parogni [The Hidden Image Descriptions Making the Internet Accessible](https://www.nytimes.com/interactive/2022/02/18/arts/alt-text-images-descriptions.html) The New York Times (2022)
+- [single+page+design](https://www.google.com/search?q=single+page+design)
