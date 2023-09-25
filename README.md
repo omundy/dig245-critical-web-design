@@ -155,12 +155,23 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 
 ## Inspiration
 
-Site | critical | design | list | SPA
---- | :---: | :---: | :---: | :---:
-[Critical Web Design examples](https://docs.google.com/spreadsheets/d/1mQ0doWT6tGXm2W-hB5zuz3I8mijGhLSkAe_XrcfMdok/edit#gid=0) | ✅ | ✅ |  ✅ |  ✅
-[awwwards.com](https://www.awwwards.com/) |  | ✅ | ✅ | 
-[webflow.com](https://webflow.com) | | ✅ |  |  ✅
-[humaaans.com](https://humaaans.com) | | ✅ |  |  ✅
+[Critical Web Design examples](https://docs.google.com/spreadsheets/d/1mQ0doWT6tGXm2W-hB5zuz3I8mijGhLSkAe_XrcfMdok/edit#gid=0) 
+
+
+### Design Award Sites
+
+- [awwwards.com](https://www.awwwards.com/) 
+
+
+
+### Single Page Design
+
+- [onepagelove.com](https://onepagelove.com/)
+- [humaaans.com](https://humaaans.com)
+- [hyperflow.co](https://hyperflow.co)
+- [overrrides.com](https://overrrides.com)
+- [akashtyagi.com](https://akashtyagi.com)
+- [shape.xyz](https://shape.xyz)
 
 
 
