@@ -212,10 +212,12 @@ See [Critical Web Design examples](https://docs.google.com/spreadsheets/d/1mQ0do
 - [Do Not Track](https://donottrack-doc.com/en/episodes/)
 - [anatomyof.ai](https://anatomyof.ai/)
 - [docubase.mit.edu](https://docubase.mit.edu/)
-- [Who Are These Kids? (music interactive)](https://www.nytimes.com/interactive/2021/03/10/magazine/jd-beck-domi.html) The New York Times
-- Meg Miller and Ilaria Parogni [The Hidden Image Descriptions Making the Internet Accessible](https://www.nytimes.com/interactive/2022/02/18/arts/alt-text-images-descriptions.html) The New York Times (2022)
-
-
+- The New York Times
+    - [Who Are These Kids? (music interactive)](https://www.nytimes.com/interactive/2021/03/10/magazine/jd-beck-domi.html) 
+    - Meg Miller and Ilaria Parogni [The Hidden Image Descriptions Making the Internet Accessible](https://www.nytimes.com/interactive/2022/02/18/arts/alt-text-images-descriptions.html) (2022)
+    - Antonio de Luca and Sasha Portis [New York’s Subway Map Like You’ve Never Seen It Before](https://www.nytimes.com/interactive/2019/12/02/nyregion/nyc-subway-map.html) (2019)
+    - Frank Augugliaro and Jessica Bennett [Are You Even Fun? A Mostly Unscientific Quiz.](https://www.nytimes.com/2022/08/26/opinion/fun-quiz.html) (2022)
+    - [Elon Musk’s Unmatched Power in the Stars](https://www.nytimes.com/interactive/2023/07/28/business/starlink.html) (2023)
 
 
 ## Design Inspiration
