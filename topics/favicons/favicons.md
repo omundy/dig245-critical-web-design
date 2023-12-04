@@ -20,6 +20,13 @@ Favicons are relatively easy to make an add to your website.
 1. Add the files and code to your website
 
 
+## Issues?
+
+1. Make sure to include all the files with the correct paths
+1. Add a direct `link` to the `.ico` file if using it from within a directory
+1. See this example: [examples/favicon_io/index.html](./examples/favicon_io/index.html)
+
+
 
 ## Other favicon tools
 
