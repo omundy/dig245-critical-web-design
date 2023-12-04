@@ -67,10 +67,10 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 - Figma Best Practices [Everything you need to know about layout grids in Figma](https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/)
 - DesignLab 
     1. [Figma 101: Day 1 Introduction](https://designlab.com/figma-101-course/introduction-to-figma/)
-    1. [Figma 101: Day 2 | Design an app screen](https://trydesignlab.com/figma-101-course/design-an-app-screen/)
-    1. [Figma 101: Day 3 | Create a logo and icon set](https://trydesignlab.com/figma-101-course/create-a-logo-and-icon-set/)
-    1. [Figma 101: Day 5 | Create and test a prototype](https://trydesignlab.com/figma-101-course/create-and-test-a-prototype/) 
-    1. [Figma 101: Day 6 | Create a tablet or desktop version](https://trydesignlab.com/figma-101-course/create-a-tablet-or-desktop-version/) 
+    1. [Figma 101: Day 2 Design an app screen](https://trydesignlab.com/figma-101-course/design-an-app-screen/)
+    1. [Figma 101: Day 3 Create a logo and icon set](https://trydesignlab.com/figma-101-course/create-a-logo-and-icon-set/)
+    1. [Figma 101: Day 5 Create and test a prototype](https://trydesignlab.com/figma-101-course/create-and-test-a-prototype/) 
+    1. [Figma 101: Day 6 Create a tablet or desktop version](https://trydesignlab.com/figma-101-course/create-a-tablet-or-desktop-version/) 
 
 ## Bootstrap 
 
