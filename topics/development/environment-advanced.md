@@ -20,7 +20,7 @@ So you're already familiar with standard front-end web development and ready to 
 	- [Notational Velocity](http://notational.net/)
 - Browser extensions
     - [Markdown Viewer](https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk/related?hl=en) let's you preview `.md` files in your browser so you can work on your README files locally.
-    - [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US) will highlight and format JSON in the browser to help you analyze and work with it.
+    - [JSON Formatter](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) will highlight and format JSON in the browser to help you analyze and work with it.
     - [Adblock Plus](https://adblockplus.org/) will help you preserve your sanity (and maybe your privacy) while working online.
 
 
