@@ -91,6 +91,15 @@ When a user requests files from your site then your computer makes a request to 
 - For example, this site is not available davidson.edu
 
 
+### Domain Name Tools
+
+- [ICANN Lookup](https://lookup.icann.org/en/lookup) - Whois and availability
+- [who.is/](https://who.is) - Whois and availability [example](https://who.is/whois/owenmundy.com)
+- [tld-list.com](https://tld-list.com) - Search domain name availability
+- [Spaceship](https://www.spaceship.com/domain-search) - Domain name registrar with nice search interface
+- [Cloudflare](https://domains.cloudflare.com/) - Affordable domain name registrar
+- [gandi.net][https://www.gandi.net] - Domain name registrar "for a secure online space"
+
 
 
 
