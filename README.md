@@ -192,7 +192,7 @@ Tutorials, demos, and resources for DIG 245 Critical Web Design
 
 ## Inspiration
 
-See [Critical Web Design examples](https://omundy.github.io/critical-web-design-index/) for examples of internet art, critical design online, and other cultural works. A selection follows:
+See [Critical Web Design examples](https://criticalwebdesign.github.io/index) for examples of internet art, critical design online, and other cultural works. A selection follows:
 
 - [clickclickclick.click](https://clickclickclick.click)
 - [cowclicker.com](http://www.cowclicker.com/)
