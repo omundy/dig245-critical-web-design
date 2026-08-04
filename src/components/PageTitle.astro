@@ -1,0 +1,40 @@
+---
+// Overrides @astrojs/starlight/components/PageTitle.astro to render an
+// optional `subtitle` frontmatter field under the page's H1.
+
+// PAGE_TITLE_ID isn't part of Starlight's public API surface, so it's
+// hardcoded here to match the upstream constant (used for the skip-link anchor).
+const PAGE_TITLE_ID = "_top";
+
+const { title, subtitle, dates } = Astro.locals.starlightRoute.entry.data as {
+  title: string;
+  subtitle?: string;
+  dates?: string;
+};
+---
+
+<h1 id={PAGE_TITLE_ID}>{title}</h1>
+{subtitle && <p class="subtitle">{subtitle}</p>}
+{dates && <p class="dates">{dates}</p>}
+
+<style>
+  @layer starlight.core {
+    h1 {
+      margin-top: 1rem;
+      font-size: var(--sl-text-h1);
+      line-height: var(--sl-line-height-headings);
+      font-weight: 600;
+      color: var(--sl-color-white);
+    }
+    .subtitle {
+      margin-top: 0.5rem;
+      font-size: var(--sl-text-lg);
+      color: var(--sl-color-gray-2);
+    }
+    .dates {
+      margin-top: 0.5rem;
+      font-size: var(--sl-text-lg);
+      color: var(--sl-color-gray-2);
+    }
+  }
+</style>

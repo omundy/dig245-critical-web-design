@@ -17,6 +17,9 @@ export default defineConfig({
         src: "@/assets/img/network-logo.png",
       },
       customCss: ["./src/styles/global.css"],
+      components: {
+        PageTitle: "./src/components/PageTitle.astro",
+      },
       social: [
         {
           icon: "github",

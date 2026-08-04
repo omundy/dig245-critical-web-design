@@ -1,0 +1,102 @@
+---
+// Renders a table summarizing the frontmatter of every page in a schedule directory.
+
+import { getCollection } from "astro:content";
+
+interface Props {
+    directory: string;
+    exclude: string[];
+}
+const { directory = "schedule", exclude = ["overview"] } = Astro.props;
+
+const entries = await getCollection("docs", (entry) => {
+    const [dir, slug] = entry.id.split("/");
+    return dir === directory && !exclude.includes(slug) && !entry.data.draft;
+});
+
+// "week-1" -> 1, "week-10" -> 10; entries without a number sort to the end, alphabetically
+function weekNumber(id: string): number {
+    const match = id.match(/(\d+)/);
+    return match ? parseInt(match[1], 10) : Infinity;
+}
+entries.sort((a, b) => {
+    const diff = weekNumber(a.id) - weekNumber(b.id);
+    return diff !== 0 ? diff : a.id.localeCompare(b.id);
+});
+
+// frontmatter deadlines are plain strings, occasionally wrapped in *emphasis*
+function parseDeadline(raw: string): { text: string; emphasis: boolean } {
+    const trimmed = raw.trim();
+    const emphasis = trimmed.startsWith("*") && trimmed.endsWith("*") && trimmed.length > 1;
+    return { text: emphasis ? trimmed.slice(1, -1) : trimmed, emphasis };
+}
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<table class="schedule-table">
+    <thead>
+        <tr>
+            <th>Week</th>
+            <th>Dates</th>
+            <th>Deadlines</th>
+        </tr>
+    </thead>
+    <tbody>
+        {
+            entries.map((entry) => {
+                const { title, dates, deadlines } = entry.data as {
+                    title: string;
+                    dates?: string;
+                    deadlines?: string[];
+                };
+                return (
+                    <tr>
+                        <td>
+                            <a href={`${base}/${entry.id}/`}>{title}</a>
+                        </td>
+                        <td>{dates || "—"}</td>
+                        <td>
+                            {deadlines && deadlines.length > 0 ? (
+                                <ul>
+                                    {deadlines.map((deadline) => {
+                                        const { text, emphasis } = parseDeadline(deadline);
+                                        return <li>{emphasis ? <em>{text}</em> : text}</li>;
+                                    })}
+                                </ul>
+                            ) : (
+                                "—"
+                            )}
+                        </td>
+                    </tr>
+                );
+            })
+        }
+    </tbody>
+</table>
+
+{
+    entries.length === 0 && (
+        <p class="not-content">
+            No pages found in <code>{directory}/</code>.
+        </p>
+    )
+}
+
+<style>
+    .schedule-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .schedule-table th,
+    .schedule-table td {
+        text-align: left;
+        vertical-align: top;
+        padding: 0.5rem 0.75rem;
+        border-bottom: 1px solid var(--sl-color-hairline);
+    }
+    .schedule-table ul {
+        margin: 0;
+        padding-left: 1.1rem;
+    }
+</style>
