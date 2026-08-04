@@ -38,7 +38,7 @@ A website consists of several parts:
 
 There are many types of web servers available today. In its most basic form, a web server is a computer that has special software that can accept **requests** (via URLs) and return **responses** (text files like html, css, js, or media like images, video, audio, etc.).
 
-![diagram](/images/banner-web-servers-static.png)
+![diagram]/dig245-critical-web-design/images/banner-web-servers-static.png)
 
 ### WWW vs The Internet
 
@@ -47,7 +47,7 @@ There are many types of web servers available today. In its most basic form, a w
 - Packet Switching
 - TCP/IP
 
-![web-servers](/images/web-servers-dns.png)
+![web-servers]/dig245-critical-web-design/images/web-servers-dns.png)
 
 ## Domain Name System (DNS)
 
@@ -57,14 +57,14 @@ The Domain Name System (DNS) is a central part of the Internet, providing a way 
 
 - Use PING to see this in action...
 
-![web-servers](/images/web-servers-hosting.png)
+![web-servers]/dig245-critical-web-design/images/web-servers-hosting.png)
 
 ## Web Hosting
 
 When you register your domain name you tell the domain name registrar the address of your server.
 When a user requests files from your site then your computer makes a request to your web host, which returns those files for the browser to render.
 
-![diagram](/images/banner-web-servers-cloud-meme.png)
+![diagram]/dig245-critical-web-design/images/banner-web-servers-cloud-meme.png)
 
 ## Domain name availability
 
@@ -82,7 +82,7 @@ When a user requests files from your site then your computer makes a request to 
 
 ## Publishing
 
-![web-servers](/images/web-servers-publish-ftp.gif)
+![web-servers]/dig245-critical-web-design/images/web-servers-publish-ftp.gif)
 
 ### FTP / SFTP
 
@@ -92,7 +92,7 @@ Using FTP (File Transfer Protocol) to manage server files but there are drawback
 - Easier to make mistakes
 - No backups
 
-![web-servers](/images/web-servers-publish-git.jpg)
+![web-servers]/dig245-critical-web-design/images/web-servers-publish-git.jpg)
 
 ### Git
 
@@ -103,7 +103,7 @@ Publishing a website on a server with Git / Github makes it much easier to maint
 - You can control versions
 - You always have backup if you make a mistake
 
-![web-servers](/images/web-servers-cdn.png)
+![web-servers]/dig245-critical-web-design/images/web-servers-cdn.png)
 
 ## CDN
 
@@ -139,7 +139,7 @@ sudo apachectl start
 
 At this point you can visit http://localhost/ to see if it works.
 
-![it works!](/images/web-servers-it-works.png)
+![it works!]/dig245-critical-web-design/images/web-servers-it-works.png)
 
 Now you'll need to change some configuration options...
 

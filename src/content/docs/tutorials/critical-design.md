@@ -12,7 +12,7 @@ https://docs.google.com/presentation/d/1OWc_e1pquvwKi4qxJShsZ1Rqia1dbDBcwpxYwdOi
 
 <a href="http://wwwwwwwww.jodi.org" target="_blank">wwwwwwwww.jodi.org</a> by JODI (1995) takes advantage of a technical aspect of web pages — that whitespace in HTML is not rendered — to encourage viewers to consider the structures underneath the shiny veneer of the web.
 
-![jodi](/images/critical-design/jodi-wwwwwwwww-1.png)
-![jodi](/images/critical-design/jodi-wwwwwwwww-2.png)
+![jodi]/dig245-critical-web-design/images/critical-design/jodi-wwwwwwwww-1.png)
+![jodi]/dig245-critical-web-design/images/critical-design/jodi-wwwwwwwww-2.png)
 
 -->

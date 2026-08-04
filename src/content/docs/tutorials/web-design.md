@@ -35,4 +35,4 @@ How to install fonts on your computer
 1. On Mac, open Font Book and choose File > Add fonts..
 1. Select all the fonts in the folder and add them. Fonts installed on your computer will appear under the User tab.
 
-![install fonts](/images/fonts-install.png)
+![install fonts](/dig245-critical-web-design/images/fonts-install.png)

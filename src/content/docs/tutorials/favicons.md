@@ -3,7 +3,7 @@ title: Favicons
 description: How to make and troubleshoot favicons.
 ---
 
-<img width="475" src="/images/favicons/favicon-sneakaway.png" alt="favicon example" />
+<img width="475" src="/dig245-critical-web-design/images/favicons/favicon-sneakaway.png" alt="favicon example" />
 
 Favicons (short for "favorite icons") are the small images used to identify web pages in browser tabs and bookmarks. Above, you can see the favicons for Sneakaway Studio and Figma in the page's tab and bookmarks bar.
 

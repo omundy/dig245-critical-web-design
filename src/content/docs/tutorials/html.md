@@ -3,7 +3,7 @@ title: HTML Reference
 description: HTML terms, elements, and reference links.
 ---
 
-<img src="/images/logos/logo-html5.png" width="120" alt="HTML5 logo" />
+<img src="/dig245-critical-web-design/images/logos/logo-html5.png" width="120" alt="HTML5 logo" />
 
 - HTML is short for HyperText Markup Language and describes the structure of web pages.
 - HTML elements tell the browser how to display the content they contain or "wrap".

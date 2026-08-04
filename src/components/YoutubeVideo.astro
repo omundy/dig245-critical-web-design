@@ -1,0 +1,82 @@
+---
+// source: https://www.luckymedia.dev/blog/building-a-high-performance-youtube-embed-in-astro
+
+import { getYoutubeEmbedUrl, getYoutubeThumbnail } from "@/utils/embed";
+import { Image } from "astro:assets";
+import Play from "@/assets/images/Play.svg";
+
+interface Props {
+  src: string;
+  title?: string;
+  className?: string;
+}
+
+const { src, title = "YouTube video player", className } = Astro.props;
+
+const embedUrl = getYoutubeEmbedUrl(src);
+const thumbnail = await getYoutubeThumbnail(src);
+const isPlayable = Boolean(embedUrl);
+const ariaLabel = isPlayable ? "Play YouTube video" : "YouTube video unavailable";
+---
+
+<div class:list={["relative aspect-video h-full w-full cursor-pointer overflow-hidden", className]} data-youtube-video>
+  <button
+    type="button"
+    class="absolute inset-0 aspect-video h-full w-full overflow-hidden"
+    data-youtube-trigger
+    aria-label={ariaLabel}
+    data-embed-url={isPlayable ? embedUrl : undefined}
+    disabled={!isPlayable}
+    data-video-title={title}
+  >
+    <Image
+      layout="full-width"
+      src={thumbnail}
+      width={1280}
+      height={720}
+      class="h-full w-full object-cover"
+      alt={title}
+    />
+
+    <span class="pointer-events-none absolute inset-0 flex items-center justify-center">
+      <Play class="h-30 w-30 text-white opacity-80 transition-opacity group-hover:opacity-100" />
+    </span>
+  </button>
+</div>
+
+<script is:inline>
+  (() => {
+    const root = document.currentScript?.previousElementSibling;
+    if (!(root instanceof HTMLElement)) return;
+
+    const trigger = root.querySelector("[data-youtube-trigger]");
+    if (!(trigger instanceof HTMLButtonElement)) return;
+
+    const embedUrl = trigger.dataset.embedUrl;
+    const title = trigger.dataset.videoTitle;
+    if (!embedUrl) return;
+
+    const activate = () => {
+      const iframe = document.createElement("iframe");
+      iframe.src = embedUrl;
+      iframe.title = title;
+      iframe.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      iframe.loading = "lazy";
+      iframe.referrerPolicy = "strict-origin-when-cross-origin";
+      iframe.classList.add("w-full", "h-full", "absolute", "inset-0");
+
+      root.replaceChildren(iframe);
+    };
+
+    // click and accessibility activation
+    trigger.addEventListener("click", activate, { once: true });
+    trigger.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        activate();
+      }
+    }, { once: true });
+  })();
+</script>

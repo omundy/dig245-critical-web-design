@@ -3,7 +3,7 @@ title: Javascript Reference
 description: Javascript terms, data types, and examples.
 ---
 
-<img src="/images/logos/logo-js.png" width="90" alt="JavaScript logo" />
+<img src="/dig245-critical-web-design/images/logos/logo-js.png" width="90" alt="JavaScript logo" />
 
 See this repository: https://github.com/omundy/learn-javascript
 

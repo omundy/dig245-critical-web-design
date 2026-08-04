@@ -55,7 +55,7 @@ Get ready for this course. Install / create accounts:
 
 ## Sites folder
 
-<img src="/images/project-folder.png" alt="project folder" />
+<img src="/dig245-critical-web-design/images/project-folder.png" alt="project folder" />
 
 👉 Follow these steps to create a Sites folder for all your class projects and demos.
 
@@ -87,14 +87,14 @@ Designing websites requires a visual editor:
 
 Product | Cost | Description | Cons
 --- | --- | --- | ---
-<img src="/images/logos/logo-figma.png" width=30 alt="Figma" /> [Figma](https://www.figma.com/) | [free](https://www.figma.com/pricing/) | Widely used to layout, illustrate, animate, and prototype websites and apps. | ?
+<img src="/dig245-critical-web-design/images/logos/logo-figma.png" width=30 alt="Figma" /> [Figma](https://www.figma.com/) | [free](https://www.figma.com/pricing/) | Widely used to layout, illustrate, animate, and prototype websites and apps. | ?
 Photoshop | $$$ | Industry standard, uses pixels, capable of web design and much more. | Expensive. Large learning curve.
 Illustrator | $$$ | Excellent at vector graphics, therefore should only be used for illustration and print work. | Expensive. Large learning
 [Gimp](https://www.gimp.org/) | free | Open source Photoshop alternative. Opens PSDs. [Tutorials available](https://www.google.com/search?q=gimp+web+design+tutorial). | Interface can feel clunky. Not widely used.
 
 <sup>*Use Adobe products for free in VAC 212 (CAT Card access 8am–1am).</sup>
 
-<img src="/images/tally-wireframe-to-finished.png" width=700 alt="wireframe to finished design" />
+<img src="/dig245-critical-web-design/images/tally-wireframe-to-finished.png" width=700 alt="wireframe to finished design" />
 
 ---
 
@@ -106,7 +106,7 @@ A web browser is more than the software you use to access data on the internet. 
 
 ## Request > Response
 
-<img src="/images/http-requests.png" alt="http requests diagram" />
+<img src="/dig245-critical-web-design/images/http-requests.png" alt="http requests diagram" />
 
 For every page visited:
 
@@ -121,7 +121,7 @@ For every page visited:
 
 Browsers are not all created the same. Some only run on desktop or mobile. Others only run on specific operating systems. There are big differences in how browsers follow (or not!) the [WC3 standards](https://www.w3.org/standards/) when they render the pages you build. Even the browser versions can be quite distinct. Ask any veteran web developer what it was like to work around the bugs on [Internet Explorer 6](https://www.theverge.com/2014/4/8/5593584/the-most-hated-browser-in-the-world-is-finally-dead)!
 
-<img src="/images/browser-wars-2008-2019.png" alt="browser wars 2008-2019" />
+<img src="/dig245-critical-web-design/images/browser-wars-2008-2019.png" alt="browser wars 2008-2019" />
 <sup>Graphic depicting usage share during the 2nd <a href="https://en.wikipedia.org/wiki/Browser_wars">browser wars</a> (2008–)</sup>
 
 Since the browser is the primary vehicle through which users will encounter your web pages, it follows that it is essential to test your coded pages in the same environment. It would be overwhelming to test every page in all the [different browsers, operating systems, and display sizes that are available](https://en.wikipedia.org/wiki/List_of_web_browsers), but lucky for us, some browsers are more popular than others.
@@ -135,16 +135,16 @@ With your group, examine the following table containing usage share on ***all***
 
 Browser | [StatCounter](https://gs.statcounter.com/browser-market-share) <sup>8/2021</sup> | [Wikimedia](https://analytics.wikimedia.org/dashboards/browsers/#all-sites-by-browser) <sup>11/2019</sup> | Platform(s)
 --- | ---: | ---: | ---
-<img width=20 src="/images/logos/browsers/chrome_24x24.png" alt="Chrome" /> [Google Chrome](https://www.google.com/chrome/)* | 65.1% | 48.7% | Windows, MacOS, iOS, Linux
-<img width=20 src="/images/logos/browsers/safari_24x24.png" alt="Safari" /> [Safari Browser](https://www.apple.com/safari/) | 18.6% | 22.0% | MacOS & iOS only 😢
-<img width=20 src="/images/logos/browsers/firefox_24x24.png" alt="Firefox" /> [Firefox Browser](https://www.mozilla.org/en-US/firefox/new/) | 3.4% | 4.9% | Windows, MacOS, iOS, Linux
-<img width=20 src="/images/logos/browsers/edge_24x24.png" alt="Edge" /> [Microsoft Edge](https://www.microsoft.com/en-us/edge)* | 3.4% | 1.9% | Windows, MacOS
-<img width=20 src="/images/logos/browsers/samsung-internet_24x24.png" alt="Samsung Internet" /> [Samsung Internet](https://en.wikipedia.org/wiki/Samsung_Internet)* | 3.1% | 2.7% | Android & Tizen only 😢
-<img width=20 src="/images/logos/browsers/opera_24x24.png" alt="Opera" /> [Opera Browser](https://www.opera.com/)* | 2.1% | 1.1% | Windows, MacOS, iOS, Linux
-<img width=20 src="/images/logos/browsers/internet-explorer-tile_10-11_24x24.png" alt="Internet Explorer" /> [Internet Explorer](https://www.opera.com/) | 0.6% | 3.9% | Windows only 😢
+<img width=20 src="/dig245-critical-web-design/images/logos/browsers/chrome_24x24.png" alt="Chrome" /> [Google Chrome](https://www.google.com/chrome/)* | 65.1% | 48.7% | Windows, MacOS, iOS, Linux
+<img width=20 src="/dig245-critical-web-design/images/logos/browsers/safari_24x24.png" alt="Safari" /> [Safari Browser](https://www.apple.com/safari/) | 18.6% | 22.0% | MacOS & iOS only 😢
+<img width=20 src="/dig245-critical-web-design/images/logos/browsers/firefox_24x24.png" alt="Firefox" /> [Firefox Browser](https://www.mozilla.org/en-US/firefox/new/) | 3.4% | 4.9% | Windows, MacOS, iOS, Linux
+<img width=20 src="/dig245-critical-web-design/images/logos/browsers/edge_24x24.png" alt="Edge" /> [Microsoft Edge](https://www.microsoft.com/en-us/edge)* | 3.4% | 1.9% | Windows, MacOS
+<img width=20 src="/dig245-critical-web-design/images/logos/browsers/samsung-internet_24x24.png" alt="Samsung Internet" /> [Samsung Internet](https://en.wikipedia.org/wiki/Samsung_Internet)* | 3.1% | 2.7% | Android & Tizen only 😢
+<img width=20 src="/dig245-critical-web-design/images/logos/browsers/opera_24x24.png" alt="Opera" /> [Opera Browser](https://www.opera.com/)* | 2.1% | 1.1% | Windows, MacOS, iOS, Linux
+<img width=20 src="/dig245-critical-web-design/images/logos/browsers/internet-explorer-tile_10-11_24x24.png" alt="Internet Explorer" /> [Internet Explorer](https://www.opera.com/) | 0.6% | 3.9% | Windows only 😢
 Others | 4.6% | 14.5% | ---
 
-<sup>*Desktop or mobile version (or both) based on <img width=20 src="/images/logos/browsers/chromium_24x24.png" alt="Chromium" /> [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) like <img width=20 src="/images/logos/browsers/brave_24x24.png" alt="Brave" /> [Brave](https://brave.com/). ([logos](https://github.com/alrra/browser-logos))</sup>
+<sup>*Desktop or mobile version (or both) based on <img width=20 src="/dig245-critical-web-design/images/logos/browsers/chromium_24x24.png" alt="Chromium" /> [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) like <img width=20 src="/dig245-critical-web-design/images/logos/browsers/brave_24x24.png" alt="Brave" /> [Brave](https://brave.com/). ([logos](https://github.com/alrra/browser-logos))</sup>
 
 Next, compare the data from the Wikipedia [browser usage share article](https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_tables), the [StatCounter](https://gs.statcounter.com/browser-market-share), and [Wikimedia](https://analytics.wikimedia.org/dashboards/browsers/#all-sites-by-browser).
 
@@ -179,7 +179,7 @@ Did you guess, "I should install all of them?" That's not an incorrect answer. T
 
 ## Install and Configure VS Code
 
-<img src="/images/logos/logo-vscode.png" width=70 alt="VS Code logo" />
+<img src="/dig245-critical-web-design/images/logos/logo-vscode.png" width=70 alt="VS Code logo" />
 
 VS ("Visual Studio") Code is a free source code editor for macOS, Linux, and Windows. It has support for extensions to add functionality to the editor and embedded Git controls. VS Code is developed Microsoft.
 
@@ -194,7 +194,7 @@ VS ("Visual Studio") Code is a free source code editor for macOS, Linux, and Win
 
 ## Atom
 
-<img src="/images/logos/logo-atom.png" width="80px" alt="Atom logo" />
+<img src="/dig245-critical-web-design/images/logos/logo-atom.png" width="80px" alt="Atom logo" />
 
 Atom [***was***](https://github.blog/2022-06-08-sunsetting-atom/) a free and open-source source code editor for macOS, Linux, and Windows. Built by GitHub using the [Electron framework](https://en.wikipedia.org/wiki/Electron_(software_framework)), it supported plug-ins written in JavaScript, embedded Git controls, and more. Fans for Atom should migrate to the open source fork called [Pulsar](https://pulsar-edit.dev/)
 
@@ -224,7 +224,7 @@ Download and install [Atom](https://atom.io/). Then, install the following packa
 1. In Settings, click on the Install tab and search for a package
 1. Verify the name (they don't always sort correctly by popularity) and click Install
 
-![install packages](/images/software-atom-packages.png)
+![install packages](/dig245-critical-web-design/images/software-atom-packages.png)
 
 ---
 

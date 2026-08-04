@@ -3,7 +3,7 @@ title: CSS Reference
 description: CSS terms, selectors, properties, and reference links.
 ---
 
-<img src="/images/logos/logo-css3.png" width="80" alt="CSS3 logo" />
+<img src="/dig245-critical-web-design/images/logos/logo-css3.png" width="80" alt="CSS3 logo" />
 
 - CSS ("Cascading stylesheets") is the language used to control the display of HTML elements.
 - Usually stored in separate `.css` files [linked](https://www.w3schools.com/Css/css_howto.asp) in the `head`, CSS can also be added directly to the page `head` in `style` tags, or to elements themselves.
