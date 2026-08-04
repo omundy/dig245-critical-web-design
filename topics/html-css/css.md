@@ -95,23 +95,23 @@ comment */
 
 ### Margin & padding
 
-This example uses [`margin`](https://www.w3schools.com/css/css_margin.asp) to define the space outside the content and border of an element. The vertical margin is `20px` and the horizontal margin is `10px`;
+This example uses [`margin`](https://www.w3schools.com/css/css_margin.asp) to define the space outside the content and border of an element. The vertical margin is `15px` and the horizontal margin is `12px`;
 
  ```css
-p {
-	margin-top: 20px;
-	margin-right: 10px;
-	margin-bottom: 20px;
-	margin-left: 10px;
+div {
+	margin-top: 15px;
+	margin-right: 12px;
+	margin-bottom: 15px;
+	margin-left: 12px;
 }
  ```
 
-[Shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) properties let you combine multiple values in a single declaration. With the [`margin`](https://www.w3schools.com/css/css_margin.asp) shorthand you can write all the declarations above on a single line, saving not only time but bandwidth. The `margin`, `border`, and `padding` shorthands are listed in clockwise order from the top.
+[Shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) properties let you combine multiple values in a single declaration. With the [`margin`](https://www.w3schools.com/css/css_margin.asp) shorthand you can write all the declarations above on a single line. The `margin`, `border`, and `padding` shorthands are listed in clockwise order from the top.
 
 ```css
-p { margin: 10px; } /* set all margins to 10px */
-p { margin: 20px 10px; } /* set top/bottom margins to 20px and left/right to 10px */
-p { margin: 2px 4px 6px 8px; } /* set them all */
+div { margin: 10px; } /* set all margins to 10px */
+div { margin: 15px 12px; } /* top/bottom = 15px, left/right = 12px */
+div { margin: 2px 4px 6px 8px; } /* set them all */
 ```
 
 
