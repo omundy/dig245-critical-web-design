@@ -7,11 +7,14 @@ interface Props {
     directory: string;
     exclude: string[];
 }
-const { directory = "schedule", exclude = ["overview"] } = Astro.props;
+// index.mdx's collection id is just "schedule" (no trailing "/index"),
+// so its slug (the part after "schedule/") is "" — exclude that too.
+const { directory = "schedule", exclude = ["", "index"] } = Astro.props;
 
 const entries = await getCollection("docs", (entry) => {
-    const [dir, slug] = entry.id.split("/");
-    return dir === directory && !exclude.includes(slug) && !entry.data.draft;
+    if (entry.id !== directory && !entry.id.startsWith(`${directory}/`)) return false;
+    const slug = entry.id === directory ? "" : entry.id.slice(directory.length + 1);
+    return !exclude.includes(slug) && !entry.data.draft;
 });
 
 // "week-1" -> 1, "week-10" -> 10; entries without a number sort to the end, alphabetically
