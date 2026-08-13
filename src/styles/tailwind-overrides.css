@@ -1,0 +1,120 @@
+/**
+ * Tailwind CSS integration for the Starlight docs theme.
+ *
+ * Loaded via `customCss` in astro.config.mjs (registered after styles.css,
+ * so these rules take precedence on any overlapping selectors).
+ *
+ * This file exists (and should stay consistent) in these builds:
+ * https://omundy.github.io/dig345-radical-software/ - if there was a master this would be it
+ * https://criticalwebdesign.github.io/wiki/
+ * https://omundy.github.io/dig245-critical-web-design/
+ */
+
+/* @import "tailwindcss"; */
+/* Expanded manually (equivalent to the single import above) so the
+   theme/base/utilities layers are declared explicitly. This lets us control
+   how they interleave with Starlight's own `@layer starlight.*` styles,
+   rather than leaving layer order to whichever file Tailwind's import
+   resolves first. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* Preflight sets heading font-size to `inherit`, removing the browser's
+   default h1-h6 scale; restore an explicit (flattened, docs-appropriate)
+   size progression. */
+main h1 {
+  font-size: 2rem;
+}
+main h2 {
+  font-size: 1.8rem;
+}
+main h3 {
+  font-size: 1.6rem;
+}
+main h4 {
+  font-size: 1.4rem;
+}
+main h5 {
+  font-size: 1.2rem;
+}
+main h6 {
+  font-size: 1rem;
+}
+
+/* Preflight's universal `margin: 0` reset also zeroes <figure>'s default
+   margin; restore spacing and caption-style type for figures (e.g. book
+   page/exercise screenshots). */
+figure {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+figure img {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Tailwind's preflight strips default list styling (see
+   https://tailwindcss.com/docs/preflight#lists-are-unstyled), but Starlight's
+   docs content relies on it, so restore it scoped to `main` only —
+   Tailwind's reset should still apply everywhere else (e.g. nav, sidebar). */
+
+main ol,
+main ul:not([role='tablist']), /* don't affect tabs*/
+main menu {
+  display: block;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+main ol {
+  list-style-type: decimal;
+}
+main ol ol {
+  list-style-type: lower-alpha;
+}
+main ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/* Duplicates the two rules above, scoped to `.sl-markdown-content` instead
+   of `main`, so nested numbering still applies if the `main`-scoped rule is
+   ever removed or reordered. */
+.sl-markdown-content ol ol {
+  list-style-type: lower-alpha;
+}
+.sl-markdown-content ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/* !important needed here since these nested lists also match the
+   `main ol` / `main ul:not([role='tablist'])` rule above, which sets the
+   same margin properties at equal specificity — source order alone isn't
+   reliable once Starlight/MDX renders lists in varying DOM depth. */
+main ol ol,
+main ol ol ol,
+main ol ol ol ol,
+main ul ul,
+main ul ul ul,
+main ul ul ul ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+main ul:not([role="tablist"]) {
+  list-style-type: disc;
+}
+
+main ul li:not(.tab) {
+  display: list-item;
+  unicode-bidi: isolate;
+}
+
+/* testing */
+/* main ul:not([role='tablist']) { color:red}
+main ul li:not(.tab) { color:green} */

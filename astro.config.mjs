@@ -16,9 +16,15 @@ export default defineConfig({
       logo: {
         src: "@/assets/img/network-logo.png",
       },
-      customCss: ["./src/styles/global.css"],
+      customCss: [
+        "./src/styles/starlight-overrides.css",
+        "./src/styles/tailwind-overrides.css",
+        "./src/styles/custom.css",
+      ],
       components: {
+        // override default Starlight components
         PageTitle: "./src/components/PageTitle.astro",
+        SiteTitle: "./src/components/SiteTitle.astro",
       },
       social: [
         {
@@ -32,6 +38,8 @@ export default defineConfig({
           "https://github.com/omundy/dig245-critical-web-design/edit/main/",
       },
       sidebar: [
+        { label: "Syllabus", link: "./" },
+        { label: "Assignments", link: "./assignments" },
 
         // autogenerate sidebar links using folder/file names
         {

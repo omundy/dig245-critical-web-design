@@ -1,0 +1,101 @@
+/**
+ * Site-wide style overrides for the Starlight docs theme.
+ *
+ * Loaded via `customCss` in astro.config.mjs, before tailwind-overrides.css.
+ * Load order doesn't matter for precedence here: these rules are unlayered,
+ * so per the CSS cascade they always beat tailwind-overrides.css's `@layer`
+ * rules (theme/base/utilities), regardless of which file loads first.
+ *
+ * This file exists (and should stay consistent) in these builds:
+ * https://omundy.github.io/dig345-radical-software/ - if there was a master this would be it
+ * https://criticalwebdesign.github.io/wiki/
+ * https://omundy.github.io/dig245-critical-web-design/
+ */
+
+/* Widen the default Starlight content column. */
+:root {
+  --sl-content-width: 50rem;
+}
+
+/* Starlight's default hero grid is 7fr/4fr (text/image); widen the image
+   column so the (roughly square) cover art isn't squeezed as small. */
+.hero {
+  grid-template-columns: 7fr 7fr;
+}
+
+/* This template uses CSS --vars and a palette from coolers.co:
+https://coolors.co/f94144-f3722c-f8961e-f9844a-f9c74f-90be6d-43aa8b-4d908e-577590-277da1
+*/
+:root {
+  --atom-purple: #be56ddff;
+  --atom-blue: #3e9fefff;
+  --atom-cyan: #38b3c2ff;
+  --atom-green: #87c35cff;
+  --atom-gold: #e5b459ff;
+  --atom-orange: #e1964fff;
+  --atom-rose: #ed5b66ff;
+  --atom-red: #ce3f32ff;
+}
+.purple {
+  background-color: var(--atom-purple);
+}
+.blue {
+  background-color: var(--atom-blue);
+}
+.cyan {
+  background-color: var(--atom-cyan);
+}
+.green {
+  background-color: var(--atom-green);
+}
+.gold {
+  background-color: var(--atom-gold);
+}
+.orange {
+  background-color: var(--atom-orange);
+}
+.rose {
+  background-color: var(--atom-rose);
+}
+.red {
+  background-color: var(--atom-red);
+}
+
+.box-callout {
+  border: 3px solid #999;
+  padding: 1rem;
+}
+.border-purple {
+  border-color: var(--atom-purple);
+}
+.border-blue {
+  border-color: var(--atom-blue);
+}
+.border-cyan {
+  border-color: var(--atom-cyan);
+}
+.border-green {
+  border-color: var(--atom-green);
+}
+.border-gold {
+  border-color: var(--atom-gold);
+}
+.border-orange {
+  border-color: var(--atom-orange);
+}
+.border-rose {
+  border-color: var(--atom-rose);
+}
+.border-red {
+  border-color: var(--atom-red);
+}
+
+/* Custom callout for article summaries (e.g. CustomAside type="excerpt"). */
+.sl-markdown-content .callout-intro {
+  border-left: 4px solid #c2c2c2;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+.sl-markdown-content .inline-icon {
+  display: inline;
+}
