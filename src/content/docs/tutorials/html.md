@@ -1,28 +1,92 @@
 ---
 title: HTML Reference
-description: HTML terms, elements, and reference links.
+description: HTML terms, elements, and references.
+sidebar:
+  order: 1
 ---
 
-<img src="/dig245-critical-web-design/images/logos/logo-html5.png" width="120" alt="HTML5 logo" />
 
-- HTML is short for HyperText Markup Language and describes the structure of web pages.
-- HTML elements tell the browser how to display the content they contain or "wrap".
-- HTML elements are represented by tags which label pieces of content such as `<p>` (paragraph), `<h1>` (heading), etc.
 
-## An example HTML page
+## Markup Languages
+
+- Markup languages structure and format, and define text. 
+- **Markdown** is a common simple markup language, used by Wikipedia and Github README files.
+- Handy for writing plain text documents that look like rich text.
+
+```markdown
+# example.md
+
+# Hello, World!
+
+- This is 
+- a list
+
+A [link](https://davidson.edu) 
+```
+
+
+
+
+## HTML
+
+- HTML (HyperText Markup Language) is used to structure the content of web pages.
+- Hypertext is text displayed with clickable links to other text(s).
+
+
+
+
+
+## HTML Structure
+
+The structure of tags defines how browsers parse (interpret and render) the page.
+ 
+- `<html>` is the page “root” element.
+- The `<head>` and `<body>` are enclosed (“nested”) inside the `<html>` element.
+- `<head>` is for displaying meta content about the page (like the `<title>` which appears on the tab). 
+- `<body>` is for visible content that will appear within the browser window.
+
+
+
 ```html
+<!-- hello.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- meta tags, links to css, etc. -->
+    <!-- the head of the document has meta content *about* the page -->
     <title>Critical Web Design</title>
 </head>
 <body>
-    <!-- visible content goes here -->
+    <!-- the body contains visible content—what users see -->
     <p>Hello world!</p>
 </body>
 </html>
 ```
+
+
+
+
+## HTML Elements
+
+- HTML elements tell the browser how to display the content they contain or "wrap".
+- HTML elements are represented by tags which label pieces of content such as `<p>` (paragraph), `<h1>` (heading), etc.
+- Nested elements are those where the opening and closing tags are always contained.
+You should close all tags in the opposite order in which they appear.
+
+
+## An example HTML page
+
+```html
+
+```
+
+
+
+
+
+
+
+
+
 
 ## HTML Terms
 

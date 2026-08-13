@@ -1,9 +1,10 @@
 ---
 title: CSS Reference
 description: CSS terms, selectors, properties, and reference links.
+sidebar:
+  order: 2
 ---
 
-<img src="/dig245-critical-web-design/images/logos/logo-css3.png" width="80" alt="CSS3 logo" />
 
 - CSS ("Cascading stylesheets") is the language used to control the display of HTML elements.
 - Usually stored in separate `.css` files [linked](https://www.w3schools.com/Css/css_howto.asp) in the `head`, CSS can also be added directly to the page `head` in `style` tags, or to elements themselves.
@@ -27,6 +28,16 @@ p {
 	font-size: 20px;
 }
 ```
+
+
+
+:::note
+"Vanilla" HTML means the default format; no CSS has been applied to change the presentation. For example [this page](https://criticalwebdesign.github.io/book/01-networks/examples/example.html)
+:::
+
+
+
+
 
 ## CSS Terms
 

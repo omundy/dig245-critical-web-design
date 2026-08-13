@@ -3,6 +3,10 @@ title: Testing and Validation
 description: Bookmarklets and tools for testing and validating websites.
 ---
 
+
+
+## Bookmarklets
+
 ### Make a bookmarklet
 
 1. Copy a JS code sample (e.g. below...)
@@ -29,6 +33,13 @@ Use the code below and the above bookmarklet instructions
 ```
 javascript:alert(document.lastModified)
 ```
+
+## Testing
+
+### Inputs
+
+- https://theasciicode.com.ar/
+
 
 ### Website, Domain, and Server Tests
 
