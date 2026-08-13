@@ -1,0 +1,65 @@
+---
+// src/components/RevealSlides.astro
+import "reveal.js/reveal.css";
+import "reveal.js/theme/black.css"; // Choose your preferred theme
+import "reveal.js/plugin/highlight/monokai.css"; // syntax highlighting theme
+
+interface Props {
+  // any valid CSS length, e.g. "600px", "60vh", "40rem"
+  height?: string;
+}
+const { height = "600px" } = Astro.props;
+---
+
+<div class="slide-wrapper">
+  <div class="reveal deck-container" style={{ height }}>
+    <div class="slides">
+      <slot />
+    </div>
+  </div>
+  <small>Press <b>f</b> for fullscreen, <b>esc</b> to exit</small>
+</div>
+
+<script>
+  import Reveal from "reveal.js";
+  import Markdown from "reveal.js/plugin/markdown";
+  import Highlight from "reveal.js/plugin/highlight";
+
+  // Initialize Reveal after the component mounts
+  // https://revealjs.com/config/
+  const deck = new Reveal(document.querySelector(".reveal") as HTMLElement, {
+    embedded: true, // Crucial: keeps reveal constrained to the container element
+    hash: false,
+
+    controlsTutorial: false,
+    slideNumber: "c/t",
+    disableLayout: false,
+    mouseWheel: true,
+
+    plugins: [Markdown, Highlight],
+    keyboard: {
+      // Example: disable specific key codes or map custom overrides
+      18: () => {}, // option
+      74: () => {}, // j
+      91: () => {}, // command
+      106: () => {}, // J
+    },
+  });
+  deck.initialize();
+  deck.removeKeyBinding(74);
+  deck.removeKeyBinding(106);
+</script>
+
+<style>
+  .slide-wrapper {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .deck-container {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    /* border-radius: 0.25rem; */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  }
+</style>
