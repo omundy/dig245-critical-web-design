@@ -16,10 +16,18 @@ const { src, title = "YouTube video player", className } = Astro.props;
 const embedUrl = getYoutubeEmbedUrl(src);
 const thumbnail = await getYoutubeThumbnail(src);
 const isPlayable = Boolean(embedUrl);
-const ariaLabel = isPlayable ? "Play YouTube video" : "YouTube video unavailable";
+const ariaLabel = isPlayable
+  ? "Play YouTube video"
+  : "YouTube video unavailable";
 ---
 
-<div class:list={["relative aspect-video h-full w-full cursor-pointer overflow-hidden", className]} data-youtube-video>
+<div
+  class:list={[
+    "relative aspect-video h-full w-full cursor-pointer overflow-hidden",
+    className,
+  ]}
+  data-youtube-video
+>
   <button
     type="button"
     class="absolute inset-0 aspect-video h-full w-full overflow-hidden"
@@ -38,8 +46,12 @@ const ariaLabel = isPlayable ? "Play YouTube video" : "YouTube video unavailable
       alt={title}
     />
 
-    <span class="pointer-events-none absolute inset-0 flex items-center justify-center">
-      <Play class="h-30 w-30 text-white opacity-80 transition-opacity group-hover:opacity-100" />
+    <span
+      class="pointer-events-none absolute inset-0 flex items-center justify-center"
+    >
+      <Play
+        class="h-30 w-30 text-white opacity-80 transition-opacity group-hover:opacity-100"
+      />
     </span>
   </button>
 </div>
@@ -72,11 +84,15 @@ const ariaLabel = isPlayable ? "Play YouTube video" : "YouTube video unavailable
 
     // click and accessibility activation
     trigger.addEventListener("click", activate, { once: true });
-    trigger.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        activate();
-      }
-    }, { once: true });
+    trigger.addEventListener(
+      "keydown",
+      (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          activate();
+        }
+      },
+      { once: true },
+    );
   })();
 </script>

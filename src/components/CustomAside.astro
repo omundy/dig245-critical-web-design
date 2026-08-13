@@ -3,57 +3,59 @@
 
 // strong typing recommended
 interface Props {
-    type: string;
-    reference: string;
-    oneline: boolean;
+  type: string;
+  reference: string;
+  oneline: boolean;
 }
-const { type, reference, oneline=true } = Astro.props;
+const { type, reference, oneline = true } = Astro.props;
 
 const titles: { [key: string]: any } = {
-    overview: "Overview",
-    excerpt: "Excerpt",
-    newmaterial: "New Material",
-    newmaterialsingle: "",
-    quote: "Quote",
-    homework: "Homework",
-    discussion: "Discussion",
-    tech: "",
-    inclass: "In-class",
-    info: "",
-    none: "",
+  overview: "Overview",
+  excerpt: "Excerpt",
+  newmaterial: "New Material",
+  newmaterialsingle: "",
+  quote: "Quote",
+  homework: "Homework",
+  discussion: "Discussion",
+  tech: "",
+  inclass: "In-class",
+  info: "",
+  none: "",
 };
 import Icon from "@/components/Icon.astro";
 ---
 
 <div class="not-content callout-intro">
-    {( type != "none") &&
-    <Icon {type} color="black" weight="600">
+  {
+    type != "none" && (
+      <Icon {type} color="black" weight="600">
         {/* inject html */}
         <Fragment set:html={titles[type]} />
-    </Icon>
-}
-    {reference && reference}
+      </Icon>
+    )
+  }
+  {reference && reference}
 
-    {
-        // NO REFERENCE = ONE LINE
-        oneline ? (
-            <span class="componenttext">
-                <slot />
-            </span>
-        ) : (
-            <div class="componenttext">
-                <slot />
-            </div>
-        )
-    }
+  {
+    // NO REFERENCE = ONE LINE
+    oneline ? (
+      <span class="componenttext">
+        <slot />
+      </span>
+    ) : (
+      <div class="componenttext">
+        <slot />
+      </div>
+    )
+  }
 </div>
 
 <style is:global>
-    .componenttext {
-        margin-top: 0.3rem;
-    }
-    .componenttext ul {
-        margin-top: 0rem;
-        /* background-color: red; */
-    }
+  .componenttext {
+    margin-top: 0.3rem;
+  }
+  .componenttext ul {
+    margin-top: 0rem;
+    /* background-color: red; */
+  }
 </style>
