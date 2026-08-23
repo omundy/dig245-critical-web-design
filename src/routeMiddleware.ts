@@ -1,6 +1,7 @@
-// Auto-derives schedule sidebar labels as `${day} ${title}` instead of just
-// `title`, so pages don't need to duplicate that concatenation into a
-// separate frontmatter field (e.g. sidebar.label) kept in sync by hand.
+// Auto-derives schedule sidebar (and prev/next pagination) labels as
+// `${day} ${title}` instead of just `title`, so pages don't need to
+// duplicate that concatenation into a separate frontmatter field (e.g.
+// sidebar.label) kept in sync by hand.
 import { defineRouteMiddleware } from "@astrojs/starlight/route-data";
 import { getCollection } from "astro:content";
 
@@ -9,6 +10,11 @@ interface SidebarLinkLike {
   label: string;
   href?: string;
   entries?: SidebarLinkLike[];
+}
+
+interface PaginationLinkLike {
+  label: string;
+  href?: string;
 }
 
 export const onRequest = defineRouteMiddleware(async (context) => {
@@ -26,19 +32,32 @@ export const onRequest = defineRouteMiddleware(async (context) => {
 
   const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
-  function relabel(entries: SidebarLinkLike[]) {
+  function idFromHref(href: string): string {
+    return href.replace(base, "").replace(/^\/+|\/+$/g, "");
+  }
+
+  function relabel(link: { label: string; href?: string }) {
+    if (!link.href) return;
+    const label = dayTitleById.get(idFromHref(link.href));
+    if (label) link.label = label;
+  }
+
+  function relabelSidebar(entries: SidebarLinkLike[]) {
     for (const entry of entries) {
       if (entry.type === "group" && entry.entries) {
-        relabel(entry.entries);
-      } else if (entry.type === "link" && entry.href) {
-        const id = entry.href
-          .replace(base, "")
-          .replace(/^\/+|\/+$/g, "");
-        const label = dayTitleById.get(id);
-        if (label) entry.label = label;
+        relabelSidebar(entry.entries);
+      } else if (entry.type === "link") {
+        relabel(entry);
       }
     }
   }
 
-  relabel(starlightRoute.sidebar as SidebarLinkLike[]);
+  relabelSidebar(starlightRoute.sidebar as SidebarLinkLike[]);
+
+  const pagination = starlightRoute.pagination as {
+    prev?: PaginationLinkLike;
+    next?: PaginationLinkLike;
+  };
+  if (pagination.prev) relabel(pagination.prev);
+  if (pagination.next) relabel(pagination.next);
 });

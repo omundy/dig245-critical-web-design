@@ -62,8 +62,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
         };
         return (
           <tr>
-            <td>{date || "—"}</td>
-            <td>{day || "—"}</td>
+            <td>{date || " "}</td>
+            <td>{day || " "}</td>
             <td>
               <a href={`${base}/${entry.id}/`}>{title}</a>
             </td>
@@ -93,7 +93,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
                   ))}
                 </ul>
               ) : (
-                "—"
+                " "
               )}
             </td>
           </tr>
