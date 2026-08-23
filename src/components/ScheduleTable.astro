@@ -46,7 +46,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
       <th>Date</th>
       <th>Day</th>
       <th>Week</th>
-      <th>Deadlines</th>
+      <!-- <th>Deadlines</th> -->
       <th>Prep</th>
     </tr>
   </thead>
@@ -67,7 +67,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
             <td>
               <a href={`${base}/${entry.id}/`}>{title}</a>
             </td>
-            <td>
+            {/* <td>
               {deadlines && deadlines.length > 0 ? (
                 <ul>
                   {deadlines.map((deadline) => {
@@ -78,7 +78,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
               ) : (
                 "—"
               )}
-            </td>
+            </td> */}
             <td>
               {prep && prep.length > 0 ? (
                 <ul>

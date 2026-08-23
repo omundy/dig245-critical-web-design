@@ -11,12 +11,12 @@ export const collections = {
         // used by schedule/*.mdx pages and ScheduleTable.astro
         day: z.string().nullish(),
         date: z.string().nullish(),
-        deadlines: z.array(z.string()).optional(),
+        deadlines: z.array(z.string()).nullish(),
         // rendered under the H1 by the PageTitle component override, any page
         subtitle: z.string().nullish(),
         prep: z
           .array(z.object({ url: z.string().optional(), text: z.string() }))
-          .optional(),
+          .nullish(),
       }),
     }),
   }),

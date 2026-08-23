@@ -6,30 +6,44 @@
 // reach content on the other side of that line.
 import "@astrojs/starlight/style/markdown.css";
 
-const { prep } = Astro.locals.starlightRoute.entry.data as {
+const { day, prep } = Astro.locals.starlightRoute.entry.data as {
+  day?: string;
   prep?: { url?: string; text: string }[];
 };
 ---
 
+<div class="sl-markdown-content">
+  {
+    prep && prep.length > 0 && (
+      <>
+        <h2>📌 Complete before class</h2>
+
+        <ul class="not-content prep">
+          {prep.map((link) => (
+            <li>{link.url ? <a href={link.url}>{link.text}</a> : link.text}</li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+  <slot />
 {
-  prep && prep.length > 0 && (
-    <ul class="not-content related-links">
-      {prep.map((link) => (
-        <li>{link.url ? <a href={link.url}>{link.text}</a> : link.text}</li>
-      ))}
+  day &&
+    (
+    <h2>📌 Homework</h2>
+    <ul>
+      <li>See next class or <a href="../">course overview</a></li>
     </ul>
   )
-}
-
-<div class="sl-markdown-content"><slot /></div>
+ }
+</div>
 
 <style>
-  .related-links {
+  .prep {
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem 1rem;
     padding: 0;
     list-style: none;
-    font-size: var(--sl-text-sm);
   }
 </style>
