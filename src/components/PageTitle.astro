@@ -6,16 +6,21 @@
 // hardcoded here to match the upstream constant (used for the skip-link anchor).
 const PAGE_TITLE_ID = "_top";
 
-const { title, subtitle, dates } = Astro.locals.starlightRoute.entry.data as {
+const { day, title, subtitle, date } = Astro.locals.starlightRoute.entry
+  .data as {
+  day?: string;
   title: string;
   subtitle?: string;
-  dates?: string;
+  date?: string;
 };
 ---
 
-<h1 id={PAGE_TITLE_ID}>{title}</h1>
+<h1 id={PAGE_TITLE_ID}>
+  {day && <span class="day-label">{day}</span>}
+  {title}
+</h1>
 {subtitle && <p class="subtitle">{subtitle}</p>}
-{dates && <p class="dates">{dates}</p>}
+{date && <p class="date">{date}</p>}
 
 <style>
   @layer starlight.core {
@@ -26,12 +31,16 @@ const { title, subtitle, dates } = Astro.locals.starlightRoute.entry.data as {
       font-weight: 600;
       color: var(--sl-color-white);
     }
+    .day-label {
+      color: var(--sl-color-gray-2);
+      margin-right: 0.5rem;
+    }
     .subtitle {
       margin-top: 0.5rem;
       font-size: var(--sl-text-lg);
       color: var(--sl-color-gray-2);
     }
-    .dates {
+    .date {
       margin-top: 0.5rem;
       font-size: var(--sl-text-lg);
       color: var(--sl-color-gray-2);

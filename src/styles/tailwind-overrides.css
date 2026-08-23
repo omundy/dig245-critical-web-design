@@ -25,19 +25,19 @@
    default h1-h6 scale; restore an explicit (flattened, docs-appropriate)
    size progression. */
 main h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 main h2 {
-  font-size: 1.8rem;
-}
-main h3 {
   font-size: 1.6rem;
 }
+main h3 {
+  font-size: 1.45rem;
+}
 main h4 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 main h5 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 main h6 {
   font-size: 1rem;

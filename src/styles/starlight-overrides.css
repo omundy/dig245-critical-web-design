@@ -17,6 +17,16 @@
   --sl-content-width: 50rem;
 }
 
+/* Widen the content column further, but only on pages that render
+   ScheduleTable (:has() lets us match an ancestor by a descendant, so this
+   doesn't require any per-page opt-in markup). --sl-content-width caps
+   .sl-container's max-width, and custom properties cascade down from any
+   ancestor, so setting it here on <body> reaches that descendant .sl-container
+   the same way Starlight's own :root/html declarations do. */
+body:has(.schedule-table) {
+  --sl-content-width: 70rem;
+}
+
 /* Starlight's default hero grid is 7fr/4fr (text/image); widen the image
    column so the (roughly square) cover art isn't squeezed as small. */
 .hero {

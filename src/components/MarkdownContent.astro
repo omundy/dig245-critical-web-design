@@ -1,0 +1,35 @@
+---
+// Overrides @astrojs/starlight/components/MarkdownContent.astro to render an
+// optional `prep` frontmatter field as the first thing in the page's second
+// content-panel — i.e. below the divider line under the title panel, since
+// PageTitle only ever renders into the first (title-only) panel and can't
+// reach content on the other side of that line.
+import "@astrojs/starlight/style/markdown.css";
+
+const { prep } = Astro.locals.starlightRoute.entry.data as {
+  prep?: { url?: string; text: string }[];
+};
+---
+
+{
+  prep && prep.length > 0 && (
+    <ul class="not-content related-links">
+      {prep.map((link) => (
+        <li>{link.url ? <a href={link.url}>{link.text}</a> : link.text}</li>
+      ))}
+    </ul>
+  )
+}
+
+<div class="sl-markdown-content"><slot /></div>
+
+<style>
+  .related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    padding: 0;
+    list-style: none;
+    font-size: var(--sl-text-sm);
+  }
+</style>

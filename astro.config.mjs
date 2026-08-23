@@ -25,6 +25,7 @@ export default defineConfig({
         // override default Starlight components
         PageTitle: "./src/components/PageTitle.astro",
         SiteTitle: "./src/components/SiteTitle.astro",
+        MarkdownContent: "./src/components/MarkdownContent.astro",
       },
       social: [
         {
@@ -37,6 +38,7 @@ export default defineConfig({
         baseUrl:
           "https://github.com/omundy/dig245-critical-web-design/edit/main/",
       },
+      routeMiddleware: "./src/routeMiddleware.ts",
       sidebar: [
         { label: "Syllabus", link: "./" },
         { label: "Assignments", link: "./assignments" },
