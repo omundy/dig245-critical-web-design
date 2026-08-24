@@ -5,11 +5,23 @@
 // PageTitle only ever renders into the first (title-only) panel and can't
 // reach content on the other side of that line.
 import "@astrojs/starlight/style/markdown.css";
+import { getEntry } from "astro:content";
 
 const { day, prep } = Astro.locals.starlightRoute.entry.data as {
   day?: string;
   prep?: { url?: string; text: string }[];
 };
+
+// Show the *next* schedule page's prep list as this page's "Homework",
+// so students see what to do before the next class without navigating away.
+const nextHref = Astro.locals.starlightRoute.pagination.next?.href;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const nextId = nextHref?.replace(base, "").replace(/^\/+|\/+$/g, "");
+const nextEntry = nextId ? await getEntry("docs", nextId) : undefined;
+const nextPrep = nextEntry?.data.prep as
+  | { url?: string; text: string }[]
+  | null
+  | undefined;
 ---
 
 <div class="sl-markdown-content">
@@ -28,14 +40,28 @@ const { day, prep } = Astro.locals.starlightRoute.entry.data as {
   }
   <slot />
 {
-  day &&
-    (
-    <h2>📌 Homework</h2>
-    <ul>
-      <li>Follow the "Next" button below or <a href="../">visit the course overview</a></li>
-    </ul>
+  day && (
+    <>
+      <h2>📌 Homework</h2>
+      {nextPrep && nextPrep.length > 0 ? (
+        <ul class="not-content prep">
+          {nextPrep.map((link) => (
+            <li>
+              {link.url ? <a href={link.url}>{link.text}</a> : link.text}
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <ul>
+          <li>
+            Follow the "Next" button below or{" "}
+            <a href="../">visit the course overview</a>
+          </li>
+        </ul>
+      )}
+    </>
   )
- }
+}
 </div>
 
 <style>
