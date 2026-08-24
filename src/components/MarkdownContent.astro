@@ -16,7 +16,7 @@ const { day, prep } = Astro.locals.starlightRoute.entry.data as {
   {
     prep && prep.length > 0 && (
       <>
-        <h2>📌 Complete before class</h2>
+        <h2>📌 Complete these items before class</h2>
 
         <ul class="not-content prep">
           {prep.map((link) => (
@@ -32,7 +32,7 @@ const { day, prep } = Astro.locals.starlightRoute.entry.data as {
     (
     <h2>📌 Homework</h2>
     <ul>
-      <li>See next class or <a href="../">course overview</a></li>
+      <li>Follow the "Next" button below or <a href="../">visit the course overview</a></li>
     </ul>
   )
  }
