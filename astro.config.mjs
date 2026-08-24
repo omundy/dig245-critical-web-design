@@ -14,7 +14,7 @@ export default defineConfig({
       description:
         "Tutorials, demos, and resources for DIG 245 Critical Web Design",
       logo: {
-        src: "@/assets/img/network-logo.png",
+        src: "@/assets/img/network-logo-black-whiteshadow.png",
       },
       customCss: [
         "./src/styles/starlight-overrides.css",
