@@ -4,11 +4,13 @@ description: DIG 245 Syllabus
 ---
 
 import { Image } from 'astro:assets';
-import bookCover from '@/assets/img/network-logo-black-whiteshadow.png';
+import bookCoverWhite from '@/assets/img/network-logo-white.png';
+import bookCoverBlack from '@/assets/img/network-logo-black.png';
 
 <div class="grid grid-cols-3 gap-4 ...">
 	<div class="grid place-items-center">
-	<Image src={bookCover} alt="Critical Web Design cover" class="mx-auto" />
+		<Image src={bookCoverBlack} alt="Critical Web Design cover" class="mx-auto dark:sl-hidden" />
+		<Image src={bookCoverWhite} alt="Critical Web Design cover" class="mx-auto light:sl-hidden" />
 	</div>
 	<div class="col-span-2">
 
