@@ -13,14 +13,28 @@ const { day, title, subtitle, date } = Astro.locals.starlightRoute.entry
   subtitle?: string;
   date?: string;
 };
+
+import Icon from "@/components/Icon.astro";
 ---
 
-<h1 id={PAGE_TITLE_ID}>
-  {day && <span class="day-label">{day}</span>}
-  {title}
-</h1>
+<div class="flex items-center justify-between">
+  <h1 id={PAGE_TITLE_ID}>
+    {day && <span class="day-label">{day}</span>}
+    {title}
+  </h1>
+  {
+    date && (
+      <div class="date">
+        {" "}
+        <Icon type="date" color="grey" weight="300">
+          {/* inject html */}
+          <Fragment set:html={date} />
+        </Icon>{" "}
+      </div>
+    )
+  }
+</div>
 {subtitle && <p class="subtitle">{subtitle}</p>}
-{date && <p class="date">{date}</p>}
 
 <style>
   @layer starlight.core {
@@ -44,6 +58,9 @@ const { day, title, subtitle, date } = Astro.locals.starlightRoute.entry
       margin-top: 0.5rem;
       font-size: var(--sl-text-lg);
       color: var(--sl-color-gray-2);
+      /* position: relative;
+      left: 390;
+      top: 0; */
     }
   }
 </style>

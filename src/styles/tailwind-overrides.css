@@ -42,6 +42,14 @@ main h5 {
 main h6 {
   font-size: 1rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
 
 /* Preflight's universal `margin: 0` reset also zeroes <figure>'s default
    margin; restore spacing and caption-style type for figures (e.g. book
