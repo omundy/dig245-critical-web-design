@@ -29,9 +29,45 @@ body:has(.schedule-table) {
 
 /* remove margins on lists in table */
 main .schedule-table ul {
-  margin-block-start: 0rem !important; 
+  margin-block-start: 0rem !important;
   margin-block-end: 0rem !important;
 }
+
+/* ScheduleTable.astro (src/components/ScheduleTable.astro) styling. This
+   lives here, not in that component's own scoped <style>, because that
+   block was unreliably dropped from the build output on the /schedule/
+   overview page for reasons not fully pinned down — reproduced even with a
+   from-scratch, unrelated test component, and survived a full cache wipe
+   (dist/, .astro/, node_modules/.astro/, node_modules/.vite/). This global
+   stylesheet is the proven-reliable alternative. */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.schedule-table th,
+.schedule-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
+/* --sl-color-bg-nav (not --sl-color-bg-sidebar) is used here since it's
+   Starlight's own "subtly distinct from the page background" token in
+   BOTH themes — --sl-color-bg-sidebar equals the page background in
+   light mode, which would make the stripe invisible there. */
+/* .schedule-table .week-shade {
+  background-color: var(--sl-color-bg-nav);
+} */
+/* gray-3 reads as a clearly stronger line than the default hairline
+   (gray-6) in both themes — the two gray scales are mirrored between
+   light/dark, so a fixed step works without a theme-specific override. */
+.schedule-table .week-start td,
+.schedule-table .week-start th {
+  border-top: 2px solid var(--sl-color-gray-3);
+}
+/* .schedule-table .week-start td {
+  padding-top: 1rem;
+} */
 
 /* Starlight's default hero grid is 7fr/4fr (text/image); widen the image
    column so the (roughly square) cover art isn't squeezed as small. */

@@ -39,6 +39,10 @@ function parseDeadline(raw: string): { text: string; emphasis: boolean } {
 }
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+// tracks week-to-week transitions as entries render in order, so the
+// first row of each new week can get a stronger top border below
+let previousWeek: number | undefined;
 ---
 
 <table class="schedule-table">
@@ -61,8 +65,18 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
           prep?: { url?: string; text: string }[];
         };
         const date = day ? getDateForDay(day) : undefined;
+        const week = weekNumber(entry.id);
+        // skip the very first row: it already sits right under the header's
+        // own border, so marking it too would draw a redundant double line
+        const isWeekStart = previousWeek !== undefined && week !== previousWeek;
+        previousWeek = week;
         return (
-          <tr>
+          <tr
+            class:list={{
+              "week-shade": Number.isFinite(week) && week % 2 === 0,
+              "week-start": isWeekStart,
+            }}
+          >
             <td>{date || " "}</td>
             <td>{day || " "}</td>
             <td>
@@ -112,20 +126,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
   )
 }
 
-<style>
-  .schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .schedule-table th,
-  .schedule-table td {
-    text-align: left;
-    vertical-align: top;
-    padding: 0.5rem 0.75rem;
-    border-bottom: 1px solid var(--sl-color-hairline);
-  }
-  .schedule-table ul {
-    margin: 0;
-    padding-left: 1.1rem;
-  }
-</style>
+{/* 
+Styling for .schedule-table lives in src/styles/starlight-overrides.css,
+not a scoped style block here — this component's own style block was
+unreliably dropped from the build output on this page for reasons not
+fully pinned down (reproduced even with a from-scratch, unrelated test
+component, and survived a full cache wipe: dist/, .astro/,
+node_modules/.astro/, node_modules/.vite/), so the global stylesheet is
+used as the proven-reliable alternative. 
+*/}
