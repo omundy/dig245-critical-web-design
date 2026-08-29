@@ -40,9 +40,21 @@ function parseDeadline(raw: string): { text: string; emphasis: boolean } {
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
-// tracks week-to-week transitions as entries render in order, so the
-// first row of each new week can get a stronger top border below
-let previousWeek: number | undefined;
+// A "-x" day (e.g. "13-x") is a standalone week of its own (e.g. a break),
+// not part of whatever numbered week it happens to share a leading digit
+// with in the filename/sort order — so it always gets its own group key,
+// instead of grouping by weekNumber() (which would lump "week-13-x" in
+// with "week-13-1/2/3" even though they're different calendar weeks).
+function groupKey(entry: { id: string; data: { day?: string | null } }): string {
+  return entry.data.day?.endsWith("-x") ? entry.id : String(weekNumber(entry.id));
+}
+
+// tracks group-to-group transitions as entries render in order: previousGroup
+// flags the first row of each new group for a stronger top border, and
+// groupIndex (only incremented on a real transition) drives shading so it
+// alternates by group rather than by raw (and here, sometimes-shared) week number
+let previousGroup: string | undefined;
+let groupIndex = -1;
 ---
 
 <table class="schedule-table">
@@ -65,20 +77,24 @@ let previousWeek: number | undefined;
           prep?: { url?: string; text: string }[];
         };
         const date = day ? getDateForDay(day) : undefined;
-        const week = weekNumber(entry.id);
+        // "-x" day-ids (e.g. "13-x") are internal keys for date lookup on
+        // non-session entries like a week off — not a session label worth showing.
+        const dayLabel = day && !day.endsWith("-x") ? day : " ";
+        const group = groupKey(entry);
         // skip the very first row: it already sits right under the header's
         // own border, so marking it too would draw a redundant double line
-        const isWeekStart = previousWeek !== undefined && week !== previousWeek;
-        previousWeek = week;
+        const isGroupStart = previousGroup !== undefined && group !== previousGroup;
+        if (previousGroup === undefined || isGroupStart) groupIndex++;
+        previousGroup = group;
         return (
           <tr
             class:list={{
-              "week-shade": Number.isFinite(week) && week % 2 === 0,
-              "week-start": isWeekStart,
+              "week-shade": groupIndex % 2 === 1,
+              "week-start": isGroupStart,
             }}
           >
             <td>{date || " "}</td>
-            <td>{day || " "}</td>
+            <td>{dayLabel}</td>
             <td>
               <a href={`${base}/${entry.id}/`}>{title}</a>
             </td>
