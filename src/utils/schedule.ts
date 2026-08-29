@@ -71,3 +71,22 @@ export function getDateForDay(day: string): string | undefined {
   const rawDate = getDateMap().get(day);
   return rawDate ? formatDate(rawDate) : undefined;
 }
+
+// A sortable/comparable integer (YYYYMMDD) for a day's date, used to find
+// "today or the most recent past session" — plain integer comparison avoids
+// any Date-object timezone parsing, same reasoning as formatDate() above.
+// For a multi-day range (e.g. a week off), uses the *start* date, so the
+// range stays "current" for its whole span until the next real session.
+function toComparable(raw: string): number {
+  const [month, day, year] = raw.split("/").map(Number);
+  return (year ?? 0) * 10000 + (month ?? 0) * 100 + (day ?? 0);
+}
+
+export function getComparableDateForDay(day: string): number | undefined {
+  const rawDate = getDateMap().get(day);
+  if (!rawDate) return undefined;
+  const startRaw = rawDate.includes("..")
+    ? (rawDate.split("..")[0] as string)
+    : rawDate;
+  return toComparable(startRaw);
+}

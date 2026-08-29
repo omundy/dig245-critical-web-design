@@ -6,6 +6,7 @@
 // reach content on the other side of that line.
 import "@astrojs/starlight/style/markdown.css";
 import { getEntry } from "astro:content";
+import CurrentSessionHighlight from "@/components/CurrentSessionHighlight.astro";
 
 const { day, prep } = Astro.locals.starlightRoute.entry.data as {
   day?: string;
@@ -24,6 +25,7 @@ const nextPrep = nextEntry?.data.prep as
   | undefined;
 ---
 
+<CurrentSessionHighlight />
 <div class="sl-markdown-content">
   {
     prep && prep.length > 0 && (

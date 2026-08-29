@@ -1,0 +1,72 @@
+---
+// Marks the link for today's class (or, if no class meets today — e.g. a
+// weekend — the most recently held one) with a small dot, wherever it
+// appears: the sidebar nav, and the ScheduleTable overview if present on
+// this page. Computed client-side against the viewer's own clock so it
+// stays correct every day without a rebuild; a build-time-only check would
+// go stale between deploys since this site only rebuilds on push.
+import { getCollection } from "astro:content";
+import { getComparableDateForDay } from "@/utils/schedule";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const scheduleEntries = await getCollection("docs", (entry) =>
+  entry.id.startsWith("schedule/"),
+);
+
+const sessions = scheduleEntries
+  .map((entry) => {
+    const day = entry.data.day as string | undefined;
+    if (!day) return undefined;
+    const date = getComparableDateForDay(day);
+    if (date === undefined) return undefined;
+    return { href: `${base}/${entry.id}/`, date };
+  })
+  .filter((session) => session !== undefined);
+---
+
+<script type="module" define:vars={{ sessions }}>
+  const today = new Date();
+  const todayComparable =
+    today.getFullYear() * 10000 +
+    (today.getMonth() + 1) * 100 +
+    today.getDate();
+
+  let current = null;
+  for (const session of sessions) {
+    if (session.date > todayComparable) continue;
+    if (!current || session.date > current.date) current = session;
+  }
+
+  if (current) {
+    const sidebar = document.getElementById("starlight__sidebar");
+    const scopes = [sidebar, ...document.querySelectorAll(".schedule-table")];
+    for (const scope of scopes) {
+      const link = scope?.querySelector(`a[href="${current.href}"]`);
+      if (link && !link.querySelector(".current-session-dot")) {
+        const dot = document.createElement("span");
+        dot.className = "current-session-dot";
+        dot.setAttribute("aria-label", "current session");
+        dot.title = "Current session";
+        link.prepend(dot);
+      }
+    }
+  }
+</script>
+
+<style is:global>
+  .current-session-dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.4rem;
+    border-radius: 999px;
+    background-color: var(--sl-color-text-accent);
+    flex-shrink: 0;
+  }
+  /* the active sidebar link's own background is already --sl-color-text-accent,
+     the same color as the dot, so it'd otherwise disappear on the current page */
+  [aria-current="page"] .current-session-dot {
+    background-color: white;
+  }
+</style>
