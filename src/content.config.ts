@@ -9,8 +9,9 @@ export const collections = {
     schema: docsSchema({
       extend: z.object({
         // used by schedule/*.mdx pages and ScheduleTable.astro
+        // (date is no longer frontmatter — derived from `day` via
+        // src/utils/schedule.ts + src/data/schedule.tsv)
         day: z.string().nullish(),
-        date: z.string().nullish(),
         deadlines: z.array(z.string()).nullish(),
         // rendered under the H1 by the PageTitle component override, any page
         subtitle: z.string().nullish(),

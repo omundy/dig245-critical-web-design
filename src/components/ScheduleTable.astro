@@ -2,6 +2,7 @@
 // Renders a table summarizing the frontmatter of every page in a schedule directory.
 
 import { getCollection } from "astro:content";
+import { getDateForDay } from "@/utils/schedule";
 
 interface Props {
   directory: string;
@@ -53,13 +54,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
   <tbody>
     {
       entries.map((entry) => {
-        const { day, title, date, deadlines, prep } = entry.data as {
-          date?: string;
+        const { day, title, deadlines, prep } = entry.data as {
           day?: string;
           title: string;
           deadlines?: string[];
           prep?: { url?: string; text: string }[];
         };
+        const date = day ? getDateForDay(day) : undefined;
         return (
           <tr>
             <td>{date || " "}</td>

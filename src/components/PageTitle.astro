@@ -6,20 +6,24 @@
 // hardcoded here to match the upstream constant (used for the skip-link anchor).
 const PAGE_TITLE_ID = "_top";
 
-const { day, title, subtitle, date } = Astro.locals.starlightRoute.entry
-  .data as {
+const { day, title, subtitle } = Astro.locals.starlightRoute.entry.data as {
   day?: string;
   title: string;
   subtitle?: string;
-  date?: string;
 };
 
 import Icon from "@/components/Icon.astro";
+import { getDateForDay } from "@/utils/schedule";
+
+const date = day ? getDateForDay(day) : undefined;
+// "-x" day-ids (e.g. "13-x") are internal keys for date lookup on
+// non-session entries like a week off — not a session label worth showing.
+const showDayLabel = day && !day.endsWith("-x");
 ---
 
 <div class="flex items-center justify-between">
   <h1 id={PAGE_TITLE_ID}>
-    {day && <span class="day-label">{day}</span>}
+    {showDayLabel && <span class="day-label">{day}</span>}
     {title}
   </h1>
   {

@@ -25,7 +25,9 @@ export const onRequest = defineRouteMiddleware(async (context) => {
   );
   const dayTitleById = new Map(
     scheduleEntries
-      .filter((entry) => entry.data.day)
+      // "-x" day-ids (e.g. "13-x") are internal keys for date lookup on
+      // non-session entries like a week off — not a session label worth showing.
+      .filter((entry) => entry.data.day && !entry.data.day.endsWith("-x"))
       .map((entry) => [entry.id, `${entry.data.day} ${entry.data.title}`]),
   );
   if (dayTitleById.size === 0) return;
