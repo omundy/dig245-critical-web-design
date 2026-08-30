@@ -19,10 +19,12 @@ const nextHref = Astro.locals.starlightRoute.pagination.next?.href;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const nextId = nextHref?.replace(base, "").replace(/^\/+|\/+$/g, "");
 const nextEntry = nextId ? await getEntry("docs", nextId) : undefined;
-const nextPrep = nextEntry?.data.prep as
-  | { url?: string; text: string }[]
-  | null
-  | undefined;
+// Draft pages aren't published yet, so don't leak their homework early —
+// pagination.next can still point at one while running `astro dev`, where
+// drafts stay reachable for editing/preview.
+const nextPrep = (
+  nextEntry && !nextEntry.data.draft ? nextEntry.data.prep : undefined
+) as { url?: string; text: string }[] | null | undefined;
 ---
 
 <CurrentSessionHighlight />
