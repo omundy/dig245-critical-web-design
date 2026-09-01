@@ -29,7 +29,7 @@ import Icon from "@/components/Icon.astro";
 <div class="not-content callout-intro">
   {
     type != "none" && (
-      <Icon {type} color="black" weight="300">
+      <Icon {type} color="var(--sl-color-text)" weight="300">
         {/* inject html */}
         <Fragment set:html={titles[type]} />
       </Icon>

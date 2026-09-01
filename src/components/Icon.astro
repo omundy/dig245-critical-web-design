@@ -26,7 +26,7 @@ interface Props {
   color: string;
   weight: string;
 }
-const { type, color = "black", weight = "bold" } = Astro.props;
+const { type, color = "var(--sl-color-text)", weight = "bold" } = Astro.props;
 const icons: { [key: string]: any } = {
   // openbook
   // https://icon-sets.iconify.design/uil/?icon-filter=book-open&query=book&search-prefix=uil

@@ -142,11 +142,14 @@ https://coolors.co/f94144-f3722c-f8961e-f9844a-f9c74f-90be6d-43aa8b-4d908e-57759
   border-color: var(--atom-red);
 }
 
-/* Custom callout for article summaries (e.g. CustomAside type="excerpt"). */
+/* Custom callout for article summaries (e.g. CustomAside type="excerpt").
+   --sl-color-bg-nav/--sl-color-gray-4 (not fixed hex colors) so this reads
+   as a subtly-shaded panel in both themes instead of a near-white box that
+   looks wrong sitting on a dark page. */
 .sl-markdown-content .callout-intro {
-  border-left: 4px solid #c2c2c2;
+  border-left: 4px solid var(--sl-color-gray-4);
   padding: 1rem;
-  background-color: #f5f5f5;
+  background-color: var(--sl-color-bg-nav);
 }
 .sl-markdown-content .inline-icon {
   display: inline;
