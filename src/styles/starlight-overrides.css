@@ -27,10 +27,11 @@ body:has(.schedule-table) {
   --sl-content-width: 70rem;
 }
 
-/* remove margins on lists in table */
+/* remove bullets and margin from lists in table cells (Deadlines/Prep) */
 main .schedule-table ul {
-  margin-block-start: 0rem !important;
-  margin-block-end: 0rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
 }
 
 /* ScheduleTable.astro (src/components/ScheduleTable.astro) styling. This

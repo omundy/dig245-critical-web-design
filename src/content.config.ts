@@ -12,7 +12,11 @@ export const collections = {
         // (date is no longer frontmatter — derived from `day` via
         // src/utils/schedule.ts + src/data/schedule.tsv)
         day: z.string().nullish(),
-        deadlines: z.array(z.string()).nullish(),
+        // same shape as prep: text supports optional *emphasis* markup,
+        // handled by parseDeadline() in src/utils/schedule.ts
+        deadlines: z
+          .array(z.object({ url: z.string().optional(), text: z.string() }))
+          .nullish(),
         // rendered under the H1 by the PageTitle component override, any page
         subtitle: z.string().nullish(),
         prep: z

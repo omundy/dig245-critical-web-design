@@ -8,9 +8,10 @@ import "@astrojs/starlight/style/markdown.css";
 import { getEntry } from "astro:content";
 import CurrentSessionHighlight from "@/components/CurrentSessionHighlight.astro";
 
-const { day, prep } = Astro.locals.starlightRoute.entry.data as {
+const { day, prep, deadlines } = Astro.locals.starlightRoute.entry.data as {
   day?: string;
   prep?: { url?: string; text: string }[];
+  deadlines?: { url?: string; text: string }[];
 };
 
 // Show the *next* schedule page's prep list as this page's "Homework",
@@ -22,20 +23,35 @@ const nextEntry = nextId ? await getEntry("docs", nextId) : undefined;
 // Draft pages aren't published yet, so don't leak their homework early —
 // pagination.next can still point at one while running `astro dev`, where
 // drafts stay reachable for editing/preview.
-const nextPrep = (
-  nextEntry && !nextEntry.data.draft ? nextEntry.data.prep : undefined
-) as { url?: string; text: string }[] | null | undefined;
+const nextData = nextEntry && !nextEntry.data.draft ? nextEntry.data : undefined;
+const nextPrep = nextData?.prep as
+  | { url?: string; text: string }[]
+  | null
+  | undefined;
+const nextDeadlines = nextData?.deadlines as
+  | { url?: string; text: string }[]
+  | null
+  | undefined;
 ---
 
 <CurrentSessionHighlight />
 <div class="sl-markdown-content">
   {
-    prep && prep.length > 0 && (
+    ((deadlines && deadlines.length > 0) || (prep && prep.length > 0)) && (
       <>
         <h2>📌 Complete before class</h2>
 
         <ul class="not-content prep">
-          {prep.map((link) => (
+          {deadlines?.map((deadline) => (
+            <li>
+              {deadline.url ? (
+                <a href={deadline.url}>{deadline.text}</a>
+              ) : (
+                deadline.text
+              )}
+            </li>
+          ))}
+          {prep?.map((link) => (
             <li>{link.url ? <a href={link.url}>{link.text}</a> : link.text}</li>
           ))}
         </ul>
@@ -47,9 +63,19 @@ const nextPrep = (
   day && (
     <>
       <h2>📌 Homework</h2>
-      {nextPrep && nextPrep.length > 0 ? (
+      {(nextDeadlines && nextDeadlines.length > 0) ||
+      (nextPrep && nextPrep.length > 0) ? (
         <ul class="not-content prep">
-          {nextPrep.map((link) => (
+          {nextDeadlines?.map((deadline) => (
+            <li>
+              {deadline.url ? (
+                <a href={deadline.url}>{deadline.text}</a>
+              ) : (
+                deadline.text
+              )}
+            </li>
+          ))}
+          {nextPrep?.map((link) => (
             <li>
               {link.url ? <a href={link.url}>{link.text}</a> : link.text}
             </li>
