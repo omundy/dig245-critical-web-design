@@ -1,6 +1,6 @@
 ---
 day: 1-2
-title: Git & Github
+title: Github Pages
 prep:
   - text: 📚 0.0 Introduction (1–6)
   - text: 📚 Module 0.1 How This Book Is Organized (6–10)
@@ -8,64 +8,105 @@ prep:
   - text: 📚 Module 0.3 Conventions & Resources (16–18)
   - text: "Take the day 1 survey"
     url: "https://forms.gle/HJSbwH6xp1LXdVRJ9"
-# draft: true
+draft: true
 ---
-
-
-
-{/* 
-
-2026 NOTE:
-
-Make this date an intro to HTML using Codespaces only
-Move Git setup to Monday
-
-
-
-NOTE TO SELF:
-JUST FOLLOW THE GD BOOK
-
-
-*/}
-
 
 
 import CustomAside from '@/components/CustomAside.astro';
 
-import LearningObjectives from '@/components/LearningObjectives.astro';
+import Details from '@/components/Details.astro';
 
-<LearningObjectives>
+<Details title="Learning Objectives">
 1. Set up a complete web development environment including Git, GitHub, and VS Code.
-2. Document technical setup steps and blockers in a structured troubleshooting log.
+2. Create a repository with HTML files on Github.com
 3. Identify and resolve at least one peer's setup problem through collaborative troubleshooting.
-</LearningObjectives>
+</Details>
 
 
 
 
 
-## 👉 With a partner 
-
-1. What is one question you have after reading the introduction to the class?
-1. How do you currently manage versions of your projects, papers, etc.?
-
-
-## 👉 Git & Github 
+## 👉 Git Introduction
 
 Today we'll setup Git and Github so we can build and publish entire websites.
 
-1. Git & Github [slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.p) (1-21) demo
+- How do you currently manage versions of your projects, papers, etc.?
+- Git & Github [slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.p) (5-14 only) 
+
+
+
+
+
+
+
+
+{/* COPIED */}
+{/* PAGE 37 */}
+
+## 👉 How to Set Up a New Web Project with Git
+
+<CustomAside type="excerpt" reference="Exercise 1.2.1"></CustomAside>
+
+This exercise establishes best practices for setting up a new website project, including
+the index.html page, and tracking and publishing with Git. Document every step you get stuck on — this becomes your troubleshooting log for the semester.
+
+1. Login or create an account at https://github.com 
+2. Click the plus button at the top right of your page to create a New Repository.
+3. Name the repository `first-website` and enable `Add README`.
+4. Click “Create repository.”
+5. Click “Add file” to create a new file in your `first-website` repo, and name it `index.html`.
+6. Add the html, head, and body elements that define the structure of an HTML file. Your code should look like the following:
+
+```html
+<html>
+  <head>
+    <title>Hello, World!</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+
+{/* 7. Return to your codepen.io project from module 1.1 and copy the code you wrote in response to prompt 1.1 creating links to inspirational works of critical web design. Paste this code into your `index.html` file below the heading. It might look like the following—notice we used the line break tag `<br>` to create a new line for each link: */}
+7. Press Commit changes . . . and add a commit message about your changes, such as “Create new file.” Press Commit and the code you added to your file will be saved. You can verify this under the History tab.
+
+
+
+
+
+{/* REFERENCE */}
+{/* PAGE 38 */}
+
+## 👉 Enable GitHub Pages
+
+<CustomAside type="follow" reference="Exercise 1.2.2"></CustomAside>
+
+GitHub Pages is a service that lets you publish web pages for the world to see. In this
+exercise you will publish the contents of your repo as a live website. 
+
+See page 38 in the book for instructions or [check the wiki for a
+video demonstration of these exercises](https://criticalwebdesign.github.io/wiki/chapter-01/1-3-using-github/).
+
+
+
+
+
+
+
+
+
+## 👉 Install Git
+
+The Critical Web Design book [shows how to use Github Codespaces](https://criticalwebdesign.github.io/wiki/chapter-01/1-3-github-desktop/). You are free to use this method, but I recommended running Git, Github Desktop, and VS Code on your own machine, which gives you more flexibility.
+
 1. [Install and Configure Git](https://github.com/omundy/learn-git-milestones/blob/main/how-to/install-configure.md) 
 1. Continue following [Git Milestones](https://github.com/omundy/learn-git-milestones) 
+{/* NOTE TO SELF ^ REMOVE THIS IN 2027 */}
 
 
 
 
+## Finished before class is over?
 
-
-import { Aside } from '@astrojs/starlight/components';
-
-<Aside>
-The Critical Web Design book [shows how to use Github Codespaces](https://criticalwebdesign.github.io/wiki/chapter-01/1-3-github-desktop/). You are free to use this method. I recommended running Git, Github Desktop, and VS Code on your own machine, which gives you more flexibility.
-</Aside>
-
+Find one person who got something working that you didn't, and one person you can help. Spend 15 min solving each other's setup issues. Report unresolved questions to the class.
