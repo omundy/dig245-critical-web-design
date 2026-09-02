@@ -1,26 +1,26 @@
 ---
-title: Web Development Environment
+title: Web Development Tools
+# subtitle: Set up your web development environment!
 description: Set up your web development environment.
 ---
 
-Set up your web development environment!
 
-## Introduction
 
-Review the following sections and perform the activities on your own or with your group.
 
-Perform the task(s) when you see this 👉 emoji
+import Details from '@/components/Details.astro';
 
-<details>
-<summary>Learning Objectives</summary>
+<Details title="Learning Objectives">
+1. Compare popular web browsers by browser market share
+1. List essential tools for frontend web development and describe their purpose
+1. Demonstrate how to install and configure software for a web development environment
+</Details>
 
-Students who complete this module will be able to:
 
-- Compare popular web browsers by browser market share
-- List essential tools for frontend web development and describe their purpose
-- Demonstrate how to install and configure software for a web development environment
 
-</details>
+
+
+
+
 
 ---
 
@@ -87,14 +87,14 @@ Designing websites requires a visual editor:
 
 Product | Cost | Description | Cons
 --- | --- | --- | ---
-<img src="/dig245-critical-web-design/images/logos/logo-figma.png" width=30 alt="Figma" /> [Figma](https://www.figma.com/) | [free](https://www.figma.com/pricing/) | Widely used to layout, illustrate, animate, and prototype websites and apps. | ?
+<img src="/dig245-critical-web-design/images/logos/logo-figma.png" width="30" alt="Figma" /> [Figma](https://www.figma.com/) | [free](https://www.figma.com/pricing/) | Widely used to layout, illustrate, animate, and prototype websites and apps. | ?
 Photoshop | $$$ | Industry standard, uses pixels, capable of web design and much more. | Expensive. Large learning curve.
 Illustrator | $$$ | Excellent at vector graphics, therefore should only be used for illustration and print work. | Expensive. Large learning
 [Gimp](https://www.gimp.org/) | free | Open source Photoshop alternative. Opens PSDs. [Tutorials available](https://www.google.com/search?q=gimp+web+design+tutorial). | Interface can feel clunky. Not widely used.
 
 <sup>*Use Adobe products for free in VAC 212 (CAT Card access 8am–1am).</sup>
 
-<img src="/dig245-critical-web-design/images/tally-wireframe-to-finished.png" width=700 alt="wireframe to finished design" />
+<img src="/dig245-critical-web-design/images/tally-wireframe-to-finished.png" width="700" alt="wireframe to finished design" />
 
 ---
 
@@ -135,16 +135,16 @@ With your group, examine the following table containing usage share on ***all***
 
 Browser | [StatCounter](https://gs.statcounter.com/browser-market-share) <sup>8/2021</sup> | [Wikimedia](https://analytics.wikimedia.org/dashboards/browsers/#all-sites-by-browser) <sup>11/2019</sup> | Platform(s)
 --- | ---: | ---: | ---
-<img width=20 src="/dig245-critical-web-design/images/logos/browsers/chrome_24x24.png" alt="Chrome" /> [Google Chrome](https://www.google.com/chrome/)* | 65.1% | 48.7% | Windows, MacOS, iOS, Linux
-<img width=20 src="/dig245-critical-web-design/images/logos/browsers/safari_24x24.png" alt="Safari" /> [Safari Browser](https://www.apple.com/safari/) | 18.6% | 22.0% | MacOS & iOS only 😢
-<img width=20 src="/dig245-critical-web-design/images/logos/browsers/firefox_24x24.png" alt="Firefox" /> [Firefox Browser](https://www.mozilla.org/en-US/firefox/new/) | 3.4% | 4.9% | Windows, MacOS, iOS, Linux
-<img width=20 src="/dig245-critical-web-design/images/logos/browsers/edge_24x24.png" alt="Edge" /> [Microsoft Edge](https://www.microsoft.com/en-us/edge)* | 3.4% | 1.9% | Windows, MacOS
-<img width=20 src="/dig245-critical-web-design/images/logos/browsers/samsung-internet_24x24.png" alt="Samsung Internet" /> [Samsung Internet](https://en.wikipedia.org/wiki/Samsung_Internet)* | 3.1% | 2.7% | Android & Tizen only 😢
-<img width=20 src="/dig245-critical-web-design/images/logos/browsers/opera_24x24.png" alt="Opera" /> [Opera Browser](https://www.opera.com/)* | 2.1% | 1.1% | Windows, MacOS, iOS, Linux
-<img width=20 src="/dig245-critical-web-design/images/logos/browsers/internet-explorer-tile_10-11_24x24.png" alt="Internet Explorer" /> [Internet Explorer](https://www.opera.com/) | 0.6% | 3.9% | Windows only 😢
+<img width="20" src="/dig245-critical-web-design/images/logos/browsers/chrome_24x24.png" alt="Chrome" /> [Google Chrome](https://www.google.com/chrome/)* | 65.1% | 48.7% | Windows, MacOS, iOS, Linux
+<img width="20" src="/dig245-critical-web-design/images/logos/browsers/safari_24x24.png" alt="Safari" /> [Safari Browser](https://www.apple.com/safari/) | 18.6% | 22.0% | MacOS & iOS only 😢
+<img width="20" src="/dig245-critical-web-design/images/logos/browsers/firefox_24x24.png" alt="Firefox" /> [Firefox Browser](https://www.mozilla.org/en-US/firefox/new/) | 3.4% | 4.9% | Windows, MacOS, iOS, Linux
+<img width="20" src="/dig245-critical-web-design/images/logos/browsers/edge_24x24.png" alt="Edge" /> [Microsoft Edge](https://www.microsoft.com/en-us/edge)* | 3.4% | 1.9% | Windows, MacOS
+<img width="20" src="/dig245-critical-web-design/images/logos/browsers/samsung-internet_24x24.png" alt="Samsung Internet" /> [Samsung Internet](https://en.wikipedia.org/wiki/Samsung_Internet)* | 3.1% | 2.7% | Android & Tizen only 😢
+<img width="20" src="/dig245-critical-web-design/images/logos/browsers/opera_24x24.png" alt="Opera" /> [Opera Browser](https://www.opera.com/)* | 2.1% | 1.1% | Windows, MacOS, iOS, Linux
+<img width="20" src="/dig245-critical-web-design/images/logos/browsers/internet-explorer-tile_10-11_24x24.png" alt="Internet Explorer" /> [Internet Explorer](https://www.opera.com/) | 0.6% | 3.9% | Windows only 😢
 Others | 4.6% | 14.5% | ---
 
-<sup>*Desktop or mobile version (or both) based on <img width=20 src="/dig245-critical-web-design/images/logos/browsers/chromium_24x24.png" alt="Chromium" /> [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) like <img width=20 src="/dig245-critical-web-design/images/logos/browsers/brave_24x24.png" alt="Brave" /> [Brave](https://brave.com/). ([logos](https://github.com/alrra/browser-logos))</sup>
+<sup>*Desktop or mobile version (or both) based on <img width="20" src="/dig245-critical-web-design/images/logos/browsers/chromium_24x24.png" alt="Chromium" /> [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) like <img width="20" src="/dig245-critical-web-design/images/logos/browsers/brave_24x24.png" alt="Brave" /> [Brave](https://brave.com/). ([logos](https://github.com/alrra/browser-logos))</sup>
 
 Next, compare the data from the Wikipedia [browser usage share article](https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_tables), the [StatCounter](https://gs.statcounter.com/browser-market-share), and [Wikimedia](https://analytics.wikimedia.org/dashboards/browsers/#all-sites-by-browser).
 
@@ -179,7 +179,7 @@ Did you guess, "I should install all of them?" That's not an incorrect answer. T
 
 ## Install and Configure VS Code
 
-<img src="/dig245-critical-web-design/images/logos/logo-vscode.png" width=70 alt="VS Code logo" />
+<img src="/dig245-critical-web-design/images/logos/logo-vscode.png" width="70" alt="VS Code logo" />
 
 VS ("Visual Studio") Code is a free source code editor for macOS, Linux, and Windows. It has support for extensions to add functionality to the editor and embedded Git controls. VS Code is developed Microsoft.
 
@@ -198,8 +198,7 @@ VS ("Visual Studio") Code is a free source code editor for macOS, Linux, and Win
 
 Atom [***was***](https://github.blog/2022-06-08-sunsetting-atom/) a free and open-source source code editor for macOS, Linux, and Windows. Built by GitHub using the [Electron framework](https://en.wikipedia.org/wiki/Electron_(software_framework)), it supported plug-ins written in JavaScript, embedded Git controls, and more. Fans for Atom should migrate to the open source fork called [Pulsar](https://pulsar-edit.dev/)
 
-<details>
-<summary>Atom Install Instructions (depreciated)</summary>
+{/* 
 
 Download and install [Atom](https://atom.io/). Then, install the following packages in Atom > Settings:
 
@@ -252,9 +251,10 @@ Any of the below:
 ### Format "beautify" your code
 This is essential for source code editing. In any file, either
 - press `Ctl + Option + B`
-- or choose Packages → Atom Beautify → Beautify
+- or choose Packages → Atom Beautify → Beautify 
 
-</details>
+*/}
+
 
 ---
 
@@ -263,3 +263,36 @@ This is essential for source code editing. In any file, either
 We will be using Git and Github Desktop for version control, demos, turning in assignments, and collaboration.
 
 👉 Review the [Git & Github Desktop slides](https://docs.google.com/presentation/d/1vtK6LoqwF4rQQZZy-ovuEgsYUwwMRXsqDVMOjAPSBt0/edit#slide=id.g9165d0d9fd_0_120)
+
+
+
+
+
+
+---
+
+
+## Advanced Web Development Environment
+
+Tools for full-stack web development.
+
+So you're already familiar with standard front-end web development and ready to try full-stack?
+
+- NVM, NPM, Node.js
+- [Homebrew](https://brew.sh/)
+- [NVM/Node](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
+- SFTP (Secure File Transfer Protocol) clients make it easy to transfer files between computers using a GUI.
+	- [Cyberduck](https://cyberduck.io/) or [FileZilla](https://filezilla-project.org/) (Windows, MacOS, Linux)
+	- [remote-ftp](https://atom.io/packages/remote-ftp) - Enable browsing remote SFTP just like the built-in Tree View
+- Databases
+	- [TablePlus](https://tableplus.com/download)
+- Productivity
+	- [Rectangle](https://rectangleapp.com/)
+	- [Notational Velocity](http://notational.net/)
+- Browser extensions
+    - [Markdown Viewer](https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk/related?hl=en) let's you preview `.md` files in your browser so you can work on your README files locally.
+    - [JSON Formatter](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) will highlight and format JSON in the browser to help you analyze and work with it.
+    - [Adblock Plus](https://adblockplus.org/) will help you preserve your sanity (and maybe your privacy) while working online.
+	- https://builtwith.com/
+
+
