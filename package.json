@@ -7,13 +7,14 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "postinstall": "rm -rf .astro node_modules/.astro node_modules/.vite"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.6",
     "@astrojs/starlight-tailwind": "^5.0.0",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.0.2",
+    "astro": "7.2.10",
     "reveal.js": "^6.0.1",
     "sharp": "^0.35.3",
     "tailwindcss": "^4.3.3",
