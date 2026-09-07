@@ -155,3 +155,12 @@ https://coolors.co/f94144-f3722c-f8961e-f9844a-f9c74f-90be6d-43aa8b-4d908e-57759
 .sl-markdown-content .inline-icon {
   display: inline;
 }
+
+/* PrepLink.astro's YouTube icon, shown before a prep/deadline link that
+   points to a YouTube video. Lives here rather than in a scoped <style> for
+   the same reason as the .schedule-table rules above. */
+.youtube-icon {
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 0.3em;
+}

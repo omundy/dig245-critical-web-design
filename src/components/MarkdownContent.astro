@@ -7,6 +7,7 @@
 import "@astrojs/starlight/style/markdown.css";
 import { getEntry } from "astro:content";
 import CurrentSessionHighlight from "@/components/CurrentSessionHighlight.astro";
+import PrepLink from "@/components/PrepLink.astro";
 
 const { day, prep, deadlines } = Astro.locals.starlightRoute.entry.data as {
   day?: string;
@@ -44,15 +45,13 @@ const nextDeadlines = nextData?.deadlines as
         <ul class="not-content prep">
           {deadlines?.map((deadline) => (
             <li>
-              {deadline.url ? (
-                <a href={deadline.url}>{deadline.text}</a>
-              ) : (
-                deadline.text
-              )}
+              <PrepLink url={deadline.url} text={deadline.text} />
             </li>
           ))}
           {prep?.map((link) => (
-            <li>{link.url ? <a href={link.url}>{link.text}</a> : link.text}</li>
+            <li>
+              <PrepLink url={link.url} text={link.text} />
+            </li>
           ))}
         </ul>
       </>
@@ -68,16 +67,12 @@ const nextDeadlines = nextData?.deadlines as
         <ul class="not-content prep">
           {nextDeadlines?.map((deadline) => (
             <li>
-              {deadline.url ? (
-                <a href={deadline.url}>{deadline.text}</a>
-              ) : (
-                deadline.text
-              )}
+              <PrepLink url={deadline.url} text={deadline.text} />
             </li>
           ))}
           {nextPrep?.map((link) => (
             <li>
-              {link.url ? <a href={link.url}>{link.text}</a> : link.text}
+              <PrepLink url={link.url} text={link.text} />
             </li>
           ))}
         </ul>

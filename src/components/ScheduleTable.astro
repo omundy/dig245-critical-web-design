@@ -3,6 +3,7 @@
 
 import { getCollection } from "astro:content";
 import { getDateForDay } from "@/utils/schedule";
+import PrepLink from "@/components/PrepLink.astro";
 
 interface Props {
   directory: string;
@@ -95,11 +96,7 @@ let groupIndex = -1;
                 <ul>
                   {deadlines.map((deadline) => (
                     <li>
-                      {deadline.url ? (
-                        <a href={deadline.url}>{deadline.text}</a>
-                      ) : (
-                        deadline.text
-                      )}
+                      <PrepLink url={deadline.url} text={deadline.text} />
                     </li>
                   ))}
                 </ul>
@@ -112,11 +109,7 @@ let groupIndex = -1;
                 <ul>
                   {prep.map((link) => (
                     <li>
-                      {link.url ? (
-                        <a href={link.url}>{link.text}</a>
-                      ) : (
-                        link.text
-                      )}
+                      <PrepLink url={link.url} text={link.text} />
                     </li>
                   ))}
                 </ul>
