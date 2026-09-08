@@ -1,6 +1,6 @@
 ---
 day: 3-2
-title: HTML & CSS 
+title: C.R.A.P. 
 deadlines:
   - text: 📌View Source
     url: https://github.com/omundy/dig245-view-source
@@ -14,6 +14,15 @@ prep:
 # draft: true
 ---
 
+import CustomAside from '@/components/CustomAside.astro';
+
+import Details from '@/components/Details.astro';
+
+
+<Details title="Learning Objectives">
+1. Give and receive "Glow and Grow" peer critique using design intent and code organization as evaluation criteria.
+2. Articulate how specific CSS decisions (color, font, spacing) communicate meaning beyond decoration.
+</Details>
 
 
 
@@ -21,77 +30,63 @@ prep:
 
 
 
-JS Introduction [slides](https://omundy.github.io/learn-javascript/topics/introduction/slides.html)
+
+## Javascript intro
+
+- JS Introduction [slides](https://omundy.github.io/learn-javascript/topics/introduction/slides.html)
+
+
+
+
+## C.R.A.P. introduction 
+
+We already used the "Eye Movement Test" to discover how a design can lead our eyes around a layout. CRAP design principles illustrate *why* that happens:
+
+
+import { Image } from 'astro:assets';
+import crapDesignContrast from '@/assets/img/crap-principles-contrast.svg';
+import crapDesignRepetition from '@/assets/img/crap-principles-repetition.svg';
+import crapDesignAlignment from '@/assets/img/crap-principles-alignment.svg';
+import crapDesignProximity from '@/assets/img/crap-principles-proximity.svg';
+
+
+<Image src={crapDesignContrast} alt="Critical Web Design cover" class="mx-auto" />
+
+1. **Contrast** - Make different elements clearly different (size, color, weight) so the eye knows what matters most. 
+
+<Image src={crapDesignRepetition} alt="Critical Web Design cover" class="mx-auto" />
+
+2. **Repetition** - Repeat visual choices (colors, fonts, spacing) throughout a design so it feels unified. Treating similar content the same makes it easy to find information and navigate. 
+
+<Image src={crapDesignAlignment} alt="Critical Web Design cover" class="mx-auto" />
+
+3. **Alignment** - This is the spatial relationship between different elements. Line elements up with each other so nothing feels randomly placed. 
+
+<Image src={crapDesignProximity} alt="Critical Web Design cover" class="mx-auto" />
+
+4. **Proximity** - Group related items close together, and separate unrelated ones, to show relationships. 
+
+
+
+
+
+## 👉 View Source feedback
+
+1. **Share** your View Source draft — push to GitHub and share the live link in Slack.
+1. **Groups - Note** one design principle you applied to your project — what did you intend, what was the visual effect? 
+1. Articulate how specific CSS decisions (color, font, spacing) communicate meaning beyond decoration.
+1. Explore examples in these articles for more: [How to Use C.R.A.P. Design links with Principles for Better UX?](https://vwo.com/blog/crap-design-principles/) and [4 CRAP Design Principles For A Better UX](https://attentioninsight.com/crap-design-principles/)
+
 
 
 
 
 ## 👉 Work during class
 
-1. Finish your View Source project in class. 
-1. **Validate** your live HTML page at [validator.w3.org](https://validator.w3.org).
-1. Share with a partner for feedback
+1. Finish your View Source project in class following the prompt in the assignment. 
+1. **Validate** your live HTML page at [validator.w3.org](https://validator.w3.org) and CSS at [jigsaw.w3.org/css-validator](https://jigsaw.w3.org/css-validator/).
 1. What is one question you have after completing the first prompt / assignment? Post in Slack with the link to your finished project.
 
-
-
-{/* 
-
-Add a lesson on C.R.A.P.
-
-
-https://attentioninsight.com/crap-design-principles/
-https://vwo.com/blog/crap-design-principles/
-
-
-Move Figma AI to later 
-Title: Figma AI - Design Variations 
-
-
-
-
-import CustomAside from '@/components/CustomAside.astro';
-
-import Details from '@/components/Details.astro';
-
-<Details title="Learning Objectives">
-1. Generate multiple design variations for a single interface using Figma's AI tools.
-2. Evaluate design variations against fundamental design principles: contrast, repetition, alignment, and proximity ("CRAP").
-3. Write specific, principle-based critique instead of purely subjective preference ("I like this one better").
-</Details>
-
-
-
-
-🛠 **Work during class:** Figma AI (First Draft / Make Designs)
-
-## Warm Up
-
-**Group — Name that principle**
-Look at two contrasting screenshots on the board (one cluttered, one clean). As a group, call out which design principle — contrast, alignment, repetition, or proximity — explains *why* the clean one reads better. Write your group's four one-sentence definitions on the board.
-
-## Generate
-
-**Individual — Prompt to variations**
-Pick one brief: a landing page hero for a fictional product, or a mobile screen for a simple app idea (you choose the concept). Write one text prompt and use Figma AI to generate **3–4 distinct variations** from it. Don't hand-edit yet — just generate and collect the raw output side by side on one page.
-
-## Critique
-
-**Pair — Principle-based scoring**
-Swap screens with a partner. For each of their variations, score it 1–3 on each of the four CRAP principles and leave one comment per score explaining *why* (e.g. "2/3 alignment — the button and heading don't share an edge with anything else on the page"). No comments like "looks good" or "I don't like it" — every comment must name a principle.
-
-**Group — Which one wins, and why**
-Back in your group, each person presents their partner's highest- and lowest-scoring variation. Discuss: did the AI's "best-looking" output actually score well on the principles, or did something more subtle win? Where did the tool clearly fail at basic design fundamentals?
-
-> 🛠 **Next class:** Bring your favorite variation, hand-refined based on today's critique.
-
-## Discussion
-
-- Speed vs. intentionality: generating four variations took seconds — does that change how carefully you evaluate them, compared to sketching four options by hand?
-- Where did Figma AI produce something a human designer probably wouldn't have tried? Was it good or just different?
-- If a client asked you to "just use the AI version," what would you tell them about the tradeoffs?
-
- */}
 
 
 
