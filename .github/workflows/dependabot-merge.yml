@@ -2,10 +2,9 @@
 # AUTOMATED DEPENDABOT PR APPROVAL & ASTRO BUILD VALIDATION
 # ==============================================================================
 # REQUIRED REPOSITORY SETUP BEFORE USE:
-# 1. Go to your repository tab on GitHub.
-# 2. Click Settings (Gear Icon) -> General.
+# 1. Github > Repository > Settings > General
 # https://github.com/omundy/dig245-critical-web-design/settings
-# 3. Scroll to the "Pull Requests" section and check "Allow auto-merge".
+# 2. Scroll to the "Pull Requests" section and check "Allow auto-merge".
 # NOTE: You do NOT need to set up any Repository Rulesets or Branch Protection 
 # rules for this file to work safely!
 #
@@ -17,27 +16,13 @@
 #    the PR open so you can see what broke without risking your main branch.
 # ==============================================================================
 
-
-
-#### SETUP ####
-
-
-# Create ruleset in Settings > Rulesets
-# 1. Upload the Workflow file
-# 2. Create a New branch ruleset
-# 3. Name it "Protect Main" and set the Enforcement status to Active
-# 4. Under Target branches, add your default branch name
-# 5. Scroll down to Branch rules and check "Require status checks to pass" before merging.
-# 6. Click "Add checks" and search for the exact name of your job (below) "Dependabot Auto-Merge".
 name: Dependabot Auto-Merge
-
 # Best Practice: Keep your workflow on on: pull_request. By default, GitHub treats Dependabot pull_request events with a highly restricted, read-only token context to safeguard secrets against untrusted code execution. [1] (https://github.com/orgs/community/discussions/163952)
 on: pull_request
 
 permissions:
   pull-requests: write
   contents: write
-
 jobs:
   dependabot:
     runs-on: ubuntu-latest
@@ -77,22 +62,3 @@ jobs:
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
-    
-    
-      # steps:
-      # - name: Fetch Dependabot metadata
-      #   id: metadata
-      #   uses: dependabot/fetch-metadata@v2
-      #   with:
-      #     github-token: "${{ secrets.GITHUB_TOKEN }}"
-
-      # # Auto-merge only patches and minor updates for safety
-      # - name: Approve and Enable Auto-Merge
-      #   if: steps.metadata.outputs.update-type != 'version-update:semver-major'
-      #   run: |
-      #     gh pr review --approve "$PR_URL"
-      #     gh pr merge --auto --squash "$PR_URL"
-      #   env:
-      #     PR_URL: ${{ github.event.pull_request.html_url }}
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
