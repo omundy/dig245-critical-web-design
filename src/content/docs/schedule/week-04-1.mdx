@@ -1,6 +1,6 @@
 ---
 day: 4-1
-title: Figma
+title: Figma + Google Fonts
 prep:
   - text: 📚 Module 3.1 Design with Figma (91–98)
   - text: How to wireframe | Figma (2019)
@@ -12,11 +12,13 @@ prep:
 # draft: true
 ---
 
+import CustomAside from '@/components/CustomAside.astro';
+
+import Details from '@/components/Details.astro';
 
 
-## 👉 Activity: Share Unbranding Moodboards
 
-- Make your Figma sharable and post the link to Slack
+
 
 
 {/* 
@@ -29,25 +31,46 @@ prep:
 
 
 
+{/* COPIED */}
+{/* PAGE 99 */}
+
+## 👉 Activity: Reimagine a Brand’s Message
+
+<CustomAside type="excerpt" reference="Prompt 3.1 Design"></CustomAside>
+
+Draw a wireframe and create mock-ups in Figma that subvert a corporation’s messaging using
+their colors, typography, images, and/or language. 
+
+1. In the Unbranding moodboard you created in Figma, create a new Desktop frame for a first version of your design.
+1. Reimagine the messaging of a brand’s identity to provide your own alternative commentary. Consider: Who is your audience? What do you want them to think about when they see your updated, subversive design? 
+1. You may want to begin by making a screenshot of the original design and placing it in your composition. Some people like to layer new work on top of the original, thus imagining the original as a
+template. 
+1. After you have a rough idea, duplicate the frame and create a new iteration. Remember that your final web page will include a hover effect during which a page element (an image or text) changes when the user hovers their mouse on top. So make a before and after showing both states.
+
+
+import { Image } from 'astro:assets';
+import fontGraphic from '@/assets/img/03-09-typography.png';
+
+
+<Image src={fontGraphic} alt="fonts" class="mx-auto" />
+
+
+## 👉 Activity: Choose or Matching a Typeface
+
+Much of the time, when selecting a typeface for your web project, you will start by looking at Google Fonts, [fonts.google.com](https://fonts.google.com). 
+
+1. Browse by categories, filter for serif or sans-serif fonts, and preview the font in whatever text you type into the box. 
+1. Once you find a font for your project, click to see its specimen page. 
+1. Beneath the preview area, select the font by pressing the Select button (the plus) on the right side of the preview. The Selected family menu appears on the right side of the browser. If it doesn't appear then click on the icon on the top right of the window. 
+1. You should select several fonts and display them together so you can make a visual comparison. 
+
+For our project, we wanted to find a typeface matching the IKEA identity. We started with a search on Google for “IKEA logo font.” Often organizations will start with a particular font and modify it to make it hard to copy or better match their identity. Identities also evolve, as you will find with IKEA. We chose the font Jost.
 
 
 
+## 👉 Get Feedback and Start Coding
 
+**Critique — "I Notice / I Wonder"**
+With 15 min remaining, pair up and share work on screen. Each partner gives feedback using only: "I notice ___" and "I wonder ___." No praise, no criticism — just observing and questioning.
 
-
-## Related 
-
-
-import YoutubeVideo from '@/components/YoutubeVideo.astro';
-
-
-
-<figure>
-
-<div class="max-w-3xl mx-auto not-content">
-  <YoutubeVideo src="https://www.youtube.com/watch?v=t-G8GgRA5Yw&list=PLhpnnpt3tw-RDgmdR9OMvWb8nT8bqvK_K" />
-</div>
-
-HTML & CSS for Absolute Beginners: Images (12:35)
-
-</figure>
+Start coding by forking this repo: [Unbranding](https://github.com/omundy/dig245-unbranding)
