@@ -1,9 +1,6 @@
 ---
 day: 4-2
 title: File paths, images, fonts
-deadlines:
-  - text: 📌Unbranding
-    url: https://github.com/omundy/dig245-unbranding
 prep:
   - text: 📚 Module 3.2 File Paths, Images, and Pseudo-Classes (99-111)
   - text: 📚 Module 3.3 Web Fonts & JavaScript Events (112-117)
@@ -14,21 +11,49 @@ prep:
 
 
 
-## Warm Up
+## Relative and Absolute Image Paths
 
 **Group — Relative Path Puzzle**
-Given a folder structure diagram on the screen, pairs compete to write 5 correct relative file paths from different starting points. Pairs who finish first write the hardest possible path and challenge others.
+Given the below folder structure diagram, with a partner, write 2 correct relative file paths from different starting points. The second should be the hardest possible path.
 
-**Reflect** (2 sentences): What is one thing about file paths or version control that was confusing at first but now makes sense? Post to Slack.
+**Reflect** (2 sentences): What is one thing about file paths or version control that was confusing at first but now makes sense?
 
+
+import { Image } from 'astro:assets';
+
+import image from '@/assets/img/03-20-paths-hierarchy.png';
+
+<Image src={image} alt="paths" class="mx-auto" />
 
 
 ## Image hover states demo
 
-- Pseudo classes 
-- Javascript listeners
+[CSS / Javascript Cat Image Swapper](https://codepen.io/owenmundy/pen/OJRWQoY?editors=1010)
 
-Continue coding your projects 
+1. Pseudo classes 
+1. JS Data & Variables [slides](https://omundy.github.io/learn-javascript/topics/variables/slides.html)
+1. Javascript listeners
+
+
+
+
+## 👉 Get Feedback and Start Coding
+
+**Critique — "I Notice / I Wonder"**
+With 15 min remaining, pair up and share work on screen. Each partner gives feedback using only: "I notice ___" and "I wonder ___." No praise, no criticism — just observing and questioning.
+
+Start coding by forking this repo: [Unbranding](https://github.com/omundy/dig245-unbranding)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -36,6 +61,8 @@ Continue coding your projects
 
 
 ## Related 
+
+- HTML/CSS-2 (Box Model) [slides](https://docs.google.com/presentation/d/1x5yJObVVAyUj2uUV3VKqxvY1L2ucPrwKDUFKmZ2elUw/edit?usp=sharing)
 
 
 import YoutubeVideo from '@/components/YoutubeVideo.astro';
