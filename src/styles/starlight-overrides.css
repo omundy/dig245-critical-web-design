@@ -17,14 +17,21 @@
   --sl-content-width: 50rem;
 }
 
-/* Widen the content column further, but only on pages that render
-   ScheduleTable (:has() lets us match an ancestor by a descendant, so this
-   doesn't require any per-page opt-in markup). --sl-content-width caps
-   .sl-container's max-width, and custom properties cascade down from any
-   ancestor, so setting it here on <body> reaches that descendant .sl-container
-   the same way Starlight's own :root/html declarations do. */
+/* Fill the content column's available space entirely, but only on pages
+   that render ScheduleTable (:has() lets us match an ancestor by a
+   descendant, so this doesn't require any per-page opt-in markup).
+   --sl-content-width caps .sl-container's max-width, and custom properties
+   cascade down from any ancestor, so setting it here on <body> reaches that
+   descendant .sl-container the same way Starlight's own :root/html
+   declarations do. A fixed rem value here (like the site's default 70rem)
+   is still a cap, not "full width" — it still leaves visible margin on a
+   wide monitor. `none` fully removes the constraint too, but that lets the
+   table's own intrinsic content width (long prep/deadline text) grow past
+   the actual available layout space and overlap the right-hand ToC sidebar
+   on pages that have one — `100%` fills all the space actually available
+   while staying bounded by it. */
 body:has(.schedule-table) {
-  --sl-content-width: 70rem;
+  --sl-content-width: 100%;
 }
 
 /* remove bullets and margin from lists in table cells (Deadlines/Prep) */
@@ -163,4 +170,25 @@ https://coolors.co/f94144-f3722c-f8961e-f9844a-f9c74f-90be6d-43aa8b-4d908e-57759
   display: inline-block;
   vertical-align: -2px;
   margin-right: 0.3em;
+}
+
+/* MarkdownContent.astro's "Complete before class" / "Homework" lists
+   (src/components/MarkdownContent.astro). Lives here, not in that
+   component's own scoped <style>, because the <a> tags inside .prep are
+   rendered by the child PrepLink.astro component, which carries its own
+   Astro scope-hash class, not MarkdownContent's — so a scoped `.prep a`
+   selector never actually matches them. */
+.prep {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  padding: 0;
+  list-style: none;
+}
+.prep a {
+  color: var(--sl-color-text-accent);
+  text-decoration: none;
+}
+.prep a:hover {
+  color: var(--sl-color-white);
 }
