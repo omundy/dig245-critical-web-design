@@ -6,7 +6,7 @@
 // stays correct every day without a rebuild; a build-time-only check would
 // go stale between deploys since this site only rebuilds on push.
 import { getCollection } from "astro:content";
-import { getComparableDateForDay } from "@/utils/schedule";
+import { getComparableDateForEntry } from "@/utils/schedule";
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
@@ -14,15 +14,15 @@ const scheduleEntries = await getCollection("docs", (entry) =>
   entry.id.startsWith("schedule/"),
 );
 
-const sessions = scheduleEntries
-  .map((entry) => {
-    const day = entry.data.day as string | undefined;
-    if (!day) return undefined;
-    const date = getComparableDateForDay(day);
-    if (date === undefined) return undefined;
-    return { href: `${base}/${entry.id}/`, date };
-  })
-  .filter((session) => session !== undefined);
+const sessions = (
+  await Promise.all(
+    scheduleEntries.map(async (entry) => {
+      const date = await getComparableDateForEntry(entry.id);
+      if (date === undefined) return undefined;
+      return { href: `${base}/${entry.id}/`, date };
+    }),
+  )
+).filter((session) => session !== undefined);
 ---
 
 <script type="module" define:vars={{ sessions }}>

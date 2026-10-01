@@ -2,7 +2,7 @@
 // Renders a table summarizing the frontmatter of every page in a schedule directory.
 
 import { getCollection } from "astro:content";
-import { getDateForDay } from "@/utils/schedule";
+import { getDateForEntry, getLabelForEntry, sortScheduleEntries } from "@/utils/schedule";
 import PrepLink from "@/components/PrepLink.astro";
 
 interface Props {
@@ -13,33 +13,39 @@ interface Props {
 // so its slug (the part after "schedule/") is "" — exclude that too.
 const { directory = "schedule", exclude = ["", "index"] } = Astro.props;
 
-const entries = await getCollection("docs", (entry) => {
-  if (entry.id !== directory && !entry.id.startsWith(`${directory}/`))
-    return false;
-  const slug =
-    entry.id === directory ? "" : entry.id.slice(directory.length + 1);
-  return !exclude.includes(slug) && !entry.data.draft;
-});
+const entries = sortScheduleEntries(
+  await getCollection("docs", (entry) => {
+    if (entry.id !== directory && !entry.id.startsWith(`${directory}/`))
+      return false;
+    const slug =
+      entry.id === directory ? "" : entry.id.slice(directory.length + 1);
+    return !exclude.includes(slug) && !entry.data.draft;
+  }),
+);
 
-// "week-1" -> 1, "week-10" -> 10; entries without a number sort to the end, alphabetically
-function weekNumber(id: string): number {
-  const match = id.match(/(\d+)/);
-  return match ? parseInt(match[1], 10) : Infinity;
-}
-entries.sort((a, b) => {
-  const diff = weekNumber(a.id) - weekNumber(b.id);
-  return diff !== 0 ? diff : a.id.localeCompare(b.id);
-});
+// Resolved up front (Astro's JSX-returning .map() below can't itself await)
+// and looked up by id while rendering.
+const dates = new Map(
+  await Promise.all(
+    entries.map(async (entry) => [entry.id, await getDateForEntry(entry.id)] as const),
+  ),
+);
+const labels = new Map(
+  await Promise.all(
+    entries.map(async (entry) => [entry.id, await getLabelForEntry(entry.id)] as const),
+  ),
+);
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
-// A "-x" day (e.g. "13-x") is a standalone week of its own (e.g. a break),
+// A `break: true` entry (e.g. a week off) is a standalone group of its own,
 // not part of whatever numbered week it happens to share a leading digit
 // with in the filename/sort order — so it always gets its own group key,
-// instead of grouping by weekNumber() (which would lump "week-13-x" in
-// with "week-13-1/2/3" even though they're different calendar weeks).
-function groupKey(entry: { id: string; data: { day?: string | null } }): string {
-  return entry.data.day?.endsWith("-x") ? entry.id : String(weekNumber(entry.id));
+// instead of grouping by its auto-numbered week (which would lump it in
+// with the surrounding real sessions even though it's not one of them).
+function groupKey(entry: { id: string; data: { break?: boolean | null } }, label: string | undefined): string {
+  if (entry.data.break) return entry.id;
+  return label ? (label.split("-")[0] as string) : entry.id;
 }
 
 // tracks group-to-group transitions as entries render in order: previousGroup
@@ -63,17 +69,15 @@ let groupIndex = -1;
   <tbody>
     {
       entries.map((entry) => {
-        const { day, title, deadlines, prep } = entry.data as {
-          day?: string;
+        const { title, deadlines, prep } = entry.data as {
           title: string;
           deadlines?: { url?: string; text: string }[];
           prep?: { url?: string; text: string }[];
         };
-        const date = day ? getDateForDay(day) : undefined;
-        // "-x" day-ids (e.g. "13-x") are internal keys for date lookup on
-        // non-session entries like a week off — not a session label worth showing.
-        const dayLabel = day && !day.endsWith("-x") ? day : " ";
-        const group = groupKey(entry);
+        const date = dates.get(entry.id);
+        const label = labels.get(entry.id);
+        const dayLabel = label ?? " ";
+        const group = groupKey(entry, label);
         // skip the very first row: it already sits right under the header's
         // own border, so marking it too would draw a redundant double line
         const isGroupStart = previousGroup !== undefined && group !== previousGroup;

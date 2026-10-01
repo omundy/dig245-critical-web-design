@@ -1,0 +1,128 @@
+---
+day: true
+title: Figma + Google Fonts
+prep:
+  - text: 📚 Module 3.1 Design with Figma (91–98)
+  - text: How to wireframe | Figma (2019)
+    url: https://www.figma.com/blog/how-to-wireframe
+  - text: "Codecademy: CSS 3-2 Changing the Box Model (5)"
+    url: https://www.codecademy.com/learn/learn-css
+  - text: "Codecademy: JS 1-1 Introduction to Javascript (8)"
+    url: https://www.codecademy.com/learn/introduction-to-javascript
+# draft: true
+---
+
+import CustomAside from '@/components/CustomAside.astro';
+
+import Details from '@/components/Details.astro';
+
+
+
+
+
+
+{/* 
+
+[Intro to Figma](https://www.figma.com/community/file/1545020470697928278)
+
+ */}
+
+
+
+## Design Style Guides
+
+A set of standards for designing documents, websites, signage, and other identifiers to ensure uniformity in style and formatting wherever the brand is used (logos, color, type, etc.). Explore [Style guides](https://www.creativebloq.com/branding/great-examples-design-style-guides-3132070) and [Design Systems](https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/) ([NASA](https://standardsmanual.com/products/nasa-graphics-standards-manual), [Firefox](https://acorn.firefox.com/), [Uber](https://brand.uber.com/), [Apple](https://developer.apple.com/design/human-interface-guidelines))
+
+{/* 
+
+- [Design Trends Activity](https://docs.google.com/document/d/1AAbnUaUGDdunVPkJNPSPfy0u-pDmgATzdRzuDiG7YgA/edit) 
+- [Web Design Trends](https://docs.google.com/presentation/d/1OWc_e1pquvwKi4qxJShsZ1Rqia1dbDBcwpxYwdOic7o/edit#slide=id.gfed80f96be_0_1) 
+- [Style Guides & Design Systems](https://docs.google.com/presentation/d/1OWc_e1pquvwKi4qxJShsZ1Rqia1dbDBcwpxYwdOic7o/edit#slide=id.gfed80f96be_0_31) 
+
+*/}
+
+
+
+
+
+
+
+
+
+{/* COPIED */}
+{/* PAGE 99 */}
+
+## 👉 Activity: Reimagine a Brand’s Message
+
+<CustomAside type="excerpt" reference="Prompt 3.1 Design"></CustomAside>
+
+Draw a wireframe and create mock-ups in Figma that subvert a corporation’s messaging using
+their colors, typography, images, and/or language. 
+
+1. In the Unbranding moodboard you created in Figma, create a new Desktop frame for a first version of your design.
+1. Reimagine the messaging of a brand’s identity to provide your own alternative commentary. Consider: Who is your audience? What do you want them to think about when they see your updated, subversive design? 
+1. You may want to begin by making a screenshot of the original design and placing it in your composition. Some people like to layer new work on top of the original, thus imagining the original as a
+template. 
+1. After you have a rough idea, duplicate the frame and create a new iteration. Remember that your final web page will include a hover effect during which a page element (an image or text) changes when the user hovers their mouse on top. So make a before and after showing both states.
+
+
+import { Image } from 'astro:assets';
+import fontGraphic from '@/assets/img/03-09-typography.png';
+
+
+<Image src={fontGraphic} alt="fonts" class="mx-auto" />
+
+
+## 👉 Activity: Choose or Matching a Typeface
+
+Much of the time, when selecting a typeface for your web project, you will start by looking at Google Fonts, [fonts.google.com](https://fonts.google.com). 
+
+1. Browse by categories, filter for serif or sans-serif fonts, and preview the font in whatever text you type into the box. 
+1. Once you find a font for your project, click to see its specimen page. 
+1. Beneath the preview area, select the font by pressing the Select button (the plus) on the right side of the preview. The Selected family menu appears on the right side of the browser. If it doesn't appear then click on the icon on the top right of the window. 
+1. You should select several fonts and display them together so you can make a visual comparison. 
+
+For our project, we wanted to find a typeface matching the IKEA identity. We started with a search on Google for “IKEA logo font.” Often organizations will start with a particular font and modify it to make it hard to copy or better match their identity. Identities also evolve, as you will find with IKEA. We chose the font Jost.
+
+
+
+
+
+
+## Related 
+
+
+
+import YoutubeVideo from '@/components/YoutubeVideo.astro';
+
+
+
+<figure>
+
+<div class="max-w-3xl mx-auto not-content">
+  <YoutubeVideo src="https://www.youtube.com/watch?v=atn22-bmTPU&list=PLhpnnpt3tw-RDgmdR9OMvWb8nT8bqvK_K" />
+</div>
+
+Paula Scher: Great design is serious (not solemn) (21:57)
+
+</figure>
+
+
+
+
+
+
+{/* 
+
+POTENTIALLY FOR NEXT TIME
+
+
+**Individual — Unbranding Moodboard in Figma**
+Following Module 3.1: 12 curated images defining your counter-brand's visual world, a color palette (primary, secondary, accent), 2 typeface choices with a one-sentence rationale each.
+
+**Pair — Moodboard Feedback**
+Swap Figma files. Give feedback on: (1) Does the moodboard have a clear visual voice? (2) Is there tension that makes it feel *critical* rather than just aesthetic? (3) One image you'd swap and why.
+
+
+
+ */}
