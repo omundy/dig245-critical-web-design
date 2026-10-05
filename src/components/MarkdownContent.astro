@@ -59,11 +59,11 @@ const nextDeadlines = nextData?.deadlines as
   }
   <slot />
 {
-  day && (
-    <>
-      <h2>📌 Homework</h2>
-      {(nextDeadlines && nextDeadlines.length > 0) ||
-      (nextPrep && nextPrep.length > 0) ? (
+  day &&
+    ((nextDeadlines && nextDeadlines.length > 0) ||
+      (nextPrep && nextPrep.length > 0)) && (
+      <>
+        <h2>📌 Homework</h2>
         <ul class="not-content prep">
           {nextDeadlines?.map((deadline) => (
             <li>
@@ -76,16 +76,8 @@ const nextDeadlines = nextData?.deadlines as
             </li>
           ))}
         </ul>
-      ) : (
-        <ul>
-          <li>
-            Follow the "Next" button below or{" "}
-            <a href="../">visit the course overview</a>
-          </li>
-        </ul>
-      )}
-    </>
-  )
+      </>
+    )
 }
 </div>
 
