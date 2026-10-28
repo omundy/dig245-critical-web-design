@@ -24,6 +24,6 @@
     "@astrojs/check": "^0.9.10"
   },
   "overrides": {
-    "undici": "^8.11.2"
+    "undici": "^8.12.3"
   }
 }
