@@ -37,7 +37,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Matches standard modern Astro project defaults
+          node-version: '22' # Astro requires Node >=22.12 (deploy.yml's withastro/action also defaults to 22)
           cache: 'npm'
 
       # The gatekeeper step: Installs packages using the project lockfile

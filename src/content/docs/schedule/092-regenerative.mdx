@@ -1,0 +1,228 @@
+---
+day: true
+title: AI Tools
+deadlines:
+  - text: "📌Regenerative - Prototype #2"
+    url: https://github.com/omundy/dig245-regenerative
+  - text: "📌Regenerative - Design #1"
+    url: https://github.com/omundy/dig245-regenerative
+prep:
+  - text: 📚 Module 8.2 Generative Arp Visualization (269-279)
+  - text: "Codecademy: JS 5-1 Arrays (7)"
+    url: https://www.codecademy.com/learn/introduction-to-javascript
+  - text: "Codecademy: JS 6-1 Loops (7)"
+    url: https://www.codecademy.com/learn/introduction-to-javascript
+---
+
+import Details from '@/components/Details.astro';
+
+
+
+{/* 
+## Review Prototypes
+
+1. **Push** your Regenerative project prototype to GitHub — must have at least one working generative element. 
+1. Share the repo link.
+*/}
+
+
+
+
+
+## AI Ground rules
+
+Now that you have foundational knowledge in HTML CSS JS we can start incorporating AI tools, with the following rules:
+
+1. **Audit Every Output**: AI is trained on massive projects by professionals. Never use code unless you can explain line-by-line what it does.
+1. **Not a magic bullet**: Treat AI like a junior assistant—it offers suggestions, but you direct the action.
+1. **Be transparent** about how AI informed your project. Attribute it with a 1-line code comment whenever AI helped solve a bug or structure a feature.
+
+
+## Section A - Using AI as an assistant only 
+
+---
+
+**Goal:** Use AI as a "critique partner" to stress-test your code and concept. Find bugs without letting the AI write the code for you.
+
+
+
+
+### 1. Install Github Copilot Chat 
+
+1. Open your Usability Test assignment in VS Code 
+1. Install the [Github Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat&st_source=ai_overview) extension
+1. Click the button in the top right to "Toggle the Secondary Sidebar" to see the chat panel
+
+
+
+:::note
+Copilot free tier is about 50 chat or agent requests a month.
+:::
+
+
+
+### 2. Disable Copilot inline-suggestions
+
+These snippets are uniformed and only distract from your goal!
+
+import { Image } from 'astro:assets';
+
+import copilot from '@/assets/img/copilot.png';
+import copilotDisabled from '@/assets/img/copilot-disabled.png';
+
+<Image src={copilot} alt="paths" class="mx-auto" />
+
+1. Click the Copilot icon at the bottom right of VS Code 
+1. Disable all three Copilot `Inline Suggestions` - 
+
+<Image src={copilotDisabled} alt="paths" class="mx-auto" />
+
+
+
+
+### 3. Check a document for errors 
+
+1. Open `main.js` (or any file with Javascript)
+1. In the chat window add the following and press return: `Check this document for errors`
+1. Ask for help: `Give me instructions to fix these errors`
+1. Continue checking all files in this repo 
+
+
+
+
+
+### 4. Write comments to explain code
+
+1. Open `main.js` (or any file with Javascript)
+1. In the chat window add the following and press return: `Write comments to explain code`
+1. Confirm the additions are correct 
+1. Commit your work 
+
+
+
+
+
+
+
+
+
+## Section B - Generate code with AI
+
+---
+
+
+### 5. Write a prompt 
+
+1. Open your Regenerative assignment in VS Code 
+1. Confirm you have an `AGENTS.md` file that requires AI agents to add attribution. If not, [download and add the file to your project](https://github.com/omundy/dig245-regenerative/blob/main/AGENTS.md).  
+1. In the chat window add a statement to create a function that generates random data. Modify the type as needed: `Write a function that returns a random animal. Let me modify the outcome with a parameter.`
+
+
+:::caution
+Always save your work before asking the AI to edit your documents!
+:::
+
+
+
+## 6. AI Critique Your Regenerative Prototype
+
+Create a prompt using this framework: *"Role + Context + Goal + Constraint"*. For example, "Act as a professional chef in a vegan restaurant. Review this carrot cake recipe to make sure it is dairy and gluten free."
+
+For your project...
+
+1. Give the AI a role: `Act as a front-end developer.`
+1. Provide context: `The Regenerative assignment asks me to create a web page that can generate new iterations of itself based on some changeable data source. My idea is ________`
+1. Ask for a plan `Give me a plan to help structure this document. `
+1. Finish with constraints: `Keep it simple. I will design the layout myself.`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
+
+
+
+**Rules of Engagement:**
+1. **No Bulk Copy-Pasting:** You must read the AI’s explanation and manually type/apply changes in VS Code.
+2. **You Keep the Reins:** AI gives suggestions; you decide what serves your design and critical intent.
+
+---
+
+## 📋 Task 1: Semantic & Accessibility Audit (15 mins)
+
+1. Open your project in **VS Code** and open an AI assistant (ChatGPT, Claude, or Gemini) in your browser.
+2. Copy your main HTML file contents and paste them into the AI with this exact prompt:
+   > *"Act as a web accessibility and HTML standards auditor. Review this code for semantic tags (`<main>`, `<nav>`, `<article>`, etc.) and screen-reader accessibility. Point out 2 specific flaws, explain WHY they are problematic, and describe how to fix them manually without writing the full code for me."*
+3. **Action:** Read the feedback. Open your file in VS Code and manually update your HTML structure to address at least one issue found.
+
+---
+
+## 📱 Task 2: Layout & Responsiveness Stress-Test (15 mins)
+
+1. Open your main CSS file in VS Code.
+2. Copy your layout rules (Flexbox, Grid, or media queries) and paste them into the AI with this prompt:
+   > *"Act as a front-end developer. Review this CSS layout code for responsiveness issues on smaller screens. Tell me what layout risks exist (e.g., fixed widths, overflow risks) and what CSS properties I should adjust myself."*
+3. **Action:** Test your site in the browser preview using Developer Tools (Mobile View). Manually tweak your CSS in VS Code to fix any layout breakage.
+
+---
+
+## 🌿 Task 3: Conceptual & Footprint Reflection (10 mins)
+
+1. Ask your AI assistant to critique your core project idea from a critical web design perspective:
+   > *"My web project explores the theme 'Regenerative.' Here is my short concept summary: [INSERT 1–2 SENTENCES]. What hidden digital footprints, carbon costs, or heavy web practices might ironically contradict a 'regenerative' web approach?"*
+2. **Action:** Consider the AI's response. Ask yourself: Is my site bloated with unnecessary heavy media, third-party libraries, or complex scripts?
+
+---
+
+## 🚀 Task 4: Commit & Document (10 mins)
+
+1. Open your terminal in VS Code.
+2. Open your `README.md` file and add a section titled `## AI Collaboration Log`:
+   * Write 2 sentences answering: **What is one critique from the AI you chose to apply, and what is one suggestion you chose to ignore? Why?**
+3. Run your standard Git commands to push your updates live to GitHub Pages:
+   ```bash
+   git add .
+   git commit -m "AI-assisted audit and accessibility fixes"
+   git push origin main
+
+
+
+
+
+
+ */}
+
+
+
+
+
+
+{/* 
+
+### 12-2 Gen AI — AI as a Tool
+
+### Learning objectives
+
+1. Use an AI assistant to diagnose a real bug in your own code, documenting the prompt, suggestion, and whether you understood the fix.
+2. Evaluate when AI assistance genuinely supports learning vs. when it substitutes for understanding you need to develop yourself.
+3. Contribute to a class AI policy that distinguishes legitimate uses from uses that undermine learning, voice, or critical intent.
+
+*No book reading — instructor-created session*
+
+**Individual — AI-Assisted Debug Session**
+Take a broken piece of your own code from a previous project. Use an AI assistant (ChatGPT, Claude, Copilot) to help diagnose it. Document: What prompt did you use? What did the AI suggest? Was it correct? Did you understand why? What would have happened if you'd just pasted it in without understanding it?
+
+**Group — Class AI Policy Workshop**
+Draft the class's working AI policy for the rest of the semester. Consider: What tasks does AI help with legitimately? What does it undermine (your learning, your voice, the critical intent of a project)? What do you need to disclose? What's the difference between using AI to debug a for-loop vs. using it to generate your critical intent statement?
+
+ */}

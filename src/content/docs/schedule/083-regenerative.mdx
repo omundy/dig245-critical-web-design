@@ -1,0 +1,82 @@
+---
+day: true
+title: Regenerative
+deadlines:
+  - text: 📌Regenerative ideas & sketches
+    url: https://github.com/omundy/dig245-regenerative
+  - text: ❓Quiz 08 - JS Functions & Scope 
+    url: https://moodle.davidson.edu/
+prep:
+  - text: 📚 Module 6.3 Javascript Functions, Arrays, & Loops (7)
+  - text: "Codecademy: JS 3-1 Functions (7)"
+    url: https://www.codecademy.com/learn/introduction-to-javascript
+  - text: "Codecademy: JS 4-1 Scope (4)"
+    url: https://www.codecademy.com/learn/introduction-to-javascript
+# draft: true
+---
+
+
+
+import CustomAside from '@/components/CustomAside.astro';
+
+import Details from '@/components/Details.astro';
+
+<Details title="Learning Objectives">
+1. Use arrays to control visual output at scale — color, position, size, or repetition — rather than coding each element individually.
+1. Pitch a Regenerative project concept and give structured peer feedback on system clarity, aesthetic goal, and technical risk.
+</Details>
+
+
+
+
+
+## JS Data Structures 
+
+1. JS Data Structures [slides](https://omundy.github.io/learn-javascript/topics/data-structures/slides.html) - Codepen: [objects](https://codepen.io/owenmundy/pen/OJGWyvL)
+1. Demo using JSON: [Simple Cat Generator](https://codepen.io/owenmundy/pen/XWvRqNZ?editors=0011) (also see examples below)
+
+
+
+
+
+
+## Share and Diagram Regenerative Ideas
+
+
+**Group — Share Regenerative Project Concepts**
+
+Share your brainstorming work (Haiku) and concept (statement) for the [Regenerative](https://github.com/omundy/dig245-regenerative) project. Peer feedback using 3 questions: 
+
+1. Is the generative system clear? 
+1. What is the aesthetic goal? 
+1. What's technically risky and needs prototyping first?
+
+
+**Individual — Plan Your Prototype**
+
+1. Diagram your idea - Where is the loop? Describe the user experience.
+1. Write pseudocode describing how you'll create it
+
+
+
+```
+Create global variables
+Store a reference to the main HTML element
+Create generate() function
+Reset variables, remove previous elements from the page
+Repeat the following for a random number of boxes
+Generate a random size, position, and color
+Insert the boxes into the page as HTML
+Add listener to call generate() on page load or when user clicks
+Create helper functions
+Return a random number between min and max
+Return a random color
+```
+
+Pseudocode example from Ch8 (p.270) for [Generative Arp](https://criticalwebdesign.github.io/book/08-generative-design/8-3/)
+
+
+## More examples
+
+- [Convert text list to array](https://codepen.io/owenmundy/pen/gbmzYob?editors=1011)
+- [Random Article Generator](https://codepen.io/owenmundy/pen/PomvjqW?editors=0010)
